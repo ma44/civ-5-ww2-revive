@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/13/2012 11:30:54 AM -->
+<GameData>
+	<IconFontTextures>
+		<Row>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconFontTextureFile>RED_WWII_FontIcons</IconFontTextureFile>
+		</Row>
+	</IconFontTextures>
+
+	<IconFontMapping>
+		<Row>
+			<IconName>ICON_PERSONNEL</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>1</IconMapping>
+		</Row>
+
+		<Row>
+			<IconName>ICON_MATERIEL</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>2</IconMapping>
+		</Row>
+
+		<Row>
+			<IconName>ICON_MEDALS</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>3</IconMapping>
+		</Row>
+
+		<Row>
+			<IconName>ICON_MEDAL</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>4</IconMapping>
+		</Row>
+		
+		<Row>
+			<IconName>ICON_BLITZ</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>51</IconMapping>
+		</Row>
+
+		<Row>
+			<IconName>ICON_SUPPLY</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>50</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_BUSHIDO</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>49</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_NEVERSURR</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>48</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_HERO</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>47</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_DESERT</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>46</IconMapping>
+		</Row>
+		<Row>
+			<IconName>ICON_WINTER</IconName>
+			<IconFontTexture>ICON_FONT_TEXTURE_RED_WWII</IconFontTexture>
+			<IconMapping>45</IconMapping>
+		</Row>
+
+
+
+
+	</IconFontMapping>
+</GameData>

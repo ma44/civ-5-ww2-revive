@@ -1,0 +1,161 @@
+-- Text File1
+-- Author: Thomas
+-- DateCreated: 11/3/2016 8:13:54 PM
+--------------------------------------------------------------
+	function LeaveBrokenCity(unit)
+	if unit:GetDomainType() == DomainTypes.DOMAIN_AIR 
+		and unit:GetMoves() > 0 -- don't bother if unit has already be used for something else (like force healing)...
+		then
+		Dprint("Checking for city status...", g_bAIDebug)
+		
+		local unitKey = GetUnitKey(unit)
+		local cityPlot = city:Plot()
+		local cityHPLeft = GameDefines.MAX_CITY_HIT_POINTS - city:GetDamage()	-- HP left for attacked city
+		if cityHPLeft < MIN_HP_LEFT_REBASE_CITY then							-- HP < 20
+			Dprint( city:GetName() .. " is broken, HP left is too small, time for rebasing.", g_bAIDebug)
+			
+			-- create possibleDestination table sorted by distance from unit...
+			local rebaseRange = unit:Range() * GameDefines.AIR_UNIT_REBASE_RANGE_MULTIPLIER / 100
+			local testedPlot = {}
+			local possibleDestination = {}
+			local city = GetCloseCity ( unit:GetOwner(), plot, true)
+			local cityHPLeft = GameDefines.MAX_CITY_HIT_POINTS - city:GetDamage()
+				if cityHPLeft >= MIN_HP_LEFT_REBASE_CITY then                    -- Do not rebase to another broken city
+					local cityPlot = city:Plot()
+					if not testedPlot[plot] then -- register only once
+						local distanceToCity = (distanceBetween(cityPlot, unit:GetPlot()) - 1)
+
+						if distanceToCity <= unit:Range() then
+							
+							table.insert (possibleDestination, {City = city, Distance = distanceToCity})
+
+						end
+					end
+				else
+					Dprint("  - Possible rebase to " .. city:GetName() .. ", but city HP left is inferior to minimum for rebasing : " .. MIN_HP_LEFT_REBASE_CITY, g_bAIDebug)
+				end
+				testedPlot[plot] = true
+		
+		
+		
+		table.sort(possibleDestination, function(a,b) return a.Distance > b.Distance end) -- shorter distance first...
+		
+		end
+	end
+
+			-- create possibleDestination table sorted by distance from unit...
+			local rebaseRange = unit:Range() * GameDefines.AIR_UNIT_REBASE_RANGE_MULTIPLIER / 100
+			local testedPlot = {}
+			local possibleDestination = {}
+			for i, plotKey in ipairs(notIntercepted) do			
+				local plot = GetPlotFromKey(plotKey)
+				local city = GetCloseCity ( unit:GetOwner(), plot, true)
+				local cityHPLeft = GameDefines.MAX_CITY_HIT_POINTS - city:GetDamage()
+				if cityHPLeft >= MIN_HP_LEFT_REBASE_CITY then
+					local cityPlot = city:Plot()
+					if not testedPlot[plot] then -- register only once
+						local distanceToCity = (distanceBetween(cityPlot, unit:GetPlot()) - 1)
+						local distanceFromCityToBombardedPlot = (distanceBetween(cityPlot, plot) - 1)
+						Dprint("  - Need interceptor at " .. city:GetName() .. " at plot ".. cityPlot:GetX() ..",".. cityPlot:GetY() .."( distance to city = " .. tostring(distanceToCity) .."), distance from city to bombarded plot = " .. tostring(distanceFromCityToBombardedPlot) .. ", unit range = "..unit:Range(), g_bAIDebug)
+						if distanceFromCityToBombardedPlot <= unit:Range() then
+							Dprint("    Interceptor range will cover the attacked plot, mark city as potential destination...", g_bAIDebug)
+							table.insert (possibleDestination, {City = city, Distance = distanceToCity})
+						else						
+							Dprint("    Interceptor range won't help there...", g_bAIDebug)
+						end
+					end
+				else
+					Dprint("  - Need interceptor at " .. city:GetName() .. ", but city HP left is inferior to minimum for rebasing : " .. MIN_HP_LEFT_REBASE_CITY, g_bAIDebug)
+				end
+				testedPlot[plot] = true
+			end
+			table.sort(possibleDestination, function(a,b) return a.Distance > b.Distance end) -- shorter distance first...
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- AIR DEFENSE -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AIRDEF_01</Type>
+			<Description>TXT_KEY_PROMOTION_AIRDEF_01</Description>
+			<Help>TXT_KEY_PROMOTION_AIRDEF_01_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_AIRDEF_01</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>7</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<PediaType>PEDIA_RANGED</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AIRDEF_02</Type>
+			<Description>TXT_KEY_PROMOTION_AIRDEF_02</Description>
+			<Help>TXT_KEY_PROMOTION_AIRDEF_02_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_AIRDEF_02</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<PromotionPrereqOr1>PROMOTION_AIRDEF_01</PromotionPrereqOr1>	
+			<PediaType>PEDIA_RANGED</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AIRDEF_03</Type>
+			<Description>TXT_KEY_PROMOTION_AIRDEF_03</Description>
+			<Help>TXT_KEY_PROMOTION_AIRDEF_03_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_AIRDEF_03</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<RangeChange>1</RangeChange>
+			<PromotionPrereqOr1>PROMOTION_AIRDEF_02</PromotionPrereqOr1>
+			<PediaType>PEDIA_RANGED</PediaType>
+		</Row>
+	</UnitPromotions>
+
+
+			<Row>
+			<Type>PROMOTION_WOLFPACK_01</Type>
+			<Description>TXT_KEY_PROMOTION_WOLFPACK_01</Description>
+			<Help>TXT_KEY_PROMOTION_WOLFPACK_01_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_WOLFPACK_01</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>4</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<AdjacentMod>10</AdjacentMod>
+			<PediaType>PEDIA_NAVAL</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_WOLFPACK_02</Type>
+			<Description>TXT_KEY_PROMOTION_WOLFPACK_02</Description>
+			<Help>TXT_KEY_PROMOTION_WOLFPACK_02_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_WOLFPACK_02</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<VisibilityChange>1</VisibilityChange>
+			<MovesChange>1</MovesChange>
+			<PromotionPrereqOr1>PROMOTION_WOLFPACK_01</PromotionPrereqOr1>
+			<PediaType>PEDIA_NAVAL</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_WOLFPACK_03</Type>
+			<Description>TXT_KEY_PROMOTION_WOLFPACK_03</Description>
+			<Help>TXT_KEY_PROMOTION_WOLFPACK_03_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_WOLFPACK_03</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>6</PortraitIndex>
+			<IconAtlas>NEW_PROMOTION_ATLAS</IconAtlas>
+			<ExtraAttacks>1</ExtraAttacks>
+			<AttackWoundedMod>15</AttackWoundedMod>
+			<PromotionPrereqOr1>PROMOTION_WOLFPACK_02</PromotionPrereqOr1>
+			<PediaType>PEDIA_NAVAL</PediaType>
+		</Row>

@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/31/2011 6:11:23 PM -->
+<GameData>
+	<Specialists>
+		<Update>
+			<Where Type="SPECIALIST_MERCHANT"/>
+			<Set>
+				<GreatPeopleRateChange>0</GreatPeopleRateChange>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="SPECIALIST_ENGINEER"/>
+			<Set>
+				<GreatPeopleRateChange>0</GreatPeopleRateChange>
+			</Set>
+		</Update>		
+	</Specialists>
+
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_FACTORY"/>
+			<Set>
+				<Cost>200</Cost>
+				<GoldMaintenance>2</GoldMaintenance>
+				<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				<SpecialistCount>2</SpecialistCount>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>24</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WALLS"/>
+			<Set>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>19</PortraitIndex>
+			</Set>
+		</Update>	
+		<Update>
+			<Where Type="BUILDING_HOSPITAL"/>
+			<Set>
+				<Cost>150</Cost>
+				<GoldMaintenance>1</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>20</PortraitIndex>
+			</Set>
+		</Update>	
+		<Update>
+			<Where Type="BUILDING_BARRACKS"/>
+			<Set>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>18</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BANK"/>
+			<Set>
+				<Cost>150</Cost>
+				<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				<SpecialistCount>2</SpecialistCount>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>21</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_HARBOR"/>
+			<Set>
+				<Cost>100</Cost>
+				<GoldMaintenance>0</GoldMaintenance>
+				<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				<SpecialistCount>1</SpecialistCount>			
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>34</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_COURTHOUSE"/>
+			<Set>
+				<Cost>100</Cost>
+				<GoldMaintenance>1</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>33</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MILITARY_ACADEMY"/>
+			<Set>
+				<Cost>200</Cost>
+				<GoldMaintenance>5</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>30</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MILITARY_BASE"/>
+			<Set>
+				<Cost>250</Cost>
+				<GoldMaintenance>10</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>32</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_ARSENAL"/>
+			<Set>
+				<Cost>150</Cost>
+				<GoldMaintenance>3</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>31</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BROADCAST_TOWER"/>
+			<Set>
+				<Cost>150</Cost>
+				<GoldMaintenance>1</GoldMaintenance>
+				<IconAtlas>WW2_BUILDINGS</IconAtlas>
+				<PortraitIndex>28</PortraitIndex>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_KREMLIN"/>
+			<Set>
+				<Defense>1200</Defense>
+				<GlobalDefenseMod>0</GlobalDefenseMod>
+				<Culture>0</Culture>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_FORBIDDEN_PALACE"/>
+			<Set>
+				<UnhappinessModifier>0</UnhappinessModifier>
+				<Culture>0</Culture>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_PENTAGON"/>
+			<Set>
+				<Culture>0</Culture>
+				<UnitUpgradeCostMod>0</UnitUpgradeCostMod>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_EIFFEL_TOWER"/>
+			<Set>
+				<Culture>0</Culture>
+				<HappinessPerXPolicies>0</HappinessPerXPolicies>	
+				<UnmoddedHappiness>0</UnmoddedHappiness>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_NOTRE_DAME"/>
+			<Set>
+				<HappinessPerXPolicies>0</HappinessPerXPolicies>
+				<UnmoddedHappiness>0</UnmoddedHappiness>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_TAJ_MAHAL"/>
+			<Set>
+				<HappinessPerXPolicies>0</HappinessPerXPolicies>
+				<UnmoddedHappiness>0</UnmoddedHappiness>
+			</Set>
+		</Update>
+	</Buildings>
+
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BRANDENBURG_GATE</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BRANDENBURG_GATE</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Experience>0</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_BRANDENBURG_GATE</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Experience>0</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_KREMLIN</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>10</Experience>
+		</Row>		
+		<Row>
+			<BuildingType>BUILDING_PENTAGON</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>15</Experience>
+		</Row>	
+	
+	</Building_DomainFreeExperiences>
+	
+	<Building_RiverPlotYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_PYRAMID</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_RiverPlotYieldChanges>
+	
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SISTINE_CHAPEL</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_HERMITAGE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_LOUVRE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>20</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TAJ_MAHAL</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>20</Yield>
+		</Row>
+	</Building_YieldChanges>
+	
+	<!-- Land Factory -->
+	
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_LAND_FACTORY</Type>
+			<DefaultBuilding>BUILDING_LAND_FACTORY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_LAND_FACTORY</Description>
+		</Row>
+	</BuildingClasses>	
+	<Buildings>
+		<Row>
+			<Type>BUILDING_LAND_FACTORY</Type>
+			<BuildingClass>BUILDINGCLASS_LAND_FACTORY</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_LAND_FACTORY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_LAND_FACTORY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_LAND_FACTORY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>22</PortraitIndex>
+		</Row>
+	</Buildings>	
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_LAND_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LAND_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_LAND_FACTORY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>15</Modifier>			
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Small Air Factory -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SMALL_AIR_FACTORY</Type>
+			<DefaultBuilding>BUILDING_SMALL_AIR_FACTORY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_SMALL_AIR_FACTORY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SMALL_AIR_FACTORY</Type>
+			<BuildingClass>BUILDINGCLASS_SMALL_AIR_FACTORY</BuildingClass>
+			<Cost>100</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_SMALL_AIR_FACTORY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_SMALL_AIR_FACTORY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SMALL_AIR_FACTORY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>25</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_SMALL_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SMALL_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_SMALL_AIR_FACTORY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>10</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Medium Air Factory -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_MEDIUM_AIR_FACTORY</Type>
+			<DefaultBuilding>BUILDING_MEDIUM_AIR_FACTORY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_MEDIUM_AIR_FACTORY</Type>
+			<BuildingClass>BUILDINGCLASS_MEDIUM_AIR_FACTORY</BuildingClass>
+			<Cost>100</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>26</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_MEDIUM_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MEDIUM_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_MEDIUM_AIR_FACTORY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>10</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Large Air Factory -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_LARGE_AIR_FACTORY</Type>
+			<DefaultBuilding>BUILDING_LARGE_AIR_FACTORY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_LARGE_AIR_FACTORY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_LARGE_AIR_FACTORY</Type>
+			<BuildingClass>BUILDINGCLASS_LARGE_AIR_FACTORY</BuildingClass>
+			<Cost>100</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_LARGE_AIR_FACTORY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_LARGE_AIR_FACTORY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_LARGE_AIR_FACTORY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>27</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_LARGE_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LARGE_AIR_FACTORY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_LARGE_AIR_FACTORY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>10</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Shipyard -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SHIPYARD</Type>
+			<DefaultBuilding>BUILDING_SHIPYARD</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SHIPYARD</Type>
+			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_SHIPYARD_HELP</Help>
+			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SHIPYARD_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>23</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_SHIPYARD</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>10</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Synthetic Fuel Plant -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SYNTHETIC_FUEL_PLANT</Type>
+			<DefaultBuilding>BUILDING_SYNTHETIC_FUEL_PLANT</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SYNTHETIC_FUEL_PLANT</Type>
+			<BuildingClass>BUILDINGCLASS_SYNTHETIC_FUEL_PLANT</BuildingClass>
+			<Cost>250</Cost>
+			<GoldMaintenance>5</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT_HELP</Help>
+			<Description>TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>16</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_LocalResourceAnds>
+		<Row>
+			<BuildingType>BUILDING_SYNTHETIC_FUEL_PLANT</BuildingType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+		</Row>
+	</Building_LocalResourceAnds>
+
+	<!-- Oil Refinery -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_OIL_REFINERY</Type>
+			<DefaultBuilding>BUILDING_OIL_REFINERY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_OIL_REFINERY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_OIL_REFINERY</Type>
+			<BuildingClass>BUILDINGCLASS_OIL_REFINERY</BuildingClass>
+			<Cost>250</Cost>
+			<GoldMaintenance>5</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_OIL_REFINERY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_OIL_REFINERY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_OIL_REFINERY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>17</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<!-- Open City -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_OPEN_CITY</Type>
+			<DefaultBuilding>BUILDING_OPEN_CITY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_OPEN_CITY</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_OPEN_CITY</Type>
+			<BuildingClass>BUILDINGCLASS_OPEN_CITY</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_OPEN_CITY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_OPEN_CITY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_OPEN_CITY_HELP</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<Defense>-1000</Defense>
+			<HurryCostModifier>0</HurryCostModifier>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+		</Row>
+	</Buildings>
+
+	<!-- Colony -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_COLONY</Type>
+			<DefaultBuilding>BUILDING_COLONY</DefaultBuilding>
+			<Description>Colony</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_COLONY</Type>
+			<BuildingClass>BUILDINGCLASS_COLONY</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_COLONY_HELP</Help>
+			<Description>TXT_KEY_BUILDING_COLONY</Description>
+			<Civilopedia>TXT_KEY_PEDIA_BUILDING_COLONY</Civilopedia>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+			<PortraitIndex>36</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_COLONY</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-95</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_COLONY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>-95</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_COLONY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-85</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+	<Building_YieldChangesPerPop>
+		<Row>
+			<BuildingType>BUILDING_COLONY</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-100</Yield>
+		</Row>
+	</Building_YieldChangesPerPop>
+
+	<!-- Axis City -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_AXISCITY</Type>
+			<DefaultBuilding>BUILDING_AXISCITY</DefaultBuilding>
+			<Description>Axis City</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_AXISCITY</Type>
+			<BuildingClass>BUILDINGCLASS_AXISCITY</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>This building marks that this is an Axis City hendering production of military units, it will be removed as soon as this country enters war.</Help>
+			<Description>Axis City</Description>
+			<Civilopedia>This building marks that this is an Axis City hendering production of military units, it will be removed as soon as this country enters war.</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_AXISCITY</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-50</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AXISCITY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>-40</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_AXISCITY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-50</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Comintern City -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_COMINTERNCITY</Type>
+			<DefaultBuilding>BUILDING_COMINTERNCITY</DefaultBuilding>
+			<Description>Comintern City</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_COMINTERNCITY</Type>
+			<BuildingClass>BUILDINGCLASS_COMINTERNCITY</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>This building marks that this is an Comintern City hendering its production of military units, it will be removed as soon as this country enters war.</Help>
+			<Description>Comintern City</Description>
+			<Civilopedia>This building marks that this is an Comintern City hendering production of military units, it will be removed as soon as this country enters war.</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_COMINTERNCITY</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-85</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_COMINTERNCITY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>-85</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_COMINTERNCITY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-67</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+
+	<!-- Allied City -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_ALLIEDCITY</Type>
+			<DefaultBuilding>BUILDING_ALLIEDCITY</DefaultBuilding>
+			<Description>Allied City</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_ALLIEDCITY</Type>
+			<BuildingClass>BUILDINGCLASS_ALLIEDCITY</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>This building marks that this is an Allied City hendering its production of military units, it will be removed as soon as this country enters war.</Help>
+			<Description>Allied City</Description>
+			<Civilopedia>This building marks that this is an Allied City hendering production of military units, it will be removed as soon as this country enters war.</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_DomainProductionModifiers>
+		<Row>
+			<BuildingType>BUILDING_ALLIEDCITY</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-85</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ALLIEDCITY</BuildingType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>-90</Modifier>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ALLIEDCITY</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-90</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+	
+	<!-- No Draft -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_NODRAFT</Type>
+			<DefaultBuilding>BUILDING_NODRAFT</DefaultBuilding>
+			<Description>No Draft</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_NODRAFT</Type>
+			<BuildingClass>BUILDINGCLASS_NODRAFT</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>This building prevents drafting (purchasing items) all together, this building is removed as soon as this country enters war.</Help>
+			<Description>No Drafting</Description>
+			<Civilopedia>This building prevents drafting all together, this building is removed as soon as this country enters war.</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_HurryModifiers>
+		<Row>
+			<BuildingType>BUILDING_NODRAFT</BuildingType>
+			<HurryType>HURRY_GOLD</HurryType>
+			<HurryCostModifier>9999</HurryCostModifier>
+		</Row>
+	</Building_HurryModifiers>
+
+	<!-- Limited Draft -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_LIMITEDDRAFT</Type>
+			<DefaultBuilding>BUILDING_LIMITEDDRAFT</DefaultBuilding>
+			<Description>Limited Draft</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_LIMITEDDRAFT</Type>
+			<BuildingClass>BUILDINGCLASS_LIMITEDDRAFT</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>This building triples the cost of drafting (purchasing items), it is removed when this country enters war.</Help>
+			<Description>Limited Drafting</Description>
+			<Civilopedia>This building triples the cost of drafting (purchasing items), it is removed when this country enters war.</Civilopedia>
+			<!-- <ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag> -->
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>0</ConquestProb>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>30</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_HurryModifiers>
+		<Row>
+			<BuildingType>BUILDING_LIMITEDDRAFT</BuildingType>
+			<HurryType>HURRY_GOLD</HurryType>
+			<HurryCostModifier>200</HurryCostModifier>
+		</Row>
+	</Building_HurryModifiers>
+
+	
+	<!-- Legion HQ -->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_LEGION_HQ</Type>
+			<DefaultBuilding>BUILDING_LEGION_HQ</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_LEGION_HQ</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_LEGION_HQ</Type>
+			<BuildingClass>BUILDINGCLASS_LEGION_HQ</BuildingClass>
+			<Cost>-1</Cost>
+			<GoldMaintenance>0</GoldMaintenance>
+			<Help>TXT_KEY_BUILDING_LEGION_HQ_HELP</Help>
+			<Description>TXT_KEY_BUILDING_LEGION_HQ</Description>
+			<Civilopedia>TXT_KEY_BUILDING_LEGION_HQ_HELP</Civilopedia>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>100</ConquestProb>
+			<Defense>2000</Defense>
+			<HurryCostModifier>0</HurryCostModifier>
+			<PortraitIndex>29</PortraitIndex>
+			<IconAtlas>WW2_BUILDINGS</IconAtlas>
+		</Row>
+	</Buildings>
+	<!-- Remove all unneed wonders -->
+	<Buildings>
+		<Delete Type="BUILDING_ANGKOR_WAT"/>
+		<Delete Type="BUILDING_CHICHEN_ITZA"/>
+		<Delete Type="BUILDING_CIRCUS_MAXIMUS"/>		
+		<Delete Type="BUILDING_COLOSSUS"/>
+		<Delete Type="BUILDING_CRISTO_REDENTOR"/>
+		<Delete Type="BUILDING_GREAT_LIBRARY"/>
+		<Delete Type="BUILDING_GREAT_LIGHTHOUSE"/>
+		<Delete Type="BUILDING_GREAT_WALL"/>
+		<Delete Type="BUILDING_HAGIA_SOPHIA"/>
+		<Delete Type="BUILDING_HANGING_GARDEN"/>
+		<Delete Type="BUILDING_HEROIC_EPIC"/>
+		<Delete Type="BUILDING_HIMEJI_CASTLE"/>
+		<Delete Type="BUILDING_IRONWORKS"/>
+		<Delete Type="BUILDING_MACHU_PICHU"/>
+		<Delete Type="BUILDING_NATIONAL_COLLEGE"/>
+		<Delete Type="BUILDING_NATIONAL_EPIC"/>
+		<Delete Type="BUILDING_NATIONAL_TREASURY"/>
+	 	<Delete Type="BUILDING_ORACLE"/>
+		<Delete Type="BUILDING_OXFORD_UNIVERSITY"/>		
+		<Delete Type="BUILDING_PORCELAIN_TOWER"/>
+		<Delete Type="BUILDING_STONEHENGE"/>
+		<Delete Type="BUILDING_SYDNEY_OPERA_HOUSE"/>
+		<Delete Type="BUILDING_UNITED_NATIONS"/>
+	</Buildings>
+	<DeleteMissingReferences table="Buildings" column="Type"/>
+
+</GameData>

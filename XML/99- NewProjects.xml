@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/19/2011 1:43:51 PM -->
+<GameData>
+	<!-- MILITARY OPERATION *************************************************************** -->
+	
+	<!-- Operation Weserübung (Norway / Denmark invasion) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_WESERUBUNG</Type>
+			<Description>TXT_KEY_OPERATION_WESERUBUNG</Description>
+			<Help>TXT_KEY_OPERATION_WESERUBUNG_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_WESERUBUNG</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_WESERUBUNG_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>300</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>62</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_WESERUBUNG</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_WESERUBUNG</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Seelöwe (UK invasion) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_SEELOWE</Type>
+			<Description>TXT_KEY_OPERATION_SEELOWE</Description>
+			<Help>TXT_KEY_OPERATION_SEELOWE_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_SEELOWE</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_SEELOWE_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>61</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_SEELOWE</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_SEELOWE</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation China (Invasion of China) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_CHINA</Type>
+			<Description>TXT_KEY_OPERATION_CHINA</Description>
+			<Help>TXT_KEY_OPERATION_CHINA_DESC</Help>
+			<Civilopedia>TXT_KEY_OPERATION_CHINA_DESC</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_CHINA_DESC</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_JAPAN_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>62</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_CHINA</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_CHINA</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Fall Gelb (Invasion Plan of France, Netherlands and Belgium) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_FALLGELB</Type>
+			<Description>TXT_KEY_OPERATION_FALLGELB</Description>
+			<Help>TXT_KEY_OPERATION_FALLGELB_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_FALLGELB</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_FALLGELB_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_FALLGELB</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_FALLGELB</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Sonnenblume (German Support in Africa) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_SONNENBLUME</Type>
+			<Description>TXT_KEY_OPERATION_SONNENBLUME</Description>
+			<Help>TXT_KEY_OPERATION_SONNENBLUME_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_SONNENBLUME</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_SONNENBLUME_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>500</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>57</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_SONNENBLUME</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_SONNENBLUME</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Twenty Five (Invasion Plan of Yugoslavia) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_TWENTYFIVE</Type>
+			<Description>TXT_KEY_OPERATION_TWENTYFIVE</Description>
+			<Help>TXT_KEY_OPERATION_TWENTYFIVE_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_TWENTYFIVE</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_TWENTYFIVE_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>58</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_TWENTYFIVE</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_TWENTYFIVE</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Marita (Invasion Plan of Greece) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_MARITA</Type>
+			<Description>TXT_KEY_OPERATION_MARITA</Description>
+			<Help>TXT_KEY_OPERATION_MARITA_DESC</Help>
+			<Civilopedia>TXT_KEY_OPERATION_MARITA_DESC</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_MARITA_DESC</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_GERMANY_UNIT_ICONS_2</IconAtlas>
+			<PortraitIndex>59</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_MARITA</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_MARITA</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation Pacific (Invasion Plan of Indonesia and the Philippines) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_PACIFIC</Type>
+			<Description>TXT_KEY_OPERATION_PACIFIC</Description>
+			<Help>TXT_KEY_OPERATION_PACIFIC_DESC</Help>
+			<Civilopedia>TXT_KEY_OPERATION_PACIFIC_DESC</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_PACIFIC_DESC</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>750</Cost>
+			<IconAtlas>WW2_JAPAN_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>63</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_PACIFIC</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_PACIFIC</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>75</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Torch (Invasion Plan of North Africa) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_TORCH</Type>
+			<Description>TXT_KEY_OPERATION_TORCH</Description>
+			<Help>TXT_KEY_OPERATION_TORCH_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_TORCH</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_TORCH_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>750</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>63</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_TORCH</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_TORCH</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Motherland call (Defense of Russia) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_MOTHERLANDCALL</Type>
+			<Description>TXT_KEY_OPERATION_MOTHERLANDCALL</Description>
+			<Help>TXT_KEY_OPERATION_MOTHERLANDCALL_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_MOTHERLANDCALL</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_MOTHERLANDCALL_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>300</Cost>
+			<IconAtlas>WW2_USSR_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>63</PortraitIndex>
+		</Row>
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_MOTHERLANDCALL</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_MOTHERLANDCALL</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Uranus (Stalingrad) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_URANUS</Type>
+			<Description>TXT_KEY_OPERATION_URANUS</Description>
+			<Help>TXT_KEY_OPERATION_URANUS_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_URANUS</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_URANUS_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>400</Cost>
+			<IconAtlas>WW2_USSR_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>62</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_URANUS</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_URANUS</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Project_Flavors>
+	<!-- Operation Moskwa -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_MOSKWA</Type>
+			<Description>TXT_KEY_OPERATION_MOSKWA</Description>
+			<Help>TXT_KEY_OPERATION_MOSKWA_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_MOSKWA</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_MOSKWA_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>350</Cost>
+			<IconAtlas>WW2_USSR_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>62</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_MOSKWA</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_MOSKWA</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Project_Flavors>	
+	<!-- Operation Husky (Invasion Plan of Sicilia) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_HUSKY</Type>
+			<Description>TXT_KEY_OPERATION_HUSKY</Description>
+			<Help>TXT_KEY_OPERATION_HUSKY_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_HUSKY</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_HUSKY_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>350</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>61</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_HUSKY</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_HUSKY</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation Avalanche (Invasion Plan of Italy) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_AVALANCHE</Type>
+			<Description>TXT_KEY_OPERATION_AVALANCHE</Description>
+			<Help>TXT_KEY_OPERATION_AVALANCHE_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_AVALANCHE</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_AVALANCHE_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>400</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_AVALANCHE</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_AVALANCHE</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Fourteenth Army (Defense of India) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_FOURTEENTH_ARMY</Type>
+			<Description>TXT_KEY_OPERATION_FOURTEENTH_ARMY</Description>
+			<Help>TXT_KEY_OPERATION_FOURTEENTH_ARMY_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_FOURTEENTH_ARMY</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_FOURTEENTH_ARMY_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_FOURTEENTH_ARMY</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_FOURTEENTH_ARMY</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation Task Force 57 (Royal Navy Pacific Fleet) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_TASK_FORCE_57</Type>
+			<Description>TXT_KEY_OPERATION_TASK_FORCE_57</Description>
+			<Help>TXT_KEY_OPERATION_TASK_FORCE_57_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_TASK_FORCE_57</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_TASK_FORCE_57_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_TASK_FORCE_57</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_TASK_FORCE_57</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Aleutian Islands (Invasion of Attu) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_ALEUTIAN_ISLANDS</Type>
+			<Description>TXT_KEY_OPERATION_ALEUTIAN_ISLANDS</Description>
+			<Help>TXT_KEY_OPERATION_ALEUTIAN_ISLANDS_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_ALEUTIAN_ISLANDS</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_ALEUTIAN_ISLANDS_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_ALEUTIAN_ISLANDS</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_ALEUTIAN_ISLANDS</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+
+
+	<!-- Operation Australia (Invasion of Australia) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_AUSTRALIA</Type>
+			<Description>TXT_KEY_OPERATION_AUSTRALIA</Description>
+			<Help>TXT_KEY_OPERATION_AUSTRALIA_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_AUSTRALIA</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_AUSTRALIA_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_AUSTRALIA</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_AUSTRALIA</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Australian Liberation (Liberation of Australia) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_AUSTRALIAN_LIBERATION</Type>
+			<Description>TXT_KEY_OPERATION_AUSTRALIAN_LIBERATION</Description>
+			<Help>TXT_KEY_OPERATION_AUSTRALIAN_LIBERATION_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_AUSTRALIAN_LIBERATION</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_AUSTRALIAN_LIBERATION_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_AUSTRALIAN_LIBERATION</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_AUSTRALIAN_LIBERATION</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Watchtower (Liberation of the Guadalcanal Islands) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_WATCHTOWER</Type>
+			<Description>TXT_KEY_OPERATION_WATCHTOWER</Description>
+			<Help>TXT_KEY_OPERATION_WATCHTOWER_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_WATCHTOWER</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_WATCHTOWER_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_WATCHTOWER</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_WATCHTOWER</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation March Back (Liberation of the Dutch East Indies and Phillippines) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_MARCH_BACK</Type>
+			<Description>TXT_KEY_OPERATION_MARCH_BACK</Description>
+			<Help>TXT_KEY_OPERATION_MARCH_BACK_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_MARCH_BACK</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_MARCH_BACK_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_MARCH_BACK</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_MARCH_BACK</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+
+	<!-- Operation Take Down (Conquering Japan and Okinawa) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_TAKE_DOWN</Type>
+			<Description>TXT_KEY_OPERATION_TAKE_DOWN</Description>
+			<Help>TXT_KEY_OPERATION_TAKE_DOWN_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_TAKE_DOWN</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_MARCH_BACK_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>60</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_TAKE_DOWN</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_TAKE_DOWN</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+	
+	<!-- Operation Overlord (Invasion Plan of France) -->
+	<Projects>
+		<Row>
+			<Type>OPERATION_OVERLORD</Type>
+			<Description>TXT_KEY_OPERATION_OVERLORD</Description>
+			<Help>TXT_KEY_OPERATION_OVERLORD_DESC</Help>
+			<Civilopedia>TXT_KEY_PEDIA_OPERATION_OVERLORD</Civilopedia>
+			<Strategy>TXT_KEY_OPERATION_OVERLORD_STRAT</Strategy>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>1000</Cost>
+			<IconAtlas>WW2_USA_UNIT_ICONS</IconAtlas>
+			<PortraitIndex>62</PortraitIndex>
+		</Row>
+
+	</Projects>
+	<Project_Flavors>
+		<Row>
+			<ProjectType>OPERATION_OVERLORD</ProjectType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<ProjectType>OPERATION_OVERLORD</ProjectType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>80</Flavor>
+		</Row>
+	</Project_Flavors>
+</GameData>

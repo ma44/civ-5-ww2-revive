@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="1fa4b768-ae75-4260-b727-6a2becc6530e" version="6">
+  <Properties>
+    <Name>R.E.D. WWII Edition RV</Name>
+    <Teaser>R.E.D. WWII Edition is a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Fr</Teaser>
+    <Description>R.E.D. WWII Edition is a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Frontline: units can capture tiles (or liberate your allied/friends tiles)[NEWLINE][ICON_BULLET]Supply lines: units that are not connected to a city won't get reinforcement and a malus in combat[NEWLINE][ICON_BULLET]Reinforcements: personnel and materiel are needed to "heal" your units.[NEWLINE][ICON_BULLET]National units: each great power have it's own set of units models[NEWLINE][NEWLINE][COLOR_RED]The[/COLOR] [COLOR_YELLOW]R.E.D. WWII RV Data Files (v.1)[/COLOR][COLOR_RED] mod must be activated to play this mod[/COLOR]</Description>
+    <Authors>Gedemon, bacononaboat, Urzahil, Pimmkm</Authors>
+    <SpecialThanks>danrell, T_KCommanderbly, FouR_Pharao, JanBoruta, Whys, whoward69, Hulfgar, Achille44, Putmalk, NiRv4n4, pap1723, csebal, Hulfgar, Putmalk, smellymummy, NwabudikeMorgan, rhettrongun, Mylon, Redox, PAVLOS_GR300, LegoLink11</SpecialThanks>
+    <HideSetupGame>1</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>5</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+    <Custom_Background_TXT_KEY_RED_EURO1940_SCENARIO_TITLE>Art/ww2europe1940.dds</Custom_Background_TXT_KEY_RED_EURO1940_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE>Art/1936startscreen.dds</Custom_Background_TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE>Art/StalingradMap.dds</Custom_Background_TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE>
+    <Custom_Background_TXT_KEY_RED_EARTH1936_SCENARIO_TITLE>Art/Earth1936startscreen.dds</Custom_Background_TXT_KEY_RED_EARTH1936_SCENARIO_TITLE>
+    <DisableLoadGameOption>1</DisableLoadGameOption>
+    <Custom_Background_TEXT_KEY_RED_PACIFIC_SCENARIO_TITLE>Art/Background/IwoJimaBackground.dds</Custom_Background_TEXT_KEY_RED_PACIFIC_SCENARIO_TITLE>
+  </Properties>
+  <Dependencies>
+    <Mod id="2ac737a3-00a3-4d33-9b88-714266967b12" minversion="1" maxversion="999" title="R.E.D. WWII RV Data Files" />
+    <Game minversion="1" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="FE21325C17AB8E4D1A23646332C75CBA" import="0">1937_Earth.Civ5Map</File>
+    <File md5="B252ADE8C37A6D6EA43E6564D821182D" import="1">Art/1936startscreen.dds</File>
+    <File md5="7644CE93F203967E9CE667DEEAF7996E" import="1">Art/Backgrounds/1936MainMenu.dds</File>
+    <File md5="82074B2EB8461494B8630BF08EB5E055" import="1">Art/Backgrounds/1942background.dds</File>
+    <File md5="809644AD6CFDF1849EB0C21E2566137C" import="1">Art/Backgrounds/Background_38.dds</File>
+    <File md5="BDC1711FD0BFEE5A7E98EFF768420590" import="1">Art/Backgrounds/Earth_1936.dds</File>
+    <File md5="926D79FCBD2D0BD3588261978E54039A" import="1">Art/Backgrounds/IwoJimaBackground.dds</File>
+    <File md5="4C2EFEB57D028BB477996F966D5FD893" import="1">Art/Backgrounds/special.dds</File>
+    <File md5="383BEE3FFDF7B44F56254AC1684D154C" import="1">Art/Backgrounds/Stalingrad.dds</File>
+    <File md5="18E77E6D6D2BA70A3DC55938D65D1173" import="1">Art/Backgrounds/_background.dds</File>
+    <File md5="9F697BC9F3FD89BD3C280743644336E9" import="1">Art/Background_1.dds</File>
+    <File md5="F2A9D2C2B152B91D71DFAC3919FE680D" import="1">Art/Background_10.dds</File>
+    <File md5="D70AF8718432C38DB4F56E076B41A3EC" import="1">Art/Background_11.dds</File>
+    <File md5="74FD24340E992776BF4629828E7620ED" import="1">Art/Background_2.dds</File>
+    <File md5="85DB6086E85DFAE8960BD5D921102C0D" import="1">Art/Background_3.dds</File>
+    <File md5="0DE328015B3850C470B404689BFADD56" import="1">Art/Background_4.dds</File>
+    <File md5="101E45C3A81551A6D15D3D2214BE3A45" import="1">Art/Background_5.dds</File>
+    <File md5="614078F992D2AA398EF87FB42539C158" import="1">Art/Background_6.dds</File>
+    <File md5="1B4012333665C003FCE4195DB65B6B22" import="1">Art/Background_7.dds</File>
+    <File md5="9751BEE3DB7C6261211262BEAE0CB62C" import="1">Art/Background_8.dds</File>
+    <File md5="A269A6F61155F927055549458EB058E9" import="1">Art/Background_9.dds</File>
+    <File md5="C4E25EF5B8FB87452AC0057D6442B83C" import="1">Art/CivMinorTraits/Albania.dds</File>
+    <File md5="CF8229621CB4E5EBD011D1EEE05011F8" import="1">Art/CivMinorTraits/Algerien.dds</File>
+    <File md5="F9F1275D38E710E1A95A7E37306E8B50" import="1">Art/CivMinorTraits/Arabien.dds</File>
+    <File md5="8F28B51DB24DC751F343E17370035494" import="1">Art/CivMinorTraits/Argentina.dds</File>
+    <File md5="FC81A7417EFA751FEA28408E62524D75" import="1">Art/CivMinorTraits/Australia.dds</File>
+    <File md5="9FBCF427956CAE032D52C109AB027E1E" import="1">Art/CivMinorTraits/Austria.dds</File>
+    <File md5="3E9BB3762B2563C4EF112426A0C205AC" import="1">Art/CivMinorTraits/Belgien.dds</File>
+    <File md5="67670712F9EE769D341CED9CADABCC27" import="1">Art/CivMinorTraits/Brazil.dds</File>
+    <File md5="F7F0C95EF828C410953227403958413D" import="1">Art/CivMinorTraits/Bulgarien.dds</File>
+    <File md5="C570515F54D3A000E38CFDBC62B4E323" import="1">Art/CivMinorTraits/Central.dds</File>
+    <File md5="2AB979AF75F132A51956DB69D02539D6" import="1">Art/CivMinorTraits/Chechoslowakia.dds</File>
+    <File md5="5AFAA8B86F64C60362BF2AE1FD86B5E7" import="1">Art/CivMinorTraits/Chile.dds</File>
+    <File md5="39E67E28E128F6CEB75E491D1307A9B4" import="1">Art/CivMinorTraits/Colombia.dds</File>
+    <File md5="0F67B9576B016295928A53CE8D5DEEA6" import="1">Art/CivMinorTraits/ComChina.dds</File>
+    <File md5="CB28F465052E1F68D91C9029A4A97982" import="1">Art/CivMinorTraits/Denmark.dds</File>
+    <File md5="9FB57A0BF3C4B44153609EB57A584657" import="1">Art/CivMinorTraits/Ecuador.dds</File>
+    <File md5="331BBF168DA6A8BCEB30D83B1692E676" import="1">Art/CivMinorTraits/Egypt.dds</File>
+    <File md5="9947CF61BB2D92B8FDECCA991ECE87B1" import="1">Art/CivMinorTraits/Estonia.dds</File>
+    <File md5="B499408956C1CC1312BF2FC50C67D718" import="1">Art/CivMinorTraits/Finnland.dds</File>
+    <File md5="757230A276FAACF29659864C10F81BDB" import="1">Art/CivMinorTraits/Greece.dds</File>
+    <File md5="1CF20984024ADA8DF3186CB3990A4749" import="1">Art/CivMinorTraits/Irak.dds</File>
+    <File md5="33DCC6C7E37C55DE95E85878324DC50D" import="1">Art/CivMinorTraits/Iran.dds</File>
+    <File md5="408FCE5DA733BD2F61DC8EB474C99527" import="1">Art/CivMinorTraits/Irland.dds</File>
+    <File md5="5C85857447BD87A4894ECA536DAE12AD" import="1">Art/CivMinorTraits/Jugoslawien.dds</File>
+    <File md5="A58AB973557F5E7FF1187FA4C693A1BF" import="1">Art/CivMinorTraits/Kanada.dds</File>
+    <File md5="A9E7CAEB6BFEB1606E5523A451231EEA" import="1">Art/CivMinorTraits/Latvia.dds</File>
+    <File md5="40C30C8B50B07A675F733375B3BFB44D" import="1">Art/CivMinorTraits/Libanon.dds</File>
+    <File md5="B6C1A5B2F60EB3A05366008F4B2AA681" import="1">Art/CivMinorTraits/Libyen.dds</File>
+    <File md5="A6D0D7476408F2E7CD531078CC98440C" import="1">Art/CivMinorTraits/Lithuania.dds</File>
+    <File md5="A766A34A95661A84030895C8C48692C4" import="1">Art/CivMinorTraits/Marokko.dds</File>
+    <File md5="6DC0A37B54E8E3052FB6080E03D427E4" import="1">Art/CivMinorTraits/Mexico.dds</File>
+    <File md5="C10B03F3578EABEA7ACD896A94F7A020" import="1">Art/CivMinorTraits/Mongolia.dds</File>
+    <File md5="7E23C5082636ACC56F61CE812665677D" import="1">Art/CivMinorTraits/NewZealand.dds</File>
+    <File md5="DB7EDBD0FF773CEFE4EF4A3DA3E0CA15" import="1">Art/CivMinorTraits/Niederlande.dds</File>
+    <File md5="E3C15C02D79830D16876C51504A09081" import="1">Art/CivMinorTraits/Norwegen.dds</File>
+    <File md5="3F674F41D8BA9527D3D3F6CB208F6A89" import="1">Art/CivMinorTraits/Palestine.dds</File>
+    <File md5="D0761427179D8684FAD3FC3CCD0B7FE1" import="1">Art/CivMinorTraits/Peru.dds</File>
+    <File md5="DE6A7E8A12A4BEEDBD9A2F43711DC6C2" import="1">Art/CivMinorTraits/Polen.dds</File>
+    <File md5="39D72C84F05390DBE625A34D239A16C1" import="1">Art/CivMinorTraits/Portugal.dds</File>
+    <File md5="1D7E03E04ECDFD5783AA5A11932CAD06" import="1">Art/CivMinorTraits/Romania.dds</File>
+    <File md5="1722E9ED528725D558099E4D01B30FAF" import="1">Art/CivMinorTraits/Schweden.dds</File>
+    <File md5="CDD4A978DE56FA556CA1D9C878C4C069" import="1">Art/CivMinorTraits/Schweiz.dds</File>
+    <File md5="095449707587C6C6B073FF649D993D64" import="1">Art/CivMinorTraits/Slowakei.dds</File>
+    <File md5="BC34E9C5602713A6CFFF97454D9B9D0A" import="1">Art/CivMinorTraits/SouthAfrica.dds</File>
+    <File md5="788E38C4B697D762BD9C81FC242E6668" import="1">Art/CivMinorTraits/SpainRepublic.dds</File>
+    <File md5="686434DE6FB567C5624CD56664C8ACC6" import="1">Art/CivMinorTraits/Spanien.dds</File>
+    <File md5="0E67D0A37846F4F640AD4BF70A74877F" import="1">Art/CivMinorTraits/Syrien.dds</File>
+    <File md5="4FEBF7FBE2F1DCA47DE17548FCB2EEE2" import="1">Art/CivMinorTraits/Thailand.dds</File>
+    <File md5="0D179DDA50A39DB1AFF32AFA1FF49189" import="1">Art/CivMinorTraits/Tunesien.dds</File>
+    <File md5="E845DE253B54D6AF216150A0B94DD6F0" import="1">Art/CivMinorTraits/Turky.dds</File>
+    <File md5="50780483135B5E7077706471096718CF" import="1">Art/CivMinorTraits/Ungarn.dds</File>
+    <File md5="50358A9D323E113DBE418EF0FF17E146" import="1">Art/CivMinorTraits/Uruguay.dds</File>
+    <File md5="0AE495435B5E4E5B92F8D9F52066A8C4" import="1">Art/CivMinorTraits/Venezuela.dds</File>
+    <File md5="A4AC1B7662A446CE694091CD240F0480" import="1">Art/CivMinorTraits/Vichy.dds</File>
+    <File md5="C7D16D2649D831FF8118B09DB45B1610" import="1">Art/Earth1936startscreen.dds</File>
+    <File md5="DE6E1D42876E71BB31F05BD4F6DF9DE5" import="1">Art/FontIcons/RED_WWII_FontIcons.dds</File>
+    <File md5="C9410E1352442C37C0ABB03D357CB4C0" import="1">Art/FontIcons/RED_WWII_FontIcons.ggxml</File>
+    <File md5="FCF82E83C3633F75F4C1F81C48B72812" import="1">Art/Icons/BritishTroopsAtlas128.dds</File>
+    <File md5="9F499ADB9F57F5770C707C87A728DD59" import="1">Art/Icons/BritishTroopsAtlas256.dds</File>
+    <File md5="1FEA86F83391C1E95202D720B73DF3F4" import="1">Art/Icons/BritishTroopsAtlas45.dds</File>
+    <File md5="40C9294426B8D6BB9F1122AE3D5AA878" import="1">Art/Icons/BritishTroopsAtlas64.dds</File>
+    <File md5="BB814E3E47B7355B45B7223BF6A4F64E" import="1">Art/Icons/BritishTroopsAtlas80.dds</File>
+    <File md5="6EC10E5CEA98879FBB629D91B80B2FB9" import="1">Art/Icons/BuildingAtlas128.dds</File>
+    <File md5="A9B1AFD74714B610FFD40EDF9C771F1B" import="1">Art/Icons/BuildingAtlas256.dds</File>
+    <File md5="F0280499F418EFEBFC381DFE8E8BDEA4" import="1">Art/Icons/BuildingAtlas45.dds</File>
+    <File md5="D835B103C3D6F94CFC017C09BBF4D629" import="1">Art/Icons/BuildingAtlas64.dds</File>
+    <File md5="A1C14E3AD5278318F3ABB6B37ABC0239" import="1">Art/Icons/BuildingAtlas80.dds</File>
+    <File md5="95654BAAA9949AFE803CFEA78140DC04" import="1">Art/Icons/FrenchTroopsAtlas128.dds</File>
+    <File md5="7D211B0B4B774FD16B5C9749A949D8D5" import="1">Art/Icons/FrenchTroopsAtlas256.dds</File>
+    <File md5="7DBA554B213856C72E65423C250034C3" import="1">Art/Icons/FrenchTroopsAtlas45.dds</File>
+    <File md5="3FCD468776F0582B168FA895BE3FFACC" import="1">Art/Icons/FrenchTroopsAtlas64.dds</File>
+    <File md5="A49B9E46B8D3869B0CEE85977F2F7C51" import="1">Art/Icons/FrenchTroopsAtlas80.dds</File>
+    <File md5="572CD51B3A51A7F27F7D91D525BD8F2D" import="1">Art/Icons/GermanTroopsAtlas_1_128.dds</File>
+    <File md5="C2E24AA9E9C28AFD4C9892A4B059CFA0" import="1">Art/Icons/GermanTroopsAtlas_1_256.dds</File>
+    <File md5="F23599E020A8C4BF654990C960936DEE" import="1">Art/Icons/GermanTroopsAtlas_1_45.dds</File>
+    <File md5="EFAF2DD2BCDC8730E9E99C7EBD5D1212" import="1">Art/Icons/GermanTroopsAtlas_1_64.dds</File>
+    <File md5="DD4262CEC5800E362F5A9D75E496BE10" import="1">Art/Icons/GermanTroopsAtlas_1_80.dds</File>
+    <File md5="5D3A4354BF211902584FA95B3F791B30" import="1">Art/Icons/GermanTroopsAtlas_2_128.dds</File>
+    <File md5="5C89F9D48964218F827D871ECD201AEF" import="1">Art/Icons/GermanTroopsAtlas_2_256.dds</File>
+    <File md5="D71F84418FBE21BA37F4AEC64C60977A" import="1">Art/Icons/GermanTroopsAtlas_2_45.dds</File>
+    <File md5="C07671C43879FFDE54F57E201C48E933" import="1">Art/Icons/GermanTroopsAtlas_2_64.dds</File>
+    <File md5="F25F55FE6EDF5944451A971D461732F7" import="1">Art/Icons/GermanTroopsAtlas_2_80.dds</File>
+    <File md5="1B7DECF21EC72C8478646A25B71E7C97" import="1">Art/Icons/ItalianTroopsAtlas-128.dds</File>
+    <File md5="A2E2375E4DBABFB675051C473766B6BB" import="1">Art/Icons/ItalianTroopsAtlas-256.dds</File>
+    <File md5="1EF92C4E9990802D405F87F2124D1CF2" import="1">Art/Icons/ItalianTroopsAtlas-45.dds</File>
+    <File md5="05ECB2C31C0EDB3CCDB456A7EB0E2719" import="1">Art/Icons/ItalianTroopsAtlas-64.dds</File>
+    <File md5="01CF44517EACA6D32D8371DB5C276287" import="1">Art/Icons/ItalianTroopsAtlas-80.dds</File>
+    <File md5="50D002941E3DA6E730B4D6EF41C52EF4" import="1">Art/Icons/JapanTroopsAtlas128.dds</File>
+    <File md5="6244604E32A560E503C47C607A959B48" import="1">Art/Icons/JapanTroopsAtlas256.dds</File>
+    <File md5="B88CBF5D5B3F8DE0D6DED54977970274" import="1">Art/Icons/JapanTroopsAtlas45.dds</File>
+    <File md5="E9FE197949419E2C5BC8DAA414F28B0B" import="1">Art/Icons/JapanTroopsAtlas64.dds</File>
+    <File md5="EC948F4140F70F75517A5EB6F1FCBEA2" import="1">Art/Icons/JapanTroopsAtlas80.dds</File>
+    <File md5="473BCC1B6AB68099972213CAF15E3E32" import="1">Art/Icons/OtherTroopsAtlas-128.dds</File>
+    <File md5="5688BAEC2B076E4AF49A7683898F9C0F" import="1">Art/Icons/OtherTroopsAtlas-256.dds</File>
+    <File md5="CB7CE5FC89671B25ECD34BA339612AF7" import="1">Art/Icons/OtherTroopsAtlas-45.dds</File>
+    <File md5="2D6119AB34DB5F5B8B9E30958F074534" import="1">Art/Icons/OtherTroopsAtlas-64.dds</File>
+    <File md5="CEBEA2536467E1775FAF1D19A3AC3999" import="1">Art/Icons/OtherTroopsAtlas-80.dds</File>
+    <File md5="EDB92FB68BA5010421F5EF050ACF32FC" import="1">Art/Icons/promotions128.dds</File>
+    <File md5="DAF81E63179072D41415B21D0E46E364" import="1">Art/Icons/RussianTroopsAtlas128.dds</File>
+    <File md5="3EC32A957C25BF0A9069272BA50314F2" import="1">Art/Icons/RussianTroopsAtlas256.dds</File>
+    <File md5="E955ED70111DB58DB2E5D0D54161D084" import="1">Art/Icons/RussianTroopsAtlas45.dds</File>
+    <File md5="19A95A0FF4C8FF40B115BFA2819DC1B4" import="1">Art/Icons/RussianTroopsAtlas64.dds</File>
+    <File md5="179AE621947FEE67996BC786FFD44A23" import="1">Art/Icons/RussianTroopsAtlas80.dds</File>
+    <File md5="ABA661992A2BBA292D0390820474A98E" import="1">Art/Icons/USTroopsAtlas128.dds</File>
+    <File md5="AA20D52824B720D5910FBC319F3CD60C" import="1">Art/Icons/USTroopsAtlas256.dds</File>
+    <File md5="ECE4F9D1D44109DFD08BD65FBBCF6064" import="1">Art/Icons/USTroopsAtlas45.dds</File>
+    <File md5="DFB63A96E6F492717447695D97C54D0E" import="1">Art/Icons/USTroopsAtlas64.dds</File>
+    <File md5="2D5FA1DE3D4592DAF9436803DFCAC5F1" import="1">Art/Icons/USTroopsAtlas80.dds</File>
+    <File md5="A1867EC7BDE6BC74A5AF663A88228628" import="1">Art/Icons/WW2FlagsAtlas128.dds</File>
+    <File md5="9831617A7A7C64609E57D8D90380BFEF" import="1">Art/Icons/WW2FlagsAtlas256.dds</File>
+    <File md5="DFC3F6BD93A9330A0A4C782DC37E55D7" import="1">Art/Icons/WW2FlagsAtlas32.dds</File>
+    <File md5="BE3C31B228D938985AD815F233FB0E08" import="1">Art/Icons/WW2FlagsAtlas45.dds</File>
+    <File md5="20B943832B97CE7CF2741DE3184F2CA5" import="1">Art/Icons/WW2FlagsAtlas64.dds</File>
+    <File md5="5AF1B471083DC400EC3A802BC99DC233" import="1">Art/Icons/WW2FlagsAtlas80.dds</File>
+    <File md5="8EB9C44205CEB3235CD07D7335934DE5" import="1">Art/Icons/ww2UnitAtlas128.dds</File>
+    <File md5="F31B35B6CA6E9AB9D8C8FB87403AEB80" import="1">Art/Icons/ww2UnitAtlas256.dds</File>
+    <File md5="D4CAC23647B87417511338AB7A91A847" import="1">Art/Icons/ww2UnitAtlas45.dds</File>
+    <File md5="E182F928F5045CB1996ACF2CC79849B7" import="1">Art/Icons/ww2UnitAtlas64.dds</File>
+    <File md5="78129C5986A566781888B124DD38D034" import="1">Art/Icons/ww2UnitAtlas80.dds</File>
+    <File md5="8FD1DC7BFBEAA489C44585982F680E41" import="1">Art/Icons/WW2UnitsFlagsAtlas32.dds</File>
+    <File md5="9B3F1F479BF9271AAE5A04319143AB4E" import="1">Art/Improvements/Bunker/Bunker.dds</File>
+    <File md5="C70FAA7F68E4A5A117AD76B58973056B" import="1">Art/Improvements/Bunker/Bunker_B.fxsxml</File>
+    <File md5="E8F761511D5E08A56AA290F51AFCE83B" import="1">Art/Improvements/Bunker/Bunker_B.gr2</File>
+    <File md5="8C0C9F4CF8EC0F6888FA1B75FD5A700E" import="1">Art/Improvements/Bunker/Bunker_HB.fxsxml</File>
+    <File md5="5983B416DB3DFD92962DBAEA060E0E53" import="1">Art/Improvements/Bunker/Bunker_HB.gr2</File>
+    <File md5="DC923934B295013E9AFDF312CA9695AE" import="1">Art/Improvements/Bunker/Bunker_PL.fxsxml</File>
+    <File md5="264F3A635CD40916999E1E4971221046" import="1">Art/Improvements/Bunker/Bunker_PL.gr2</File>
+    <File md5="527E6958AFF6EC7FE29A925EEB1047DC" import="1">Art/Improvements/Bunker/crater.dds</File>
+    <File md5="B1C693C943DC77AD66E4DC9240F3A7C4" import="1">Art/Improvements/Bunker/destroyed_city.dds</File>
+    <File md5="577EF72CBF5DE34C59A79AE2805AF0C0" import="1">Art/Improvements/TradingPosts/fx_triggers_pl_med_trading_post.ftsxml</File>
+    <File md5="577EF72CBF5DE34C59A79AE2805AF0C0" import="1">Art/Improvements/TradingPosts/fx_triggers_pl_mod_trading_post.ftsxml</File>
+    <File md5="501CF0A5E3C21018C013D3B4317CA744" import="1">Art/Improvements/TradingPosts/hb_med_trading_post1.fxsxml</File>
+    <File md5="B45DE9D3763C0F9F68582D88913B247F" import="1">Art/Improvements/TradingPosts/hb_med_trading_post1.gr2</File>
+    <File md5="5D6A36CFE18C97096B0A4E7926904243" import="1">Art/Improvements/TradingPosts/hb_med_trading_post2.fxsxml</File>
+    <File md5="63E36B168FD4B22980D0829E4BB385C5" import="1">Art/Improvements/TradingPosts/hb_med_trading_post2.gr2</File>
+    <File md5="360BFF6B1C2C33AEA0FB1265A249D9F4" import="1">Art/Improvements/TradingPosts/hb_med_trading_post3.fxsxml</File>
+    <File md5="66997A1BD58282F4067E590C152BEC20" import="1">Art/Improvements/TradingPosts/hb_med_trading_post3.gr2</File>
+    <File md5="CB47075A5A0E032BF7E7416728D6C09F" import="1">Art/Improvements/TradingPosts/hb_med_trading_post4.fxsxml</File>
+    <File md5="ED5F71FECB627CB01845C6B3E1B0EEA8" import="1">Art/Improvements/TradingPosts/hb_med_trading_post4.gr2</File>
+    <File md5="5214D033101EC4A72DA956659062D7D5" import="1">Art/Improvements/TradingPosts/hb_med_trading_post_decal_d.dds</File>
+    <File md5="23859743BCF27B88E5FA82B45AA14BE4" import="1">Art/Improvements/TradingPosts/hb_med_trading_post_decal_h.dds</File>
+    <File md5="C1138664F3C9013B3A00936FD6F8F457" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post1.fxsxml</File>
+    <File md5="5DB26391A57EA4969465B92D5309522D" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post1.gr2</File>
+    <File md5="725D444B2A2D2344EAEDF1AD7A5B2AD8" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post2.fxsxml</File>
+    <File md5="0BD89B3E86B1AED32C7DB3B72BD8376C" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post2.gr2</File>
+    <File md5="B82E79B73E95733004776190F2C3FE4A" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post3.fxsxml</File>
+    <File md5="F330376090D7B6F2917465429E62E18D" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post3.gr2</File>
+    <File md5="CD0B13F27F00812F28BF296D5C7964C9" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post4.fxsxml</File>
+    <File md5="1ADDE54461302CD822251228F53B2445" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post4.gr2</File>
+    <File md5="9B1D9706CF5551105CD831255E92D548" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post_decal_d.dds</File>
+    <File md5="4CA134970FB9E12BF19F3B4498030B86" import="1">Art/Improvements/TradingPosts/hb_mod_trading_post_decal_h.dds</File>
+    <File md5="51C8943E4189319DA827715C49EC8CD7" import="1">Art/Improvements/TradingPosts/med_trading_post1.fxsxml</File>
+    <File md5="D270BB4B45D7422C823502CCF44EE81E" import="1">Art/Improvements/TradingPosts/med_trading_post1.gr2</File>
+    <File md5="2D8AEA7BD38D831A1578291375FED8E0" import="1">Art/Improvements/TradingPosts/med_trading_post2.fxsxml</File>
+    <File md5="B57594FC125E876601DF80E2A09AF477" import="1">Art/Improvements/TradingPosts/med_trading_post2.gr2</File>
+    <File md5="056D696EC9ACFAA5CF997FE4D7AD6458" import="1">Art/Improvements/TradingPosts/med_trading_post3.fxsxml</File>
+    <File md5="5DAE4625CF27EECC2A7222CD181EF5C3" import="1">Art/Improvements/TradingPosts/med_trading_post3.gr2</File>
+    <File md5="010AF40D76F46278A2298619DCBC8263" import="1">Art/Improvements/TradingPosts/med_trading_post4.fxsxml</File>
+    <File md5="7793E70757886C3024C25746DB6541BB" import="1">Art/Improvements/TradingPosts/med_trading_post4.gr2</File>
+    <File md5="D718424195EDECBE1815C385150177BD" import="1">Art/Improvements/TradingPosts/med_trading_post_decal_diff.dds</File>
+    <File md5="77BA3A06997A8B9E2F01B35E8BC91F36" import="1">Art/Improvements/TradingPosts/med_trading_post_decal_h.dds</File>
+    <File md5="2C560780EC81A0194877863B133CECD2" import="1">Art/Improvements/TradingPosts/med_trading_post_decal_s.dds</File>
+    <File md5="628DF29F9AE898BE18434C7187E2A050" import="1">Art/Improvements/TradingPosts/med_trading_post_diff.dds</File>
+    <File md5="4E52B986919158B8EF6D355981B50A71" import="1">Art/Improvements/TradingPosts/med_trading_post_sref.dds</File>
+    <File md5="DCABFDDA59D986ACA8D40A578E252031" import="1">Art/Improvements/TradingPosts/mod_trading_post1.fxsxml</File>
+    <File md5="E751979E7E52A604EA7784725196EDB7" import="1">Art/Improvements/TradingPosts/mod_trading_post1.gr2</File>
+    <File md5="117590882819D104FF828B8C120FAE88" import="1">Art/Improvements/TradingPosts/mod_trading_post2.fxsxml</File>
+    <File md5="9038FF77933CDB7E274AA04240763EFB" import="1">Art/Improvements/TradingPosts/mod_trading_post2.gr2</File>
+    <File md5="BDCFC2C0883CB3AEED25451C819F1838" import="1">Art/Improvements/TradingPosts/mod_trading_post3.fxsxml</File>
+    <File md5="95C1FBA2ACC167F5699EFE30D16C9C5F" import="1">Art/Improvements/TradingPosts/mod_trading_post3.gr2</File>
+    <File md5="483246ED244032DF9FDEBD7BAE5FE6B5" import="1">Art/Improvements/TradingPosts/mod_trading_post4.fxsxml</File>
+    <File md5="AF76552A0420C1C202CDC8A02D8215C8" import="1">Art/Improvements/TradingPosts/mod_trading_post4.gr2</File>
+    <File md5="FDFDAF6A6CAC6FCA379EFA622EA2ACA2" import="1">Art/Improvements/TradingPosts/mod_trading_post_decal_d.dds</File>
+    <File md5="943E528D220345A83CDE2AEB61A1D09E" import="1">Art/Improvements/TradingPosts/mod_trading_post_decal_h.dds</File>
+    <File md5="3EC8353FC0570955963C14559403B83E" import="1">Art/Improvements/TradingPosts/mod_trading_post_decal_s.dds</File>
+    <File md5="FFF1D0E923484CEED49C21B73D920F39" import="1">Art/Improvements/TradingPosts/mod_trading_post_diff.dds</File>
+    <File md5="D1C172034F46DD95DB3E93BDD19C59FD" import="1">Art/Improvements/TradingPosts/mod_trading_post_sref.dds</File>
+    <File md5="4DEADE23E6540FFB9D785623BB55CE46" import="1">Art/Improvements/TradingPosts/pl_med_trading_post.dds</File>
+    <File md5="DA4FCEE11A154916BD26B4DEA1F10E28" import="1">Art/Improvements/TradingPosts/pl_med_trading_post.gr2</File>
+    <File md5="323C78A5B273B3E481C0ADF929D67F3C" import="1">Art/Improvements/TradingPosts/pl_med_trading_post1.fxsxml</File>
+    <File md5="5DD00C460AB457DE285E91EE4D1C4043" import="1">Art/Improvements/TradingPosts/pl_med_trading_post1.gr2</File>
+    <File md5="CD82BDD5346BEF70347CB00F1E275283" import="1">Art/Improvements/TradingPosts/pl_med_trading_post2.fxsxml</File>
+    <File md5="3C97A56AA934C57EC1AEFCBC3B63B53F" import="1">Art/Improvements/TradingPosts/pl_med_trading_post2.gr2</File>
+    <File md5="D47C786DE4FE83C5D5B3519AB63A83E2" import="1">Art/Improvements/TradingPosts/pl_med_trading_post3.fxsxml</File>
+    <File md5="6E06B0BFE2858A6C33BE9EA68B2CF17E" import="1">Art/Improvements/TradingPosts/pl_med_trading_post3.gr2</File>
+    <File md5="9C57A29FE6F1A3B35EABDBDA9C6BF033" import="1">Art/Improvements/TradingPosts/pl_med_trading_post4.fxsxml</File>
+    <File md5="FBD5A96E80B6DD0FD560A7EE845390EB" import="1">Art/Improvements/TradingPosts/pl_med_trading_post4.gr2</File>
+    <File md5="302742E8A78FFCE9FA923CB9FE5AD979" import="1">Art/Improvements/TradingPosts/pl_med_trading_post_decal_d.dds</File>
+    <File md5="B14DC354555E3761372D76F6A258F385" import="1">Art/Improvements/TradingPosts/pl_med_trading_post_sref.dds</File>
+    <File md5="F9375923FD08079E8223E653728C0BB0" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post1.fxsxml</File>
+    <File md5="971A32D6BDD3B83BEA82833D65748088" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post1.gr2</File>
+    <File md5="95B08F104872BB8FB670661903C23C3B" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post2.fxsxml</File>
+    <File md5="2731ADBB7A38E1AF0199F6F6BDC10A95" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post2.gr2</File>
+    <File md5="B0DBBC08873605D96A8D646E3FD84565" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post3.fxsxml</File>
+    <File md5="A2572D79A94DA1D20418EBF734214D72" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post3.gr2</File>
+    <File md5="9BFA4733E27C82F434BECFE8BA1D3ED3" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post4.fxsxml</File>
+    <File md5="AB08DEBA037BB68E95BBA16F6FE04516" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post4.gr2</File>
+    <File md5="2E827FB56A989FECDE663D943662D89D" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post_decal_d.dds</File>
+    <File md5="30ADEC29EB03EB28568ABCD4EB004E4A" import="1">Art/Improvements/TradingPosts/pl_mod_trading_post_diff.dds</File>
+    <File md5="D34331E75243776A0083919604E59128" import="1">Art/IwoJimaMap.dds</File>
+    <File md5="D91B8F9532877A6CBB65C18DF246F231" import="1">Art/LoadingScreens/dom_america.dds</File>
+    <File md5="B15429BD1A1397B466814696D7F0C1FA" import="1">Art/LoadingScreens/dom_china.dds</File>
+    <File md5="EDE5F7A5D057A32932D090417F350408" import="1">Art/LoadingScreens/dom_france.dds</File>
+    <File md5="B634A31DBC82C04C0A5F67044F6005F0" import="1">Art/LoadingScreens/dom_germany.dds</File>
+    <File md5="62A46008864693025DEB8944B441601E" import="1">Art/LoadingScreens/dom_greece.dds</File>
+    <File md5="1BF9304C49C529390F5DF8323B4B9A94" import="1">Art/LoadingScreens/dom_italy.dds</File>
+    <File md5="667457AACC54F3DE8B1F923B0C515704" import="1">Art/LoadingScreens/dom_japan.dds</File>
+    <File md5="CC31812716F20E97F3214F331423B6B1" import="1">Art/LoadingScreens/dom_multi.dds</File>
+    <File md5="D37B8F7E60F7C711067F7E4869DC2122" import="1">Art/LoadingScreens/dom_poland.dds</File>
+    <File md5="4049B80D6E73327C5647ACA7230035E6" import="1">Art/LoadingScreens/dom_uk.dds</File>
+    <File md5="9D1768A49B78D192C9C05502C78BC8FB" import="1">Art/LoadingScreens/dom_ussr.dds</File>
+    <File md5="D34331E75243776A0083919604E59128" import="0">Art/Maps/IwoJimaMap.dds</File>
+    <File md5="F1F49762EAF0B1B08AFFE3D03651E645" import="1">Art/Maps/mapFrance.dds</File>
+    <File md5="EC8E2D8BC7F5164EF9705E889BFA0C45" import="1">Art/Maps/mapGermany.dds</File>
+    <File md5="72C5E4B6C9625A8667944E57DAEF2511" import="1">Art/Maps/mapItaly.dds</File>
+    <File md5="5EAF997CC7D2EECD1DE0B7243AAEF8A7" import="1">Art/Maps/mapJapan.dds</File>
+    <File md5="D072D7FA92565B6B4A9AB8F6413ED22D" import="1">Art/Maps/mapUnitedKingdom.dds</File>
+    <File md5="1D40149D6B2E906B88E6F2874A5C1C8C" import="1">Art/Maps/mapUSA.dds</File>
+    <File md5="01C020CD99FA5729D91A4B1D33AF1A57" import="1">Art/Maps/mapUSSR.dds</File>
+    <File md5="18FC711715747F85D1A8130552884350" import="1">Art/Maps/RedWorldMap.dds</File>
+    <File md5="AFBF351DA75EDDD5598CF3F8D62FF988" import="1">Art/Promotions/NewPromos128.dds</File>
+    <File md5="EB1388B217688DC63CCF45694C3D7199" import="1">Art/Promotions/NewPromos2048.dds</File>
+    <File md5="1D2C30E93F9EA2366332AFF6305FA084" import="1">Art/Promotions/NewPromos256.dds</File>
+    <File md5="0C2842CD48F5488E18D190ACD85101A8" import="1">Art/Promotions/NewPromos360.dds</File>
+    <File md5="8937A1A84152B29EB125F48EE469B48B" import="1">Art/Promotions/NewPromos512.dds</File>
+    <File md5="DD9F4125A0C5C3C5AC85E440BDC3F2A8" import="1">Art/RED_WWII_Logo.dds</File>
+    <File md5="1C8E0CA7E2DCAB172B10010712CF1B28" import="1">Art/RED_WWII_SetupScreen.dds</File>
+    <File md5="6511BF19F414CF6DBCEC770B80E39EDE" import="1">Art/Scenes/scene_america.dds</File>
+    <File md5="C0548F3AF105F59A78AE263534E9F5C2" import="1">Art/Scenes/scene_china.dds</File>
+    <File md5="7DE79C1D74A9916628B78A2F9C03538D" import="1">Art/Scenes/scene_england.dds</File>
+    <File md5="3A42A43BF397904E1FA7F41BE0C817DE" import="1">Art/Scenes/scene_france.dds</File>
+    <File md5="1CA8C43228A67CB478B02FB0970EC4C8" import="1">Art/Scenes/scene_germany.dds</File>
+    <File md5="50235383C12FE47F0A7EC0ABBD4044B5" import="1">Art/Scenes/scene_greece.dds</File>
+    <File md5="D7175FAD25A1FF7CBEA5E73D20F39C88" import="1">Art/Scenes/scene_italy.dds</File>
+    <File md5="40BF7579CFC8D7CC9AB8E15D2897CA95" import="1">Art/Scenes/scene_japan.dds</File>
+    <File md5="5B49B384F00E7D3E767DAD931D48E754" import="1">Art/Scenes/scene_ussr.dds</File>
+    <File md5="71303C59C3F4A2E027E84E8916D036B7" import="1">Art/StalingradMap.dds</File>
+    <File md5="6BAC96F31BCD4703F853382C6337A635" import="0">Art/SV_icons/SV_Blank.dds</File>
+    <File md5="9DD6B4DEAF52555E58887D0F3503E21A" import="1">Art/Victories/victory_allies.dds</File>
+    <File md5="A214B28A2277635EDE999A0911FB82F9" import="1">Art/Victories/victory_axis.dds</File>
+    <File md5="FDCA78A986DF9290A684A19530DF717F" import="1">Art/Victories/victory_germany.dds</File>
+    <File md5="D8B680701AD9559A6647EEB47BA5B720" import="1">Art/Victories/victory_ussr.dds</File>
+    <File md5="2AD06C570CEC8BAB0FA5246602795919" import="1">Art/victory_defeat.dds</File>
+    <File md5="A06B1AC85B13132429FB0FD45E1ED102" import="1">Art/ww21942startscreen.dds</File>
+    <File md5="DD55B73D95A3B136E70D33DA3C7B4F06" import="1">Art/ww2europe1940.dds</File>
+    <File md5="6E86436940D82AA41F2B4607B4295BEC" import="1">Art/_RED_WWII_Logo.dds</File>
+    <File md5="5BCAB5ABB58FDE7169595D8FC003F281" import="0">CvGameCore_RED.dll</File>
+    <File md5="E3FDA2C82BF4F759ED4EE136FCD1688E" import="0">Europe_1937.Civ5Map</File>
+    <File md5="867A61DE549D8CCF3DA087124E0FF5F1" import="0">Europe_1939.Civ5Map</File>
+    <File md5="C12B5722064310516E5DFE45E7B04906" import="0">GameSetup/Earth1936Setup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/Earth1936Setup.xml</File>
+    <File md5="D989DD6B124F64BD0F620A8DB0FF8A94" import="0">GameSetup/RedAmericaEuro1936Setup.lua</File>
+    <File md5="38679B8D862D435EC74867E4838F2946" import="0">GameSetup/RedAmericaEuro1936Setup.xml</File>
+    <File md5="C7A2E63FF52BDE96A414646975B408ED" import="0">GameSetup/RedEuro1940Setup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/RedEuro1940Setup.xml</File>
+    <File md5="A4C41B1B20D57B7274353D1557BFEF59" import="0">GameSetup/REDModsMenu.lua</File>
+    <File md5="C1429358AA6A129D88D1E5A997A7FDEF" import="0">GameSetup/REDModsMenu.xml</File>
+    <File md5="24A8D91FD8F62B33CB20826FC1710AD6" import="0">GameSetup/RedPacificSetup.lua</File>
+    <File md5="022D08372895361B84AF20EB393AA3CC" import="0">GameSetup/RedPacificSetup.xml</File>
+    <File md5="E8B9E540197537D8EDD2982B385AC364" import="0">GameSetup/StalingradSetup.lua</File>
+    <File md5="522A7A6FBD4C7E465EE6FEE02643E759" import="0">GameSetup/StalingradSetup.xml</File>
+    <File md5="F22A8E85D86A891DDAB15E4A0B12F357" import="1">Lua/AmericaEuro1936/DefinesAmericaEuro1936.lua</File>
+    <File md5="64E5B14B3E8793DC179B18CE3E06E6A5" import="1">Lua/AmericaEuro1936/RedAmericaEuro1936.lua</File>
+    <File md5="1E1E3CD85533DD50DE0192B6483A9401" import="1">Lua/AmericaEuro1936/ScriptAmericaEuro1936.lua</File>
+    <File md5="706F51BA570B7C83FF5B20B49BB346FD" import="1">Lua/Cseb/csbmod_Common_PlotHelpers.lua</File>
+    <File md5="D4EB8C49B5DC9279985DEB3D6F0A7742" import="1">Lua/Cseb/csbmod_extplotinfo_Common.lua</File>
+    <File md5="1035E422B5A7EA588720D570F862E4E5" import="1">Lua/Cseb/csbmod_extplotinfo_PlotHelp.lua</File>
+    <File md5="76EEF1915C17026D4A9703F2C1C87D59" import="1">Lua/Cseb/csbmod_extplotinfo_PlotPopup.lua</File>
+    <File md5="5E5DA06FDCFF3C6F4CE0FA6D30096471" import="1">Lua/Earth1936/DefinesEarth1936.lua</File>
+    <File md5="543DA01E0BC79481DE3BD57475B0A9B5" import="1">Lua/Earth1936/RedEarth1936.lua</File>
+    <File md5="1AF25A854DF519051568E50E82140ED0" import="1">Lua/Earth1936/ScriptEarth1936.lua</File>
+    <File md5="E83F257546B5D7162B0D49859D7187C2" import="1">Lua/Europe1940/DefinesEuro1940.lua</File>
+    <File md5="26A1AD37C0E861F66EFB14485E4EE662" import="1">Lua/Europe1940/RedEuro1940.lua</File>
+    <File md5="65069A58C45B97A9B580EE41C8A73F70" import="1">Lua/Europe1940/ScriptEuro1940.lua</File>
+    <File md5="E92B7860C7689BA78411B68E644A92EE" import="1">Lua/FlagPromotions/ModUserData.lua</File>
+    <File md5="013788403FE8D21D92426F04A198BFC8" import="1">Lua/FlagPromotions/UnitFlagManager_addin.lua</File>
+    <File md5="877EA114D97256F7352D148C7FC9670D" import="1">Lua/Pacific1942/DefinesPacific1942.lua</File>
+    <File md5="5329EAF63B284A28F50C88D15FDCA9F5" import="1">Lua/Pacific1942/RedPacific1942.lua</File>
+    <File md5="B6753DCB6CBD2F6F302651E62115BDE7" import="1">Lua/Pacific1942/ScriptPacific1942.lua</File>
+    <File md5="714797D78DE69907D7EBA53DBA81C3BC" import="1">Lua/PlotIterators.lua</File>
+    <File md5="CE0E4EF2AFFE51455214866E5B1CD333" import="1">Lua/RedAI_Air.lua</File>
+    <File md5="AF444B3CD337BB59D8C47E8A410DCAE1" import="1">Lua/RedAI_Global.lua</File>
+    <File md5="43424D3493601B6F7D3A5E8DA2B20B60" import="1">Lua/RedAI_Move.lua</File>
+    <File md5="A78F68AA8C9ABDC5168CE9E8ECD9AF2A" import="1">Lua/RedCombat.lua</File>
+    <File md5="8D2795177A3759B432B84F7D168DEAC6" import="1">Lua/RedDebug.lua</File>
+    <File md5="9D8AE3037DE5A503629874BD60693E89" import="1">Lua/RedDefinesClasses.lua</File>
+    <File md5="F8903EFB7DB5CC89AB4933CDBCA9C6F0" import="1">Lua/RedDefinesGlobal.lua</File>
+    <File md5="A21DA4E3DFFCAFC66D079E60E4E4E11B" import="1">Lua/RedDefinesProjects.lua</File>
+    <File md5="3A2C6499AE84CE18EB6318564245C45C" import="1">Lua/RedDefinesRules.lua</File>
+    <File md5="FE26F0BEF412F90B864B5840394191E8" import="1">Lua/RedDefinesUnits.lua</File>
+    <File md5="C26CC0F4C81F64342CEE752D5ECCE66E" import="1">Lua/RedDiplomacy.lua</File>
+    <File md5="E28524A1AE242421B4AC48F77ED87F82" import="1">Lua/RedFunctions.lua</File>
+    <File md5="44251C96CD99614C0A7D0BFED189829C" import="1">Lua/RedInitFunctions.lua</File>
+    <File md5="A4CCCC862E69710BED8E1A443493899A" import="0">Lua/RedMain.lua</File>
+    <File md5="51BB1BDA8CBD62493FF3BCD65C0EAC9E" import="1">Lua/RedOverrideInclude.lua</File>
+    <File md5="29E52DEFC67A3DEC9191EBA1D576FCF9" import="1">Lua/RedResources.lua</File>
+    <File md5="C7F08C15AA741F5F59EC8096FBF2BC2E" import="1">Lua/RedScenarioDefine.lua</File>
+    <File md5="5CD450C1061FA31115C4B054314D1A97" import="1">Lua/RedSupplyRoutes.lua</File>
+    <File md5="511BEA3EB0FF0462F07A1A89289316E0" import="1">Lua/RedUnitFunctions.lua</File>
+    <File md5="82674A317001E7D768502630CDE24A22" import="1">Lua/RedUnitUtils.lua</File>
+    <File md5="DCF6D3C1193C1A37DA38178F80909D3C" import="1">Lua/RedUtils.lua</File>
+    <File md5="B3E7CA15368634E0F8C11D4111828CF9" import="1">Lua/RouteConnections.lua</File>
+    <File md5="761DFFE4309CC6660D2264F46B67E733" import="1">Lua/SaveUtils.lua</File>
+    <File md5="4C209E1FBBF9C0FF8228FB4061EEAC67" import="0">Lua/ShareData.lua</File>
+    <File md5="84AAE11CFC2CAD06017EF618E503F6F3" import="1">Lua/Stalingrad/DefinesStalingrad.lua</File>
+    <File md5="0AA3175A8CD8DB8E9CCD469AE0F6D6F8" import="1">Lua/Stalingrad/RedStalingrad.lua</File>
+    <File md5="E1DB5A0E4B89F0D41556E2D8908FE154" import="1">Lua/Stalingrad/ScriptStalingrad.lua</File>
+    <File md5="052844AC0737CFE1282669BCB1BBFCE9" import="0">Lua/TopPanel_Clock.lua</File>
+    <File md5="5EA91BA096E5FA6DAE8BCDADDF9F5209" import="1">Override/BNW/DeclareWarPlunderTradeRoutePopup.lua</File>
+    <File md5="2E54AE14984A24227321FA6606CFB003" import="1">Override/UI/CityBannerManager.lua</File>
+    <File md5="47F7093DDCAF4C3167A7B7253D4DCD6A" import="1">Override/UI/CityBannerManager.xml</File>
+    <File md5="58ECA6EB6631B546E9F39AACC987D34D" import="1">Override/UI/CityView.lua</File>
+    <File md5="08BBEA70FCB67D6274C7600F0CDB4821" import="1">Override/UI/CityView.xml</File>
+    <File md5="926C4891C7708AA17B4E32A3BCD76591" import="1">Override/UI/CityView_small.xml</File>
+    <File md5="3066D8C24A7D968653729240F3B084D3" import="1">Override/UI/DiploList.lua</File>
+    <File md5="65B2132533A107623F855E38FC911FE9" import="1">Override/UI/DiploList.xml</File>
+    <File md5="5F9E1A5CC5C901D2D3511D410CB8428E" import="1">Override/UI/EndGameMenu.lua</File>
+    <File md5="52A35172F0D0898A8339E33A658212ED" import="1">Override/UI/GameMenu.lua</File>
+    <File md5="6831C89C3E830752319E19E241832A94" import="1">Override/UI/GameMenu.xml</File>
+    <File md5="60CCF8A2BCBD8478F9213C037A471FF2" import="1">Override/UI/InfoTooltipInclude.lua</File>
+    <File md5="D714313AE95EB0726B1D872B3397B361" import="1">Override/UI/LoadScreen.lua</File>
+    <File md5="DE0AED85EAC810EDD211BAD45B3FD6A2" import="1">Override/UI/LoadScreen.xml</File>
+    <File md5="1D766CB20AE6F233FAF2DD77924496C4" import="1">Override/UI/MilitaryOverview.lua</File>
+    <File md5="7566C6955499E0970B5CFA765C7CFC56" import="0">Override/UI/ModsMenu.lua</File>
+    <File md5="C3E9D9BE697038CF94D33ABDA0CB8F3F" import="0">Override/UI/ModsMenu.xml</File>
+    <File md5="D0230C525DC2087682F585793FF5B917" import="1">Override/UI/MPList.lua</File>
+    <File md5="A4AB464D8F15EDE2335B38D1402B6F7F" import="1">Override/UI/NewTurn.lua</File>
+    <File md5="673AFC9AA16604E4E73DD4EA26AF5F01" import="1">Override/UI/NotificationPanel.lua</File>
+    <File md5="7D72EE8B9C901594B43487C87916715B" import="0">Override/UI/OptionsMenu.lua</File>
+    <File md5="2EEB461987AF1D1C1EFF46B7EC42F253" import="1">Override/UI/PlotHelpManager.lua</File>
+    <File md5="308BE323E5E4865A5F1A83D7A93AEBDE" import="1">Override/UI/PlotHelpText.lua</File>
+    <File md5="69CCC5C752D4528171C2DDB578BC8A55" import="1">Override/UI/ProductionPopup.lua</File>
+    <File md5="C717F4C862C476C1C2540B30E297CAE2" import="1">Override/UI/ProductionPopup.xml</File>
+    <File md5="CE91F245DDDEED9131FFB309FA5A54E7" import="1">Override/UI/TopPanel.lua</File>
+    <File md5="71F6E2CB30D86BD10F691548A4F0DED3" import="1">Override/UI/TopPanel.xml</File>
+    <File md5="2EEA6BE5C7BF9AFD828032823E111ED0" import="1">Override/UI/TradeLogic.lua</File>
+    <File md5="5594F6C7C8F86C7595C47B1CA2F90E7D" import="1">Override/UI/Tutorial.lua</File>
+    <File md5="BB95B13DEAC5A45CE2949F6A131D49A8" import="1">Override/UI/UnitFlagManager.lua</File>
+    <File md5="6A2DCFCB3ADA8B0BA57D1D586AF50AF8" import="1">Override/UI/UnitFlagManager.xml</File>
+    <File md5="BE529A52FB316F63E440E93E284265CC" import="1">Override/UI/UnitPanel.lua</File>
+    <File md5="7CB08D0240C1DF0C5A6F4BFC43579FDB" import="1">Override/Vanilla/Civilopedia/CivilopediaScreen.lua</File>
+    <File md5="6C821530D9F02C03EAF45F8F005EA42E" import="1">Override/Vanilla/Civilopedia/CivilopediaScreen.xml</File>
+    <File md5="D9784DAF99182EB9CD2A193E16025F80" import="1">Override/Vanilla/InGame/ActionInfoPanel.lua</File>
+    <File md5="DDF7704D85ED8EEEEFD6AE01B78DE3A9" import="1">Override/Vanilla/InGame/ActionInfoPanel.xml</File>
+    <File md5="3604CFDA51FB00EEDA9F0CE1BCEA31FB" import="1">Override/Vanilla/InGame/AdvisorCounselPopup.lua</File>
+    <File md5="31A6A484F0D62BAA4E35C995DA34B3BB" import="1">Override/Vanilla/InGame/AdvisorCounselPopup.xml</File>
+    <File md5="587445ED8B4934C221DDA2416586D605" import="1">Override/Vanilla/InGame/AdvisorInfoPopup.lua</File>
+    <File md5="7A09F5D2812850F7810DC0766C544C8C" import="1">Override/Vanilla/InGame/AdvisorInfoPopup.xml</File>
+    <File md5="1DF6746F6BF57A42BE821413D9724251" import="1">Override/Vanilla/InGame/AdvisorModal.lua</File>
+    <File md5="8FE1437A1AC9FD1F7FDCAF98D5365266" import="1">Override/Vanilla/InGame/AdvisorModal.xml</File>
+    <File md5="E4D72193B1C543FD6F7920289D214C21" import="1">Override/Vanilla/InGame/Advisors.lua</File>
+    <File md5="3CD7E14E8407C26915DE8A815E253801" import="1">Override/Vanilla/InGame/Advisors.xml</File>
+    <File md5="DF36252C33630143A5B128A459886F8F" import="1">Override/Vanilla/InGame/AnnexCityPopup.lua</File>
+    <File md5="85C02896778B1D75AC056E3D2757ED86" import="1">Override/Vanilla/InGame/BarbarianCampPopup.lua</File>
+    <File md5="5CF2FFD1FF0B8439671B99E554850115" import="1">Override/Vanilla/InGame/BarbarianCampPopup.xml</File>
+    <File md5="1CE94A22FA5C6F2C70A26C915D167FEF" import="1">Override/Vanilla/InGame/BarbarianRansomPopup.lua</File>
+    <File md5="B90AEDCC5ADFF55BA6CF5612981CE299" import="1">Override/Vanilla/InGame/Bombardment.lua</File>
+    <File md5="78ECF72E190C6E3ED406981A49E130B6" import="1">Override/Vanilla/InGame/ChangePassword.lua</File>
+    <File md5="5417ED7A3DE383BF402F01CC0559B1C2" import="1">Override/Vanilla/InGame/ChangePassword.xml</File>
+    <File md5="F1E46F3072789A49E206A411772E0CF8" import="1">Override/Vanilla/InGame/ChooseFreeItem.lua</File>
+    <File md5="7D617857DD9E9BD280A7530F8974289D" import="1">Override/Vanilla/InGame/ChooseFreeItem.xml</File>
+    <File md5="1D3592DE7604E3E3E7EE6244D5D4452A" import="1">Override/Vanilla/InGame/CityList.lua</File>
+    <File md5="B661207E3CC23B0730637E4BBF416506" import="1">Override/Vanilla/InGame/CityList.xml</File>
+    <File md5="1588E2B8908A5CCDBDFD8E98A5A7A95B" import="1">Override/Vanilla/InGame/CityPlotManagementPopup.lua</File>
+    <File md5="A9695D81DE2F9181BB0EBA344BB4F6AC" import="1">Override/Vanilla/InGame/CityStateDiploPopup.lua</File>
+    <File md5="5F1D3DD2CF3E65C5E97A1F8B66F6653B" import="1">Override/Vanilla/InGame/CityStateDiploPopup.xml</File>
+    <File md5="4A887DE8E9EA12FEB3D1435DAB5EB5F8" import="1">Override/Vanilla/InGame/CityStateGreetingPopup.lua</File>
+    <File md5="0C46179AC450C38BAE355EDABE94E82F" import="1">Override/Vanilla/InGame/CityStateGreetingPopup.xml</File>
+    <File md5="00E429A1E37E58EC57020140341778BA" import="1">Override/Vanilla/InGame/CityStateGreetingPopupOpenCenter.xml</File>
+    <File md5="3FE9AAC779B8FB662984965A0EAF59D4" import="1">Override/Vanilla/InGame/ColorKey.lua</File>
+    <File md5="3488AD81F200654DD0522FB7FCE9EA92" import="1">Override/Vanilla/InGame/ColorKey.xml</File>
+    <File md5="3CC851067B119C395E2818B24EFA9D4C" import="1">Override/Vanilla/InGame/ConfirmCityTaskPopup.lua</File>
+    <File md5="136E2B52AA638B2509B00DA5C739E2E5" import="1">Override/Vanilla/InGame/ConfirmCommandPopup.lua</File>
+    <File md5="455FBE760A319C862BBCC2B373C4668A" import="1">Override/Vanilla/InGame/ConfirmGiftPopup.lua</File>
+    <File md5="A82FC4B78C525CB736FC4EC583666C43" import="1">Override/Vanilla/InGame/ConfirmImprovementRebuildPopup.lua</File>
+    <File md5="549B9D1FCF8CADC49FE8A0C3DC00C908" import="1">Override/Vanilla/InGame/ConfirmPolicyBranchPopup.lua</File>
+    <File md5="EEFF9CD2C5A0071C7351D36D500B64B3" import="1">Override/Vanilla/InGame/DebugMenu.lua</File>
+    <File md5="A2C58B9BD747526DDEE65379889CBFAA" import="1">Override/Vanilla/InGame/DebugMenu.xml</File>
+    <File md5="7FA88E91600E0BB4FCE1BCB4D284717F" import="1">Override/Vanilla/InGame/DebugMode.lua</File>
+    <File md5="A293A001213405FEB9F920CFFF05B97E" import="1">Override/Vanilla/InGame/DebugMode.xml</File>
+    <File md5="8FE442D90081693E05000CDD59086B67" import="1">Override/Vanilla/InGame/DeclareWarMovePopup.lua</File>
+    <File md5="153AF3FA15FBC683942F0F8D7BB22275" import="1">Override/Vanilla/InGame/DeclareWarRangeStrikePopup.lua</File>
+    <File md5="E1DE076FC5F14B8C3C1F8BF30ADEFFC6" import="1">Override/Vanilla/InGame/Demographics.lua</File>
+    <File md5="C10D7AF2CB7110C1AE77363861FF641F" import="1">Override/Vanilla/InGame/Demographics.xml</File>
+    <File md5="A932B56094FDE95A5378ABE32CE6657F" import="1">Override/Vanilla/InGame/DiploCorner.lua</File>
+    <File md5="2ABA9F5D89089DEBB4ADB6C7243F6722" import="1">Override/Vanilla/InGame/DiploCorner.xml</File>
+    <File md5="6DDF10936BD421EEC1F466667AF4BBFB" import="1">Override/Vanilla/InGame/DiploCurrentDeals.lua</File>
+    <File md5="D3E8B9240623350E96E658A755C388D7" import="1">Override/Vanilla/InGame/DiploCurrentDeals.xml</File>
+    <File md5="C0C81B32DF136736874C5999405C724A" import="1">Override/Vanilla/InGame/DiploGlobalRelationships.lua</File>
+    <File md5="6A01F8696ED212BDD8D13D14A06F6DDB" import="1">Override/Vanilla/InGame/DiploGlobalRelationships.xml</File>
+    <File md5="E1B6AD307DEBEB37C3036B01F7FD8A8E" import="1">Override/Vanilla/InGame/DiploOverview.lua</File>
+    <File md5="B8797C1E954A9BB5FABEBCAE4A1656DF" import="1">Override/Vanilla/InGame/DiploOverview.xml</File>
+    <File md5="E9852228F6777E48CCCBC809F626E34A" import="1">Override/Vanilla/InGame/DiploRelationships.lua</File>
+    <File md5="65D6B5AB2841D75CF8CC576A42F5E273" import="1">Override/Vanilla/InGame/DiploRelationships.xml</File>
+    <File md5="A9B9FE8BEB90B4C6C5F0B0572C4C9122" import="1">Override/Vanilla/InGame/DiploTrade.lua</File>
+    <File md5="F769CE1FA8762C01C86C6D1CFF81CD9C" import="1">Override/Vanilla/InGame/DiploTrade.xml</File>
+    <File md5="5513E8D1B49C1144CFDA2453BC2A7480" import="1">Override/Vanilla/InGame/DiploVotePopup.lua</File>
+    <File md5="C6DBEE8832828540F552BCBB64A59140" import="1">Override/Vanilla/InGame/DiploVotePopup.xml</File>
+    <File md5="28AA663FB2E8318B1F5D21F55C2431FF" import="1">Override/Vanilla/InGame/DiscussionDialog.lua</File>
+    <File md5="B8A61CBDB6B125CD259D734196D75BFA" import="1">Override/Vanilla/InGame/DiscussionDialog.xml</File>
+    <File md5="494E15CF7664BBE68B174CE637E1AD03" import="1">Override/Vanilla/InGame/DiscussLeader.lua</File>
+    <File md5="216ECC73629C411C3CDEBD2726B38CEE" import="1">Override/Vanilla/InGame/DiscussLeader.xml</File>
+    <File md5="676990A146B43F7AD4AC8041F6F59773" import="1">Override/Vanilla/InGame/EconomicGeneralInfo.lua</File>
+    <File md5="340168630A5C158CE4C268D8D28F1AC0" import="1">Override/Vanilla/InGame/EconomicGeneralInfo.xml</File>
+    <File md5="9D3519174C4647BE1B438E4A12EC0076" import="1">Override/Vanilla/InGame/EconomicOverview.lua</File>
+    <File md5="974CCC4576302D4290000AF6238C7A84" import="1">Override/Vanilla/InGame/EconomicOverview.xml</File>
+    <File md5="5FBF89E9624E87F46AA7581CE51B096B" import="1">Override/Vanilla/InGame/EmptyPopup.lua</File>
+    <File md5="BBC525FB8B894B199D42FC93D6C8899F" import="1">Override/Vanilla/InGame/EmptyPopup.xml</File>
+    <File md5="0826445779D4AAB05FA212128AD7F4D4" import="1">Override/Vanilla/InGame/EndGameMenu.xml</File>
+    <File md5="46F48158F80B9FC9273C0143729756F2" import="1">Override/Vanilla/InGame/EndGameReplay.lua</File>
+    <File md5="D3B2E29F1B1221858E5D1C8B790D9484" import="1">Override/Vanilla/InGame/EndGameReplay.xml</File>
+    <File md5="963E1C7A6840D7098E0DBBF9D418250B" import="1">Override/Vanilla/InGame/EnemyUnitPanel.lua</File>
+    <File md5="B3817382F5432236CA4946813DB6D165" import="1">Override/Vanilla/InGame/EnemyUnitPanel.xml</File>
+    <File md5="93A7EE97E20618D3BAC227A888E55B1C" import="1">Override/Vanilla/InGame/EnemyUnitPanel_small.xml</File>
+    <File md5="5FBF89E9624E87F46AA7581CE51B096B" import="1">Override/Vanilla/InGame/FluidFOW.lua</File>
+    <File md5="90963FC29716E66AD6DA2F0F4E565241" import="1">Override/Vanilla/InGame/FluidFOW.xml</File>
+    <File md5="FC840D2AA8DC2A3F3DC90ECA6482A022" import="1">Override/Vanilla/InGame/GenericPopup.lua</File>
+    <File md5="F3B2628D243375078EFC4D3F9FF3E3E0" import="1">Override/Vanilla/InGame/GenericPopup.xml</File>
+    <File md5="B6A6EC94AF97D7F3863DE672CFB7595F" import="1">Override/Vanilla/InGame/GenericWorldAnchor.lua</File>
+    <File md5="0D9A389502D633EDFBEAAF95E83CE036" import="1">Override/Vanilla/InGame/GenericWorldAnchor.xml</File>
+    <File md5="FCB944D0174F9C734FEE58F9156911E5" import="1">Override/Vanilla/InGame/GoldenAgePopup.lua</File>
+    <File md5="039AEB7ADF2EAFED78A3519F9A4F4478" import="1">Override/Vanilla/InGame/GoldenAgePopup.xml</File>
+    <File md5="24B15E76C12DBE86EE3D8DB09146C5BE" import="1">Override/Vanilla/InGame/GoodyHutPopup.lua</File>
+    <File md5="B444C393823CDE6CE776CCFDFB3DB376" import="1">Override/Vanilla/InGame/GoodyHutPopup.xml</File>
+    <File md5="68858FF2D352D65C87A314786696A009" import="1">Override/Vanilla/InGame/GPList.lua</File>
+    <File md5="477D58A6D2694AFD7030EBC1E6CDF0D1" import="1">Override/Vanilla/InGame/GPList.xml</File>
+    <File md5="6CDF19A5A2D733ECE976EC5CA73DBC96" import="1">Override/Vanilla/InGame/GraphicsPanel.lua</File>
+    <File md5="7AAF12A1A79AF965CC46575EAF5BAE78" import="1">Override/Vanilla/InGame/GraphicsPanel.xml</File>
+    <File md5="3F0A7389A2DD9BFFB3C48EA6373942B5" import="1">Override/Vanilla/InGame/GreatPersonRewardPopup.lua</File>
+    <File md5="E98E3FB22423B764988F6FF847F6EBCE" import="1">Override/Vanilla/InGame/GreatPersonRewardPopup.xml</File>
+    <File md5="49D3DF27478FDC1CCB682E2A5DFA4BB7" import="1">Override/Vanilla/InGame/HallOfFame.lua</File>
+    <File md5="D6CC2D87EEB585BB34F9BD4010013093" import="1">Override/Vanilla/InGame/HallOfFame.xml</File>
+    <File md5="AA9CDC0A9A601D0BC4BCB24215B17C0B" import="1">Override/Vanilla/InGame/HappinessInfo.lua</File>
+    <File md5="90114D5CA487797342FB19C0E536A896" import="1">Override/Vanilla/InGame/HappinessInfo.xml</File>
+    <File md5="6CDF19A5A2D733ECE976EC5CA73DBC96" import="1">Override/Vanilla/InGame/HexDebugTextPanel.lua</File>
+    <File md5="A1D94237C07F4C071EE9AB7F6954856D" import="1">Override/Vanilla/InGame/HexDebugTextPanel.xml</File>
+    <File md5="F1BBB2B4200680AB0E60D8B60ECA6574" import="1">Override/Vanilla/InGame/InfoCorner.lua</File>
+    <File md5="3609130DE1B2C5E196F5FFF2B56C2DC3" import="1">Override/Vanilla/InGame/InfoCorner.xml</File>
+    <File md5="22B5E0F94D438C68705F50E74FD991AE" import="1">Override/Vanilla/InGame/InGame.lua</File>
+    <File md5="4C97FE7AA9649B6A2294680696A71EAA" import="1">Override/Vanilla/InGame/InGame.xml</File>
+    <File md5="409ED9785FC91FCFDDACF26237ACA578" import="1">Override/Vanilla/InGame/LeaderHeadRoot.lua</File>
+    <File md5="67757EA007F02746FB9B4D6498365320" import="1">Override/Vanilla/InGame/LeaderHeadRoot.xml</File>
+    <File md5="63F7A9AFFDC9804C61DBEB807C362F9C" import="1">Override/Vanilla/InGame/LiberateMinorPopup.lua</File>
+    <File md5="AB682447ADEC20739C398A15EF497C31" import="1">Override/Vanilla/InGame/MilitaryOverview.xml</File>
+    <File md5="313C1DA8B8B012E2D926E1735633086C" import="1">Override/Vanilla/InGame/MiniMapPanel.lua</File>
+    <File md5="F7444D2B1BA860DAC9616BDBD3E25569" import="1">Override/Vanilla/InGame/MiniMapPanel.xml</File>
+    <File md5="FD7FD2103CB85DF9507E1719F6630F86" import="1">Override/Vanilla/InGame/MinorCivEnterTerritoryPopup.lua</File>
+    <File md5="5E5C7CD6D54C4DDA5CD9029F5605DC4A" import="1">Override/Vanilla/InGame/MinorCivGoldPopup.lua</File>
+    <File md5="ADD1AD563FAB054C70A5BDD6D972750F" import="1">Override/Vanilla/InGame/MPList.xml</File>
+    <File md5="F2B1FD341A5B9269AFD9B14A24C265F8" import="1">Override/Vanilla/InGame/NaturalWonderPopup.lua</File>
+    <File md5="99A4AC227275510A4E56E4DB53AEFBC7" import="1">Override/Vanilla/InGame/NaturalWonderPopup.xml</File>
+    <File md5="138D656B857A1684E5396A61F2B73CF5" import="1">Override/Vanilla/InGame/NetworkDebug.lua</File>
+    <File md5="DCB49747C300EE2D2306221239E5389B" import="1">Override/Vanilla/InGame/NetworkDebug.xml</File>
+    <File md5="4EEEA133BA5C2993DF61EB748A0B495C" import="1">Override/Vanilla/InGame/NetworkKickedPopup.lua</File>
+    <File md5="4F23A14A59061C57F1F80C898E843735" import="1">Override/Vanilla/InGame/NewEraPopup.lua</File>
+    <File md5="D7603017296119B9BA8C873658DD4C07" import="1">Override/Vanilla/InGame/NewEraPopup.xml</File>
+    <File md5="17F59F6E9D3F22C3DCEE613F5F6FC60A" import="1">Override/Vanilla/InGame/NewTurn.xml</File>
+    <File md5="C1FD5E86B05B1F488AA6C2AD9BE4E8A6" import="1">Override/Vanilla/InGame/NotificationLogPopup.lua</File>
+    <File md5="1E97E3E6C5D87B15EF1CC4C16E15A3E0" import="1">Override/Vanilla/InGame/NotificationLogPopup.xml</File>
+    <File md5="B5D37304FE656168E7872700FDE48220" import="1">Override/Vanilla/InGame/NotificationPanel.xml</File>
+    <File md5="42E291B2CA5F2AAC1F3C9E5BBF0F5A28" import="1">Override/Vanilla/InGame/PathHelpManager.lua</File>
+    <File md5="2ABBD06A786ABDB355274D41C823B831" import="1">Override/Vanilla/InGame/PathHelpManager.xml</File>
+    <File md5="0212287F5F82BD248C3FF6D7C3B41295" import="1">Override/Vanilla/InGame/PlayerChange.lua</File>
+    <File md5="55B8F092B8980F2C5455E7A911CA05CB" import="1">Override/Vanilla/InGame/PlayerChange.xml</File>
+    <File md5="D4E0F632AFE9E0FF7616243DFDF9149C" import="1">Override/Vanilla/InGame/PlotHelpManager.xml</File>
+    <File md5="94DCFBBBF6C00AB7DEE1F44B9C79C662" import="1">Override/Vanilla/InGame/PlotHelpText.xml</File>
+    <File md5="224EBEC6FF8583C828CBE33C178ED8CE" import="1">Override/Vanilla/InGame/PlotMouseoverInclude.lua</File>
+    <File md5="CFE66112A934D311C1DD4C70333BBB36" import="1">Override/Vanilla/InGame/PuppetCityPopup.lua</File>
+    <File md5="75F9BD8CF44291CC15E51686BB50C203" import="1">Override/Vanilla/InGame/Ranking.lua</File>
+    <File md5="31409679432B50752E3093435632F173" import="1">Override/Vanilla/InGame/Ranking.xml</File>
+    <File md5="6912153EF6A593FAE4E5AB54E235EFCB" import="1">Override/Vanilla/InGame/ReplayViewer.lua</File>
+    <File md5="C3D20EAB6D26122690FCF3A473A57345" import="1">Override/Vanilla/InGame/ReplayViewer.xml</File>
+    <File md5="702F5804A36BC135E37670F6E9288EE7" import="1">Override/Vanilla/InGame/ResourceIconManager.lua</File>
+    <File md5="3C1CE95F7CB70A4488F857E33B919817" import="1">Override/Vanilla/InGame/ResourceIconManager.xml</File>
+    <File md5="2E143CBEF9439DEAAD52705A6EBE0C99" import="1">Override/Vanilla/InGame/ResourceList.lua</File>
+    <File md5="625B7C6901D9123409595280E4E948F6" import="1">Override/Vanilla/InGame/ResourceList.xml</File>
+    <File md5="E6AA326D0FE7EEE53763B010A6FE6E9A" import="1">Override/Vanilla/InGame/ResourceTooltipGenerator.lua</File>
+    <File md5="9BBC14293144EE2901D3B9BF3552268A" import="1">Override/Vanilla/InGame/ReturnCivilianPopup.lua</File>
+    <File md5="2D7C5B6DEFA2E8B23E29FC493522FCA3" import="1">Override/Vanilla/InGame/SaveMapMenu.lua</File>
+    <File md5="FAB13BE0B98230F500869F782E4D5A9D" import="1">Override/Vanilla/InGame/SaveMapMenu.xml</File>
+    <File md5="94DB0CEB01F8CEAA1280025CF00F6B95" import="1">Override/Vanilla/InGame/SaveMenu.lua</File>
+    <File md5="9EB638781348A98F7A091690D27BFDF9" import="1">Override/Vanilla/InGame/SaveMenu.xml</File>
+    <File md5="1368027429A13B970090A453AB931734" import="1">Override/Vanilla/InGame/SetCityName.lua</File>
+    <File md5="D45EAE692C9522880A95AD9CFFFEE0BF" import="1">Override/Vanilla/InGame/SetCityName.xml</File>
+    <File md5="2682D21D0E02F7CBBE83D17D72C2E611" import="1">Override/Vanilla/InGame/SetUnitName.lua</File>
+    <File md5="665FB047DA0BD746C422E9B03B3120E7" import="1">Override/Vanilla/InGame/SetUnitName.xml</File>
+    <File md5="2420301444EF7DA24CE2DAEE9044BDD6" import="1">Override/Vanilla/InGame/SimpleDiploTrade.lua</File>
+    <File md5="CE6B347B2E2C5E9556F912CAA4C1C88B" import="1">Override/Vanilla/InGame/SimpleDiploTrade.xml</File>
+    <File md5="0E6CD129D6BD526147478DBC40CBA735" import="1">Override/Vanilla/InGame/SocialPolicyPopup.lua</File>
+    <File md5="0F3DF8306976044970D4765B35428F98" import="1">Override/Vanilla/InGame/SocialPolicyPopup.xml</File>
+    <File md5="C823CFFC47B6452DD9D8E220FE345FAD" import="1">Override/Vanilla/InGame/TaskList.lua</File>
+    <File md5="441687875AB71F2FB22E952391E97D58" import="1">Override/Vanilla/InGame/TaskList.xml</File>
+    <File md5="2B8E13A1A7B68E197BD4E0F3F2113E76" import="1">Override/Vanilla/InGame/TechAwardPopup.lua</File>
+    <File md5="21274C42E96EE4B9F97063A7A076971B" import="1">Override/Vanilla/InGame/TechAwardPopup.xml</File>
+    <File md5="6E447F3D53C5B5E99D0C1371A2164B6D" import="1">Override/Vanilla/InGame/TechButtonInclude.lua</File>
+    <File md5="D1ACAA5CB2FBBF0BCE07884FF90B109E" import="1">Override/Vanilla/InGame/TechHelpInclude.lua</File>
+    <File md5="8ABBA0BD28087B07780536BEB410E2EB" import="1">Override/Vanilla/InGame/TechPanel.lua</File>
+    <File md5="1AD9CAFC711C762D7B532BF95748201A" import="1">Override/Vanilla/InGame/TechPanel.xml</File>
+    <File md5="2E864F44562CA1721134CE33FC7AFBA9" import="1">Override/Vanilla/InGame/TechPanel_small.xml</File>
+    <File md5="1D32549EEBF2C24EBEE0B8EFD4720975" import="1">Override/Vanilla/InGame/TechPopup.lua</File>
+    <File md5="3BEC63C681C74631A56788058F2CF616" import="1">Override/Vanilla/InGame/TechPopup.xml</File>
+    <File md5="92EC5AC0368C738B980F97181D696D8A" import="1">Override/Vanilla/InGame/TechPopup_small.xml</File>
+    <File md5="3F73647FE0E847434A32CC8FA38CF7BB" import="1">Override/Vanilla/InGame/TechTree.lua</File>
+    <File md5="9EDB786019ED32DCD02D9BF64A3A8B3F" import="1">Override/Vanilla/InGame/TechTree.xml</File>
+    <File md5="CC282D25921C5F1E25AF7E3A5959E474" import="1">Override/Vanilla/InGame/TerrainPanel.lua</File>
+    <File md5="2073DFE2C493C0CA48AB5C7765AC1DC8" import="1">Override/Vanilla/InGame/TerrainPanel.xml</File>
+    <File md5="4809394B65D9543EB4EBA77E2ED0C74D" import="1">Override/Vanilla/InGame/TextPopup.lua</File>
+    <File md5="D9FECB5CF4DA4C507BD7E92BD92E7684" import="1">Override/Vanilla/InGame/TextPopup.xml</File>
+    <File md5="5EA0E0F5CEDAF78E04CB7F5CAB80E7BC" import="1">Override/Vanilla/InGame/TextPopup_small.xml</File>
+    <File md5="BA71C44A170FDEE0A87F0AADDC781EF7" import="1">Override/Vanilla/InGame/TurnProcessing.lua</File>
+    <File md5="7A6397F6DE772C5A0111D536D655C6D0" import="1">Override/Vanilla/InGame/TurnProcessing.xml</File>
+    <File md5="F373A6189FFFC25DC2EA7B6D686500F4" import="1">Override/Vanilla/InGame/Tutorial.xml</File>
+    <File md5="9A06D76DA194D512235D46C16FC9B1B2" import="1">Override/Vanilla/InGame/UnitList.lua</File>
+    <File md5="C779A41860B7C5770C86D8807B15E10A" import="1">Override/Vanilla/InGame/UnitList.xml</File>
+    <File md5="22B12B97AF677B2E2D561BF4186ECEE0" import="1">Override/Vanilla/InGame/UnitMemberOverlay.lua</File>
+    <File md5="7F0D0FDDAC73B3C6C63926E5CCCBCF65" import="1">Override/Vanilla/InGame/UnitMemberOverlay.xml</File>
+    <File md5="64DC0D830CCB693893C272437AC5D856" import="1">Override/Vanilla/InGame/UnitPanel.xml</File>
+    <File md5="E846CB22B70CEFD3A803150EE59A2DC2" import="1">Override/Vanilla/InGame/UnitPanel_small.xml</File>
+    <File md5="125B85A74867F958BC10DBAE89463CBE" import="1">Override/Vanilla/InGame/VictoryProgress.lua</File>
+    <File md5="0C63C10172A50DD02BE5332E28D0E8BF" import="1">Override/Vanilla/InGame/VictoryProgress.xml</File>
+    <File md5="1C21654FCB4F61A03B8D2965DC75512D" import="1">Override/Vanilla/InGame/VoteResultsPopup.lua</File>
+    <File md5="377507E59FF6819863E8BAF11AF5F749" import="1">Override/Vanilla/InGame/VoteResultsPopup.xml</File>
+    <File md5="38CBFFDCD73F13641F531831A11D839B" import="1">Override/Vanilla/InGame/WhosWinningPopup.lua</File>
+    <File md5="2588B04E3FE40FD593B87D5BB3968A73" import="1">Override/Vanilla/InGame/WhosWinningPopup.xml</File>
+    <File md5="F1D7AC582363375087C4F64455F80672" import="1">Override/Vanilla/InGame/WonderPopup.lua</File>
+    <File md5="DEF369D1CF0A043322F040681FF0AFEB" import="1">Override/Vanilla/InGame/WonderPopup.xml</File>
+    <File md5="A3743D4D2EF5B102D3D4D83F09755CFE" import="1">Override/Vanilla/InGame/WorldView.lua</File>
+    <File md5="C6C6E3A2EB23BA0AE4B4BD40212CC515" import="1">Override/Vanilla/InGame/WorldView.xml</File>
+    <File md5="41CCEBD4CAB72584C55509DBC3A9A79C" import="1">Override/Vanilla/InGame/YieldIconManager.lua</File>
+    <File md5="249988B3760129FD11C1E988FD667297" import="1">Override/Vanilla/InGame/YieldIconManager.xml</File>
+    <File md5="5B2B95ACA60D92792EFEAD02AC6E1E26" import="1">Override/XML/unitformations.xml</File>
+    <File md5="E5EBC2184C73AE53EDCFF68DCE3803D0" import="0">Pacific1942.Civ5Map</File>
+    <File md5="6B5B979E3323BFF69DC52D81DCBAB7CF" import="1">RED_Version.lua</File>
+    <File md5="0D62D554556F2F5119DA94A1A20431D0" import="0">RED_WWII/Mods/CustomMod.lua</File>
+    <File md5="4939CF1295BB75A53B7D61228B471E93" import="0">RED_WWII/Mods/EULA.lua</File>
+    <File md5="5B69120C99AC16256A0F55890EF563CD" import="0">RED_WWII/Mods/MainMenu.lua</File>
+    <File md5="154DBF10A07BEBF2043AA0641F80745B" import="0">RED_WWII/Mods/ModsBrowser.lua</File>
+    <File md5="343F5EE66460DAD3B600AE59AE0DB343" import="0">RED_WWII/Mods/ModsMenu.lua</File>
+    <File md5="C0E65BA339A2F680D206813E5B3156EF" import="0">RED_WWII/Mods/ModsSinglePlayer.lua</File>
+    <File md5="CFD6E5A76BFC294316693EFCBD34F5F6" import="0">RED_WWII/RED_WWII_BNW.Civ5Pkg</File>
+    <File md5="8FD61F0E6B43045D90D2858933AF7A0B" import="0">RED_WWII/RED_WWII_GK.Civ5Pkg</File>
+    <File md5="13391333976834CE7C603A675DDBCBB1" import="0">RED_WWII/RED_WWII_Vanilla.Civ5Pkg</File>
+    <File md5="04513A137E7A3564686BE1A00BF41626" import="0">SQL/0- ReplaceCivilizations.sql</File>
+    <File md5="55034A837CC163C27A846E921C55A43E" import="0">SQL/0- VanillaCiv5Database.sql</File>
+    <File md5="70FE3A4FC956E2611774AE305D561A9F" import="0">SQL/1- DeleteDefaultCityState.sql</File>
+    <File md5="2B52C1B3CDFA14D9E571CB0C5B4996A2" import="0">SQL/1- NewRules.sql</File>
+    <File md5="C439279F99DD53C0A21188C9EF49ECAB" import="0">SQL/1- VanillaCompatibility.sql</File>
+    <File md5="9289BCAC76A05293CE2EC4EAC588E61A" import="0">SQL/2- Create Initialization Table.sql</File>
+    <File md5="EB12DEF4D8521FF955CF9CBD498AF781" import="0">SQL/3- Define Original Units.sql</File>
+    <File md5="E218726E083EA7CBBA4669F3DB800003" import="0">SQL/4- Define Class Template Units.sql</File>
+    <File md5="92DBB7A1E3E022C07A65964278D5AE42" import="0">SQL/5- Define Subclass Template Units.sql</File>
+    <File md5="2A5959CB2303ECA7B64A037BDC6B1D9E" import="1">SQL/6- Define New Units.sql</File>
+    <File md5="82C6A06F204F7FA68B1C1C144FBF3A1B" import="0">SQL/7- Update New Units Table.sql</File>
+    <File md5="9AFD5A7175820B6D4085B15E78EB12CE" import="0">SQL/8- NewImprovements.sql</File>
+    <File md5="98D831F810C16C1129A05C62688001FA" import="0">SQL/999- FinalizeRules.sql</File>
+    <File md5="E48E78488E24F352A1AE2AC9CEE965BD" import="0">Stalingrad.Civ5Map</File>
+    <File md5="E5BC67BD1985DE6239B6A28DF2FFAB8F" import="0">UI/FlagPromotions/MiniMapPanel_addin.lua</File>
+    <File md5="761E56D02605FE225B260763A1EAF6B5" import="1">UI/FlagPromotions/MiniMapPanel_addin.xml</File>
+    <File md5="EA588008DFFB232D743F9EFD4F8D8D43" import="0">UI/FlagPromotions/OptionsScreen.lua</File>
+    <File md5="94871B1B51E15BE36D78AD4B593A56A8" import="0">UI/FlagPromotions/OptionsScreen.xml</File>
+    <File md5="8033348EB431D1E8FA662EC77F4BB780" import="0">UI/SeasonBox.xml</File>
+    <File md5="67B9E567A97B0BF9617C248A5E18EC9F" import="1">UI/HotSeatLoad.lua</File>
+    <File md5="663A21A5157DB7377C3688DD9A4A4855" import="1">UI/HotSeatLoad.xml</File>
+    <File md5="4660DA5CDE8D8A91CA12571A8CDEC5E2" import="0">UI/SeasonBox.lua</File>
+    <File md5="C259C93179E7A1983EF9CEFFEC56DA9F" import="1">UI/ScenarioMod.lua</File>
+    <File md5="D6A071F10A3FCCA9E1CB0A20AAF42BC7" import="1">UI/ScenarioMod.xml</File>
+    <File md5="685C22712C6B37B8E9DE5ABD75A1DDD3" import="1">UI/SingleLoad.lua</File>
+    <File md5="663A21A5157DB7377C3688DD9A4A4855" import="1">UI/SingleLoad.xml</File>
+    <File md5="11C90A6ACD8048346985387DD32AB873" import="0">XML/99- NewProjects.xml</File>
+    <File md5="86D2689407DD85D8D5F5A82FA1F69707" import="0">XML/AnthemsDefines.xml</File>
+    <File md5="35DE3E943D59EB1E56061315FEBA1D35" import="0">XML/ArmyFormations.xml</File>
+    <File md5="A9278701C0533A62B6211CEBD846E610" import="0">XML/NewBuildings.xml</File>
+    <File md5="F1C875F103C8F7B5E798F7CED6105022" import="0">XML/NewCivilizations.xml</File>
+    <File md5="A0174FDB14B51835687E24A66046A81F" import="0">XML/NewColors.xml</File>
+    <File md5="F641FA095EAE88430DAA82859094FF51" import="0">XML/NewFeatures.xml</File>
+    <File md5="8AEBE7D6D952C6EAD5E1175D659F3020" import="0">XML/NewFontIcons.xml</File>
+    <File md5="06E1505F8391D51C23EBB37647448FFC" import="0">XML/NewIconAtlases.xml</File>
+    <File md5="3DF0F459368B9CEBB10DCAF5C5B5E573" import="0">XML/NewMinorCivs.xml</File>
+    <File md5="4F8CA0DAF0D988317D5A89B086533861" import="0">XML/NewProcesses.xml</File>
+    <File md5="FA7B00BD2751634BD4E0EF8F2927DEA8" import="0">XML/NewPromotions.xml</File>
+    <File md5="ACEA3A22EC950C40C9A071D77FE9C873" import="0">XML/NewRules.xml</File>
+    <File md5="6DCBAD76B1D63C17C4E52DE5D46C06B8" import="0">XML/NewVictories.xml</File>
+    <File md5="8DF9B1DF8215F7F93B403E3793A0D5A0" import="1">XML/Scene/DiploAmerica.xml</File>
+    <File md5="4E182C34EAC580BDED7B87BB78C0A96A" import="1">XML/Scene/DiploChina.xml</File>
+    <File md5="AF092EB0F9307E9977F72DFBEE7364FF" import="1">XML/Scene/DiploFrance.xml</File>
+    <File md5="E72C276555995ACCF8C33A7ADD1F84F2" import="1">XML/Scene/DiploGermany.xml</File>
+    <File md5="5F1036199E999A7AFCB88242AC9C2A63" import="1">XML/Scene/DiploGreece.xml</File>
+    <File md5="CC0C3F7DD47045168D1391E0E7C5A9CF" import="1">XML/Scene/DiploItaly.xml</File>
+    <File md5="BBA9CA0374CD782570CFE410551DBB22" import="1">XML/Scene/DiploJapan.xml</File>
+    <File md5="643A1E80BA62976F42AF768BEDE784C0" import="1">XML/Scene/DiploUK.xml</File>
+    <File md5="97BE52FEB5EBA7FD466F2F62AD39BB01" import="1">XML/Scene/DiploUSSR.xml</File>
+    <File md5="F5CAFE288DFCA2EDD408A9DA006F4ABA" import="0">XML/Scene/WorkingOnCode.txt</File>
+    <File md5="8855E818367968A0C3CA8EB1863FDC42" import="0">XML/Texts_Deutsch.xml</File>
+    <File md5="8DAEF120FCE00AA671F41E20948B646D" import="0">XML/Texts_En_US.xml</File>
+    <File md5="CAEB9CC01B91678B6D60FD4EFDCAE4BE" import="0">XML/Texts_French.xml</File>
+    <File md5="B72AD84D6266F67063C3D38956B1AB11" import="0">XML/Texts_Italian.xml</File>
+    <File md5="D3A8692DEBDA9A6A2C853851493538D2" import="0">XML/Texts_Russian.xml</File>
+    <File md5="6DCF239A5B242439867BE2B6CAF29597" import="0">XML/Texts_Spanish.xml</File>
+    <File md5="24A264CAE65E2C7EE5B4E44502AF4B52" import="1">_copy to common/civ5artdefines_viseffects.xml</File>
+  </Files>
+  <Actions>
+    <OnGetDLLPath>
+      <SetDllPath>CvGameCore_RED.dll</SetDllPath>
+    </OnGetDLLPath>
+    <OnModActivated>
+      <UpdateDatabase>SQL/0- VanillaCiv5Database.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/0- ReplaceCivilizations.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/1- VanillaCompatibility.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/1- NewRules.sql</UpdateDatabase>
+      <UpdateDatabase>XML/NewRules.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewIconAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_En_US.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_French.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_Deutsch.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_Italian.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_Russian.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Texts_Spanish.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/1- DeleteDefaultCityState.sql</UpdateDatabase>
+      <UpdateDatabase>XML/NewMinorCivs.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewCivilizations.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewColors.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewBuildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewProcesses.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewVictories.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewFeatures.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewFontIcons.xml</UpdateDatabase>
+      <UpdateDatabase>XML/AnthemsDefines.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/2- Create Initialization Table.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/3- Define Original Units.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/4- Define Class Template Units.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/5- Define Subclass Template Units.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/6- Define New Units.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/7- Update New Units Table.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/8- NewImprovements.sql</UpdateDatabase>
+      <UpdateDatabase>XML/99- NewProjects.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ArmyFormations.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/999- FinalizeRules.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="CustomRED" file="GameSetup/RedEuro1940Setup.xml">
+      <Name>TXT_KEY_RED_EURO1940_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_EURO1940_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomRED" file="GameSetup/RedAmericaEuro1936Setup.xml">
+      <Name>TXT_KEY_RED_AMERICAEURO1936_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_AMERICAEURO1936_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ShareData.lua">
+      <Name>ShareData</Name>
+      <Description>ShareData</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/RedMain.lua">
+      <Name>REDWW2</Name>
+      <Description>REDWW2</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/FlagPromotions/MiniMapPanel_addin.lua">
+      <Name>MiniMapPanel_addin</Name>
+      <Description>Adds new elements to the MiniMapPanel</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomRED" file="GameSetup/StalingradSetup.xml">
+      <Name>TXT_KEY_RED_STALINGRAD_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_STALINGRAD_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomRED" file="GameSetup/Earth1936Setup.xml">
+      <Name>TXT_KEY_RED_EARTH1936_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_EARTH1936_SCENARIO_DESC</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/FlagPromotions/OptionsScreen.lua">
+      <Name>OptionsScreen</Name>
+      <Description>Option screen for flag promotions</Description>
+    </EntryPoint>
+    <EntryPoint type="Custom" file="GameSetup/REDModsMenu.xml">
+      <Name>TXT_KEY_RED_MOD_DESC</Name>
+      <Description>TXT_KEY_RED_MOD_PRESENTATION</Description>
+    </EntryPoint>
+    <EntryPoint type="CustomRED" file="GameSetup/RedPacificSetup.xml">
+      <Name>TXT_KEY_RED_PACIFIC_SCENARIO_TITLE</Name>
+      <Description>TXT_KEY_RED_PACIFIC_SCENARIO_DESC</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
