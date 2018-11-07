@@ -155,7 +155,7 @@ function CommonOnNewTurn()
 	Dprint("Starting CommonOnNewTurn ...")
 	ShowResourceData()
 	InitializeProjects()
-	MapUpdate() -- check for culture consistency
+	-- MapUpdate()  check for culture consistency
 	SetMinorRelations()
 	SetMinorDOW()
 	SetMajorRelations()
@@ -164,7 +164,7 @@ function CommonOnNewTurn()
 	LaunchMilitaryOperation()
 	Events.SerialEventUnitCreated.Add( InitializeUnit )
 	SetGlobalAIStrategicValues()
-	SaveAllTable()
+	--SaveAllTable()
 end
 
 -- functions to call at beginning of each active player turn
@@ -174,19 +174,19 @@ function CommonOnActivePlayerTurn()
 	InitializeActivePlayerTurn()
 	LaunchMilitaryOperation()
 	Events.SerialEventUnitCreated.Add( InitializeUnit )
-	SaveAllTable()
+	--SaveAllTable()
 end
 
 -- functions to call at end of each turn
 function CommonOnEndTurn()
 	  Dprint("Starting CommonOnEndTurn ...")
-	  SaveAllTable()
+	  --SaveAllTable()
 end
 
 -- functions to call at end of 1st turn
 function CommonOnFirstTurnEnd()
 	 Dprint("Starting CommonOnFirstTurnEnd ...")
-     SaveAllTable()
+     --SaveAllTable()
 end
 
 -- functions to call ASAP after loading this file when game is launched for the first time
@@ -204,7 +204,7 @@ function CommonOnGameInit()
 	 Dprint("Starting CommonOnGameInit ...")
 	-- calling order is important ! 
 	InitializeGameOption()								-- before everything else !
-	LoadAllTable()										-- before any change on tables...
+	--LoadAllTable()										-- before any change on tables...
 	RegisterScenarioUnits()
 	Events.SerialEventUnitCreated.Add( InitializeUnit ) -- before initializing Order Of Battle
 	CreateTerritoryMap()
@@ -221,7 +221,7 @@ function CommonOnGameInit()
 	ShareGlobalTables()									-- Before UI initialization, after any table initialization (Resource, projects, etc...)
 	UpdateREDLoadingFix()
 	SetGlobalAIStrategicValues()
-	SaveAllTable()
+	--SaveAllTable()
 end
 
 -- functions to call after game initialization (DoM screen button "Continue your journey" appears) after loading a saved game

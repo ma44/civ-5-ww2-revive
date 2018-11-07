@@ -13,7 +13,7 @@ print("-------------------------------------")
 -- units capture tiles
 --------------------------------------------------------------
 
-function UnitCaptureTile(playerID, UnitID, x, y)
+function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	local bDebug = false
 	local plot = Map.GetPlot(x,y)
 	if (plot == nil) then
@@ -34,7 +34,10 @@ function UnitCaptureTile(playerID, UnitID, x, y)
 
 	local plotKey = GetPlotKey ( plot )
 	local ownerID = plot:GetOwner()
-	
+	if ( norepeat == 0 ) then
+		for plot in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
+			UnitCaptureTile(playerID, UnitID, x, y, 1)
+	end
 
 	-- If the unit is moving on another player territory...
 	if (playerID ~= ownerID and ownerID ~= -1) then
