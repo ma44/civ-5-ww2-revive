@@ -204,7 +204,7 @@ function CommonOnGameInit()
 	 Dprint("Starting CommonOnGameInit ...")
 	-- calling order is important ! 
 	InitializeGameOption()								-- before everything else !
-	--LoadAllTable()										-- before any change on tables...
+	LoadAllTable()										-- before any change on tables...
 	RegisterScenarioUnits()
 	Events.SerialEventUnitCreated.Add( InitializeUnit ) -- before initializing Order Of Battle
 	CreateTerritoryMap()
