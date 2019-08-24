@@ -68,15 +68,15 @@ RESOURCE_CONNECTION					= RESOURCE_ROAD_TO_ANY_CITY	-- Default connection type (
 RESOURCE_FROM_FRIENDS				= true						-- If true you get resources from friendly territory (friendly CS or major with open border), else only from your territory
 
 UNIT_BLEEDING						= true	-- when true, unit will lose HP each turn when their supply line is cut
-BLEEDING_PER_TURN					= 2
+BLEEDING_PER_TURN					= 10
 
 -- Convoy
 TRANSPORT_DEFAULT					= TRANSPORT_MATERIEL	-- default type (1 = materiel...)
 TRANSPORT_DEFAULT_REFERENCE			= 250					-- default value
 
 -- Senario
-WAR_MINIMUM_STARTING_TURN		= 3		-- can't manually start war before this turn (but forced DOW via SetMajorRelations or SetMinorDOW are possible)
-PERMANENT_WAR_DECLARATION		= true	-- can't make peace once a war is declared (but forced peace via scenario event is still possible)
+WAR_MINIMUM_STARTING_TURN		= 1		-- can't manually start war before this turn (but forced DOW via SetMajorRelations or SetMinorDOW are possible)
+PERMANENT_WAR_DECLARATION		= false	-- can't make peace once a war is declared (but forced peace via scenario event is still possible)
 
 CAN_BUILD_UNIT_IN_OCCUPIED_CITY = false -- need special building to build unit in occupied cities
 REVEAL_ALL_CITIES				= false -- cities tiles are always visible for every civs

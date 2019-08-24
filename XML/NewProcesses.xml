@@ -29,7 +29,7 @@
 		<Update>
 			<Where Type="ROUTE_RAILROAD"/>
 			<Set>
-				<FlatMovement>5</FlatMovement>			
+				<FlatMovement>15</FlatMovement>			
 				<GoldMaintenance>0</GoldMaintenance>
 			</Set>
 		</Update>
@@ -58,7 +58,7 @@
 		<Update>
 			<Where Type="BUILD_MANUFACTORY"/>
 			<Set>
-				<Time>4</Time>
+				<Time>1000</Time>
 				<Kill>0</Kill>		
 			</Set>
 		</Update>

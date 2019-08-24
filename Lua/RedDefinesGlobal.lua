@@ -25,8 +25,8 @@ COMBATLOG_SAVE_SLOT =		"0,2"
 DYNAMICMAP_SAVE_SLOT =		"1,2"
 COMBAT_ARCHIVE_SAVE_SLOT =	"2,0"
 
-MAX_COMBAT_LOG_ENTRIES	= 200	-- Archive/delete old entries above this value
-MIN_COMBAT_LOG_ENTRIES	= 100	-- Keep this number on entries in Combat Log when deleting/archiving
+MAX_COMBAT_LOG_ENTRIES	= 10	-- Archive/delete old entries above this value
+MIN_COMBAT_LOG_ENTRIES	= 0	-- Keep this number on entries in Combat Log when deleting/archiving
 USE_ARCHIVE				= false	-- If true, archive the old entries, else delete them. Archiving can take up to 2-3 mn in late game (with more than 10,000 combats)
 
 -------------------------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ PRINT_DLL_DEBUG			= false	-- use DLL_Debug GameEvent to show some values from th
 DEBUG_SHOW_PLOT_XY		= false	-- show plot X,Y on mouse over plot
 DEBUG_SHOW_UNIT_KEY		= false	-- show unitkey on mouse over flag
 DEBUG_SHOW_RED_ORDER	= false	-- show RED current order (if any) on mouse over flag
-DEBUG_PERFORMANCE		= false	-- always show loading/save time of tables
+DEBUG_PERFORMANCE		= true	-- always show loading/save time of tables
 DEBUG_AI_BUILD			= false	-- Show AI build restrictions and current cities productions
 USE_CUSTOM_OPTION		= true	-- use the option value selected in setup screen, set to false to debug and force use of global/scenario files defines
 DEBUG_ORPHAN_TILE		= false	-- orphan tile function output debug text to firetuner ON/OFF
@@ -348,12 +348,7 @@ g_Buildings_Req = {
 }
 
 -- Buildings mutual exclusion (none of listed buildings allowed)
-g_Buildings_Exclusion = {
-	[LAND_FACTORY] =		{SMALL_AIR_FACTORY, MEDIUM_AIR_FACTORY, LARGE_AIR_FACTORY, SHIPYARD}, 
-	[SMALL_AIR_FACTORY] =	{LAND_FACTORY, LARGE_AIR_FACTORY, SHIPYARD}, 
-	[MEDIUM_AIR_FACTORY] =	{LAND_FACTORY, SHIPYARD}, 
-	[LARGE_AIR_FACTORY] =	{LAND_FACTORY, SMALL_AIR_FACTORY, SHIPYARD}, 
-	[SHIPYARD] =			{LAND_FACTORY, SMALL_AIR_FACTORY, MEDIUM_AIR_FACTORY, LARGE_AIR_FACTORY}, 
+g_Buildings_Exclusion = { 
 	[ARSENAL] =				{OPEN_CITY}, 
 	[BARRACKS] =			{OPEN_CITY}, 
 	[BARRICADE] =			{OPEN_CITY},

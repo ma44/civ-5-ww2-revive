@@ -4225,7 +4225,7 @@ g_Partisan = {
 		SpawnList = { {X=21, Y=44}, {X=22, Y=44}, {X=22, Y=40}, {X=23, Y=47}, {X=27, Y=45}, {X=27, Y=47}, {X=24, Y=45}, {X=26, Y=48}, {X=28, Y=43},  {X=28, Y=44}, {X=29, Y=38}, {X=31, Y=48},  {X=29, Y=43}, {X=29, Y=46}, {X=29, Y=44},  {X=30, Y=48}, {X=31, Y=48}, {X=33, Y=43}, {X=33, Y=46}, {X=34, Y=45}, },
 		RandomSpawn = true, -- true : random choice in spawn list
 		CivID = FRANCE,
-		Frequency = 50, -- probability (in percent) of partisan spawning at each turn
+		Frequency = 10, -- probability (in percent) of partisan spawning at each turn
 		Condition = NorthFranceInvaded, -- Must refer to a function, remove this line to use the default condition (true)
 		},
 	}

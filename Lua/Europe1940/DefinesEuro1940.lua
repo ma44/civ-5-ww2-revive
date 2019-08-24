@@ -24,8 +24,8 @@ RESOURCE_CONSUMPTION			= true	-- Use resource consumption (fuel, ...)
 
 ALLOW_AI_CONTROL			= true
 NO_AI_EMBARKATION			= true -- remove AI ability to embark (to do : take total control of AI unit to embark)
-NO_SUICIDE_ATTACK			= false -- If set to true, try to prevent suicide attacks
-UNIT_SUPPORT_LIMIT_FOR_AI	= false -- Allow limitation of max number of AI units based on number of supported units
+NO_SUICIDE_ATTACK			= true -- If set to true, try to prevent suicide attacks
+UNIT_SUPPORT_LIMIT_FOR_AI	= true -- Allow limitation of max number of AI units based on number of supported units
 	
 AI_LAND_MINIMAL_RESERVE		= 15	
 AI_AIR_MINIMAL_RESERVE		= 10	
@@ -62,7 +62,7 @@ end
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") == 0) then
 	g_Calendar = {}
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
-	local dayList = { "1", "25" }
+	local dayList = { "1", "10", "20" }
 	local turn = 0
 	for year = 1939, 1947 do -- see large
 		for month = 1, #monthList do

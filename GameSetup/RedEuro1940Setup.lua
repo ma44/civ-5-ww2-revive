@@ -123,7 +123,7 @@ Controls.StartButton:RegisterCallback(Mouse.eLClick, function()
 	PreGame.SetMapScript(scenarioMap.EvaluatedPath)
 	PreGame.SetLoadWBScenario(true)
 	--UI.ResetScenarioPlayerSlots(true); -- why do that ?
-	PreGame.SetGameSpeed(3)  -- Quick speed
+	PreGame.SetGameSpeed(2)  -- Standard speed
 	PreGame.SetOverrideScenarioHandicap(true)
 	--PreGame.SetEra(GameInfo.Eras["ERA_MODERN"].ID); -- nop do not start at turn 0, so maybe use and set tutn 0 in-game ?
 

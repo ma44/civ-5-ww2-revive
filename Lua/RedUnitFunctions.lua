@@ -37,6 +37,7 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	if ( norepeat == 0 ) then
 		for plot in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
 			UnitCaptureTile(playerID, UnitID, x, y, 1)
+		end
 	end
 
 	-- If the unit is moving on another player territory...
@@ -254,7 +255,7 @@ function UnitName(playerID, unitID, num) -- num = number of unit of this type
 		end
 		if ( unitType == FR_FANTASQUE ) then
 			local name = { "Chacal", "Jaguar", "Leopard", "Lynx", "Panthere", "Tigre", "Fantasque", "Malin", "Terrible", "Indomptable", "Audacieux", "Triomphant",
-			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "Maillé Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
+			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "Maillï¿½ Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
 			"Bison", "Guepard", "Lion", "Valmy", "Verdun", "Vauban"}	
 			if (num <= # name) then
 				str = name[num]
@@ -1824,6 +1825,9 @@ function InitializeUnit(playerID, unitID)
 		Dprint("-------------------------------------", bDebug)
 	else
 		Dprint ("- WARNING : tried to initialize nil unit for ".. player:GetName(), bDebug)
+
+	unit:SetDamage( unit:GetMaxHitPoints() - (unit:GetMaxHitPoints * 0.66 ) ) -- Makes making units have a bit of a delay until full health, useful for stopping massive spamming of units and costs resources
+
 	end
 
 end
