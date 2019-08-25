@@ -1826,7 +1826,7 @@ function InitializeUnit(playerID, unitID)
 	else
 		Dprint ("- WARNING : tried to initialize nil unit for ".. player:GetName(), bDebug)
 
-	unit:SetDamage( unit:GetMaxHitPoints() - (unit:GetMaxHitPoints * 0.66 ) ) -- Makes making units have a bit of a delay until full health, useful for stopping massive spamming of units and costs resources
+	unit:SetDamage( unit:GetMaxHitPoints() - (unit:GetMaxHitPoints * 0.50 ) ) -- Makes making units have a bit of a delay until full health, useful for stopping massive spamming of units and costs resources
 
 	end
 
