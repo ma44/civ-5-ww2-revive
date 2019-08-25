@@ -164,7 +164,7 @@ function CommonOnNewTurn()
 	LaunchMilitaryOperation()
 	Events.SerialEventUnitCreated.Add( InitializeUnit )
 	SetGlobalAIStrategicValues()
-	SaveAllTable()
+	--SaveAllTable()
 end
 
 -- functions to call at beginning of each active player turn
@@ -180,7 +180,7 @@ end
 -- functions to call at end of each turn
 function CommonOnEndTurn()
 	  Dprint("Starting CommonOnEndTurn ...")
-	  SaveAllTable()
+	  --SaveAllTable()
 end
 
 -- functions to call at end of 1st turn

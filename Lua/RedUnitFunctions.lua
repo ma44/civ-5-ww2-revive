@@ -14,6 +14,7 @@ print("-------------------------------------")
 --------------------------------------------------------------
 
 function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
+	norepeat = norepeat or 0
 	local bDebug = false
 	local plot = Map.GetPlot(x,y)
 	if (plot == nil) then
