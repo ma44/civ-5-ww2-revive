@@ -197,6 +197,7 @@ end
 -- functions to call ASAP after loading a saved game
 function CommonOnLoading()
 	 Dprint("Starting CommonOnLoading ...")
+	 LoadAllTable()
 end
 
 -- functions to call after first game initialization (DoM screen button "Begin your journey" appears)
