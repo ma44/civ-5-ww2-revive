@@ -19,10 +19,6 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	if (plot == nil) then
 		return
 	end
-	
-	if ( plot:IsCity() or plot:IsWater() ) then
-		return
-	end
 
 	-- check here if an unit can't capture a tile and return
 	local player = Players[ playerID ]
@@ -36,8 +32,14 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	local ownerID = plot:GetOwner()
 	if ( norepeat == 0 or not norepeat ) then
 		for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
-			UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
+			if ( plot2:GetNumUnits() == 0 or not plot2:GetNumUnits() )
+				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
+			end
 		end
+	end
+
+	if ( plot:IsCity() or plot:IsWater() ) then
+		return
 	end
 
 	-- If the unit is moving on another player territory...
