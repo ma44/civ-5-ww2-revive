@@ -32,7 +32,7 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	local ownerID = plot:GetOwner()
 	if ( norepeat == 0 or not norepeat ) then
 		for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
-			if ( plot2:GetNumUnits() == 0 or not plot2:GetNumUnits() )
+			if ( not plot2:GetNumUnits() ) then
 				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
 			end
 		end
