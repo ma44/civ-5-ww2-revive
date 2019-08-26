@@ -155,7 +155,7 @@ function CommonOnNewTurn()
 	Dprint("Starting CommonOnNewTurn ...")
 	ShowResourceData()
 	InitializeProjects()
-	MapUpdate() --check for culture consistency
+	--MapUpdate() --check for culture consistency
 	SetMinorRelations()
 	SetMinorDOW()
 	SetMajorRelations()
