@@ -76,7 +76,7 @@ TRANSPORT_DEFAULT_REFERENCE			= 250					-- default value
 
 -- Senario
 WAR_MINIMUM_STARTING_TURN		= 1		-- can't manually start war before this turn (but forced DOW via SetMajorRelations or SetMinorDOW are possible)
-PERMANENT_WAR_DECLARATION		= false	-- can't make peace once a war is declared (but forced peace via scenario event is still possible)
+PERMANENT_WAR_DECLARATION		= true	-- can't make peace once a war is declared (but forced peace via scenario event is still possible)
 
 CAN_BUILD_UNIT_IN_OCCUPIED_CITY = false -- need special building to build unit in occupied cities
 REVEAL_ALL_CITIES				= false -- cities tiles are always visible for every civs
@@ -88,9 +88,9 @@ ALLOW_SCRIPTED_EVENTS	= true -- allow scripted events like "Fall of France", "Fa
 ALLOW_ALTERNATE_HISTORY = true -- allow declarations of war outside the historic calendar
 HARDCORE_MODE			= false -- takes off the unit limit for the AI and allows suicide attacks
 
-SCENARIO_MATERIEL_PER_TURN	= 500 -- / ((HANDICAP + 2 ) /2) = materiel for reinforcement bonus each turn
-SCENARIO_PERSONNEL_PER_TURN = 350 -- / ((HANDICAP + 2 ) /2) = personnel for reinforcement bonus each turn
-SCENARIO_OIL_PER_TURN		= 100 -- / ((HANDICAP + 2 ) /2) = oil for resource bonus each turn
+SCENARIO_MATERIEL_PER_TURN	= 100 -- / ((HANDICAP + 2 ) /2) = materiel for reinforcement bonus each turn
+SCENARIO_PERSONNEL_PER_TURN = 200 -- / ((HANDICAP + 2 ) /2) = personnel for reinforcement bonus each turn
+SCENARIO_OIL_PER_TURN		= 25 -- / ((HANDICAP + 2 ) /2) = oil for resource bonus each turn
 
 SCENARIO_MAX_MATERIEL_BONUS		= 0
 SCENARIO_MAX_OIL_BONUS			= 5000

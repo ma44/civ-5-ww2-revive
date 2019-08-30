@@ -50,6 +50,11 @@ function MapUpdate() -- to do : check culture tile consistency. for example, a c
 				Dprint("WARNING: Culture was set on water plot ("..x..","..y.."), removing it ...")
 				plot:SetOwner(-1, -1)
 
+			-- No more capturing mountains, helps with areas and supply lines
+			elseif( plot:IsMountain() ) then
+				Dprint("WARNING: Culture was set on mountain plot ("..x..","..y.."), removing it ...")
+				plot:SetOwner(-1, -1)
+
 			-- if the original plot owner is a possible ally of the current owner, give it back to him
 			elseif bCapturedPlot and AreSameSide( ownerID, originalOwner) then -- and Players[originalOwner]:IsAlive() ) then 			
 				Dprint("Changing owner at ("..x..","..y.."), ".. Players[originalOwner]:GetName() .. " and " .. Players[ownerID]:GetName() .." are same side")

@@ -38,7 +38,7 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 		end
 	end
 
-	if ( plot:IsCity() or plot:IsWater() ) then
+	if ( plot:IsCity() or plot:IsWater() or plot:IsMountain()) then
 		return
 	end
 
@@ -1545,6 +1545,27 @@ function CanGetSupply (playerID, unitID, bShow )
 		return true
 	end
 
+	--City in the same area, this unit and all others of the same player have supply here
+	local unitActualArea = unitPlot:Area() --Goddamm GetArea() returns a integer area ID and not the actual area
+	if(unitActualArea:GetCitiesPerPlayer(playerID)) then
+		return true
+	end
+
+	-- Check all cities in our current area and see if there's one
+
+	--[[
+	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
+	local closeCityInArea = GetCloseCityInArea( playerID, unitPlot, false, unitPlot:GetArea() )
+	if( closeCityInArea ) then
+		local cityPlot = closeCityInArea:Plot()
+		if ( isPlotConnected(player, unitPlot, cityPlot, "Land", bHighlight, nil, PathBlocked) ) then
+			Dprint ("   - Found path with close city (".. cityPlot:GetName() ..")", bDebug )
+			return true
+		end
+	end
+	]]--
+
+	--[[
 	-- first check closest own cities
 	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
 	local closeCity = GetCloseCity ( playerID, unitPlot )
@@ -1566,6 +1587,8 @@ function CanGetSupply (playerID, unitID, bShow )
 			return true
 		end	
 	end
+
+	]]--
 
 	-- try logistic entry plots if they are defined
 	if g_LogisticEntryPlot then
@@ -2439,6 +2462,13 @@ function DynamicUnitPromotion(playerID)
 
 	local bDebug = false
 
+	local turn = Game.GetGameTurn()
+	local date = g_Calendar[turn] or " "
+	g_startTurnTime = os.clock()
+	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	print("------------------------------------------------------------------------------------ BEGIN DYNAMIC UNIT PROMOTIONS -------------------------------------------------------------------------------------------------")
+	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
 	local player = Players[playerID]
 	if ( player:IsAlive() ) then	
 		Dprint("-------------------------------------", bDebug)
@@ -2481,6 +2511,13 @@ function DynamicUnitPromotion(playerID)
 
 		end
 	end
+
+	g_endTurnTime = os.clock()
+	if g_endTurnTime > 0 then
+		print ("Time for dynamic unit promotions = " .. g_startTurnTime - g_endTurnTime )	
+	end
+	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
 end
 -- add to GameEvents.PlayerDoTurn on loading / reloading a game.
 

@@ -3919,7 +3919,7 @@ function SeasonScenario()
 					for i, data in pairs ( map ) do
 						if (i == plotKey) then
 							local ter = data.TerrainType
-							plot:SetTerrainType(ter)
+							plot:SetTerrainType(ter, false, true)
 						end
 					end
 					local feat = plot:GetFeatureType();
@@ -3937,17 +3937,17 @@ function SeasonScenario()
 					local feat = plot:GetFeatureType();
 					local rand = math.random( 1, 100 )
 					if rand <= 95 and ter == 0 then  -- Grassland to Snow 95%
-						plot:SetTerrainType(4)
+						plot:SetTerrainType(4, false, true)
 					elseif rand > 95 and ter == 0 then  -- Grassland to Tundra 5%
-						plot:SetTerrainType(3)
+						plot:SetTerrainType(3, false, true)
 					elseif ter == 3 then -- Tundra to Snow 100%
-						plot:SetTerrainType(4)
+						plot:SetTerrainType(4, false, true)
 					elseif rand <= 95 and ter == 1 then  -- Plains to Snow 95%
-						plot:SetTerrainType(4)
+						plot:SetTerrainType(4, false, true)
 					elseif rand > 95 and ter == 1 then  -- Plains to Tundra 5%
-						plot:SetTerrainType(3)
+						plot:SetTerrainType(3, false, true)
 					elseif rand <= 95 and ter == 6 and feat == -1 then -- Sea to Ice
-						plot:SetFeatureType(0)
+						plot:SetFeatureType(0, false, true)
 					end
 				end
 			end	
