@@ -1546,14 +1546,13 @@ function CanGetSupply (playerID, unitID, bShow )
 	end
 
 	--City in the same area, this unit and all others of the same player have supply here
-	local unitActualArea = unitPlot:Area() --Goddamm GetArea() returns a integer area ID and not the actual area
-	if(unitActualArea:GetCitiesPerPlayer(playerID)) then
+	Dprint(" ".. unitPlot:Area():GetCitiesPerPlayer(playerID) .." " )
+	if(unitPlot:Area():GetCitiesPerPlayer(playerID) > 1) then
 		return true
 	end
 
 	-- Check all cities in our current area and see if there's one
 
-	--[[
 	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
 	local closeCityInArea = GetCloseCityInArea( playerID, unitPlot, false, unitPlot:GetArea() )
 	if( closeCityInArea ) then
@@ -1563,7 +1562,6 @@ function CanGetSupply (playerID, unitID, bShow )
 			return true
 		end
 	end
-	]]--
 
 	--[[
 	-- first check closest own cities
@@ -1649,6 +1647,7 @@ function CanGetSupply (playerID, unitID, bShow )
 			end
 		end
 	end
+	return false
 end
 
 -- check if units can embark from plot
