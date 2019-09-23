@@ -49,6 +49,7 @@ end
 -- functions to call ASAP after loading a saved game
 function ScenarioOnLoading()
 	GameEvents.PlayerCanCreate.Add(PlayerEarth1936ProjectRestriction)
+	Events.SerialEventCityCaptured.Add( CapitulationCheck )
 	Events.SerialEventCityCaptured.Add( FallOfFrance )
 	Events.SerialEventCityCaptured.Add( FallOfPoland )
 	LuaEvents.OnCityAttacked.Add( FallOfDenmark )
