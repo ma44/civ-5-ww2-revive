@@ -1544,15 +1544,15 @@ function CanGetSupply (playerID, unitID, bShow )
 		-- for now don't check naval supply lines
 		return true
 	end
-
+--[[
 	--City in the same area, this unit and all others of the same player have supply here
 	Dprint(" ".. unitPlot:Area():GetCitiesPerPlayer(playerID) .." " )
 	if(unitPlot:Area():GetCitiesPerPlayer(playerID) > 1) then
 		return true
 	end
-
+]]--
 	-- Check all cities in our current area and see if there's one
-
+--[[
 	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
 	local closeCityInArea = GetCloseCityInArea( playerID, unitPlot, false, unitPlot:GetArea() )
 	if( closeCityInArea ) then
@@ -1562,8 +1562,8 @@ function CanGetSupply (playerID, unitID, bShow )
 			return true
 		end
 	end
+]]--
 
-	--[[
 	-- first check closest own cities
 	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
 	local closeCity = GetCloseCity ( playerID, unitPlot )
@@ -1586,7 +1586,7 @@ function CanGetSupply (playerID, unitID, bShow )
 		end	
 	end
 
-	]]--
+
 
 	-- try logistic entry plots if they are defined
 	if g_LogisticEntryPlot then
