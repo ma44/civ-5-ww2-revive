@@ -60,6 +60,7 @@ end
 function ScenarioOnGameInit()
 	BalanceScenario()
 	GameEvents.PlayerCanCreate.Add(PlayerEarth1936ProjectRestriction)
+	Events.SerialEventCityCaptured.Add( CapitulationCheck )
 	Events.SerialEventCityCaptured.Add( FallOfFrance )
 	Events.SerialEventCityCaptured.Add( FallOfPoland )
 	LuaEvents.OnCityAttacked.Add( FallOfDenmark )
