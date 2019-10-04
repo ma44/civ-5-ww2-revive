@@ -6,9 +6,6 @@
 print("Loading Red Europe 1940 Scripts...")
 print("-------------------------------------")
 
------------------------------------------
--- Capitulation: Capture a enemy capital that isn't the original or all city states
------------------------------------------
 
 -----------------------------------------
 -- Functions override
@@ -1167,46 +1164,6 @@ function FallOfPoland(hexPos, playerID, cityID, newPlayerID)
 end
 -- add to Events.SerialEventCityCaptured in main scenario Lua
 
-function CapitulationCheck(hexPos, playerID, cityID, newPlayerID)
-	
-	local original_player = Players[playerID]
-	local new_player = Players[newPlayerID]
-	if(original_player:IsMinorCiv()) then --If it's a minor civ, we need to capture all the cities to get all the territory automatically
-		local has_cities = false
-		for city in original_player:Cities() do
-			if(city) then
-				has_cities = true
-			end
-		end
-		if(has_cities) then
-			return
-		end
-		
-		for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
-			local plot = Map.GetPlotByIndex(iPlotLoop)
-			local ownerID = plot:GetOwner()
-			if(ownerID ~= -1) then
-				plot:SetOwner(new_player, -1)
-			end
-		end
-	else --Major civ, need to capture a capital city that wasn't the original capital
-		local captured_city = new_player:GetCityByID(cityID)
-			if(captured_city:IsCapital() and captured_city:IsOriginalCapital() != true) then
-				for city in original_player:Cities() do
-					new_player:AcquireCity(city, true, true)
-				end
-				
-				for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
-					local plot = Map.GetPlotByIndex(iPlotLoop)
-					local ownerID = plot:GetOwner()
-					if(ownerID ~= -1) then
-						plot:SetOwner(new_player, -1)
-					end
-				end
-			end
-	end
-end
--- add to Events.SerialEventCityCaptured in main scenario Lua
 
 -----------------------------------------
 -- Denmark
