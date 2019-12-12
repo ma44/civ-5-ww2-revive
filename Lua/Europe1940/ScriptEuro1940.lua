@@ -4238,7 +4238,7 @@ function CapitulationCheck(hexPos, playerID, cityID, newPlayerID)
 		for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
 			local plot = Map.GetPlotByIndex(iPlotLoop)
 			local ownerID = plot:GetOwner()
-			if(ownerID ~= -1) then
+			if(ownerID == original_player) then
 				plot:SetOwner(new_player, -1)
 			end
 		end
@@ -4252,7 +4252,7 @@ function CapitulationCheck(hexPos, playerID, cityID, newPlayerID)
 			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
 				local plot = Map.GetPlotByIndex(iPlotLoop)
 				local ownerID = plot:GetOwner()
-				if(ownerID ~= -1) then
+				if(ownerID == original_player) then
 					plot:SetOwner(new_player, -1)
 				end
 			end
