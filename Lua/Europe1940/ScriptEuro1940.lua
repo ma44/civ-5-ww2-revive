@@ -4220,8 +4220,8 @@ end
 -----------------------------------------
 -- Capitulation: Capture a enemy capital that isn't the original or all city states
 -----------------------------------------
---[[
-function bleh(hexPos, playerID, cityID, newPlayerID)
+
+function CapitulationCheck(hexPos, playerID, cityID, newPlayerID)
 	local original_player = Players[playerID]
 	local new_player = Players[newPlayerID]
 	if(original_player:IsMinorCiv()) then --If it's a minor civ, we need to capture all the cities to get all the territory automatically
@@ -4244,7 +4244,7 @@ function bleh(hexPos, playerID, cityID, newPlayerID)
 		end
 	else --Major civ, need to capture a capital city that wasn't the original capital
 		local captured_city = new_player:GetCityByID(cityID)
-		if(captured_city:IsCapital() and captured_city:IsOriginalCapital() != true) then
+		if(captured_city:IsCapital() and captured_city:IsOriginalCapital() ~= true) then
 			for city in original_player:Cities() do
 				new_player:AcquireCity(city, true, true)
 			end
@@ -4259,7 +4259,7 @@ function bleh(hexPos, playerID, cityID, newPlayerID)
 		end
 	end
 end
-]]--
+
 -- Partisan table
 g_Partisan = { 
 		[1] = {

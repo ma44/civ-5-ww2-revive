@@ -2470,6 +2470,10 @@ function DynamicUnitPromotion(playerID)
 
 	local player = Players[playerID]
 	if ( player:IsAlive() ) then	
+		local team = player:GetTeam() --Don't check for out of supply if not at war
+		if(team:GetAtWarCount(false) == 0) then
+			return
+		end
 		Dprint("-------------------------------------", bDebug)
 		Dprint("Add and remove dynamic promotions for ".. player:GetName() .." units ...", bDebug)
 		for unit in player:Units() do
