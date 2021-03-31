@@ -19,9 +19,6 @@ function CheckCultureChange(iHexX, iHexY, iPlayerID, bUnknown)
 			Dprint("-------------------------------------")
 			Dprint("Culture was set on water plot ("..x..","..y.."), removing it ...")
 			plot:SetOwner(-1, -1)
-		elseif( plot:IsMountain() ) then
-			Dprint("Culture was set on mountain plot ("..x..","..y.."), removing it ...")
-			plot:SetOwner(-1, -1)
 		elseif plot:IsCity() then
 			--FixCityGraphicBug(plot)
 			--UpdateCityGraphic(plot:GetPlotCity())
@@ -52,11 +49,6 @@ function MapUpdate() -- to do : check culture tile consistency. for example, a c
 			if ( plot:IsWater() ) then
 				Dprint("WARNING: Culture was set on water plot ("..x..","..y.."), removing it ...")
 				plot:SetOwner(-1, -1)
-
-			-- No more capturing mountains, helps with areas and supply lines
-			--elseif( plot:IsMountain() ) then
-			--	Dprint("WARNING: Culture was set on mountain plot ("..x..","..y.."), removing it ...")
-			--	plot:SetOwner(-1, -1)
 
 			-- if the original plot owner is a possible ally of the current owner, give it back to him
 			elseif bCapturedPlot and AreSameSide( ownerID, originalOwner) then -- and Players[originalOwner]:IsAlive() ) then 			

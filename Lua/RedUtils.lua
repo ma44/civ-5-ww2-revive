@@ -138,40 +138,6 @@ function GetCloseCity ( playerID, plot , bNotSelf)
 	end
 end
 
--- Ditto above but needs to be the same area, if no city exists return nothing (return city object)
-function GetCloseCityInArea ( playerID, plot , bNotSelf, area)
-	local pPlayer = Players[playerID]
-	if pPlayer then
-		local distance = 1000
-		local closeCity = nil
-		local i_city_plot = nil
-		for pCity in pPlayer:Cities() do
-
-			i_city_plot = pCity:Plot()
-
-			if (i_city_plot and i_city_plot:GetArea() == area) then
-
-				if pCity:Plot() == plot and bNotSelf then
-					--Dprint ( " -- GetCloseCity() called with (bNotSelf = true), don't test city on starting plot...")
-				else
-					distanceToCity = Map.PlotDistance(pCity:GetX(), pCity:GetY(), plot:GetX(), plot:GetY())
-					if ( distanceToCity < distance) then
-						distance = distanceToCity
-						closeCity = pCity
-					end
-				end
-			end
-		end
-		if(closeCity) then
-			return closeCity
-		end
-	else
-		Dprint("- WARNING: pPlayer is nil for GetCloseCity()")
-		if playerID then Dprint ("  -- playerID is :" .. playerID) else Dprint ("  -- playerID is : nil or false") end
-		return nil
-	end
-end
-
 -- get original owner of a plot
 function GetPlotFirstOwner(plotKey)
 	-- return original owner of a plot

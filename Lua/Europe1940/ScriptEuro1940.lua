@@ -6,6 +6,7 @@
 print("Loading Red Europe 1940 Scripts...")
 print("-------------------------------------")
 
+
 -----------------------------------------
 -- Functions override
 -----------------------------------------
@@ -3918,7 +3919,7 @@ function SeasonScenario()
 					for i, data in pairs ( map ) do
 						if (i == plotKey) then
 							local ter = data.TerrainType
-							plot:SetTerrainType(ter, false, true)
+							plot:SetTerrainType(ter)
 						end
 					end
 					local feat = plot:GetFeatureType();
@@ -3936,17 +3937,17 @@ function SeasonScenario()
 					local feat = plot:GetFeatureType();
 					local rand = math.random( 1, 100 )
 					if rand <= 95 and ter == 0 then  -- Grassland to Snow 95%
-						plot:SetTerrainType(4, false, true)
+						plot:SetTerrainType(4)
 					elseif rand > 95 and ter == 0 then  -- Grassland to Tundra 5%
-						plot:SetTerrainType(3, false, true)
+						plot:SetTerrainType(3)
 					elseif ter == 3 then -- Tundra to Snow 100%
-						plot:SetTerrainType(4, false, true)
+						plot:SetTerrainType(4)
 					elseif rand <= 95 and ter == 1 then  -- Plains to Snow 95%
-						plot:SetTerrainType(4, false, true)
+						plot:SetTerrainType(4)
 					elseif rand > 95 and ter == 1 then  -- Plains to Tundra 5%
-						plot:SetTerrainType(3, false, true)
+						plot:SetTerrainType(3)
 					elseif rand <= 95 and ter == 6 and feat == -1 then -- Sea to Ice
-						plot:SetFeatureType(0, false, true)
+						plot:SetFeatureType(0)
 					end
 				end
 			end	
@@ -4217,49 +4218,6 @@ function SeasonScenario()
 	end
 end
 
------------------------------------------
--- Capitulation: Capture a enemy capital that isn't the original or all city states
------------------------------------------
-
-function CapitulationCheck(hexPos, playerID, cityID, newPlayerID)
-	local original_player = Players[playerID]
-	local new_player = Players[newPlayerID]
-	if(original_player:IsMinorCiv()) then --If it's a minor civ, we need to capture all the cities to get all the territory automatically
-		local has_cities = false
-		for city in original_player:Cities() do
-			if(city) then
-				has_cities = true
-			end
-		end
-		if(has_cities) then
-			return
-		end
-		
-		for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
-			local plot = Map.GetPlotByIndex(iPlotLoop)
-			local ownerID = plot:GetOwner()
-			if(ownerID == original_player) then
-				plot:SetOwner(new_player, -1)
-			end
-		end
-	else --Major civ, need to capture a capital city that wasn't the original capital
-		local captured_city = new_player:GetCityByID(cityID)
-		if(captured_city:IsCapital() and captured_city:IsOriginalCapital() ~= true) then
-			for city in original_player:Cities() do
-				new_player:AcquireCity(city, true, true)
-			end
-				
-			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
-				local plot = Map.GetPlotByIndex(iPlotLoop)
-				local ownerID = plot:GetOwner()
-				if(ownerID == original_player) then
-					plot:SetOwner(new_player, -1)
-				end
-			end
-		end
-	end
-end
-
 -- Partisan table
 g_Partisan = { 
 		[1] = {
@@ -4267,7 +4225,7 @@ g_Partisan = {
 		SpawnList = { {X=21, Y=44}, {X=22, Y=44}, {X=22, Y=40}, {X=23, Y=47}, {X=27, Y=45}, {X=27, Y=47}, {X=24, Y=45}, {X=26, Y=48}, {X=28, Y=43},  {X=28, Y=44}, {X=29, Y=38}, {X=31, Y=48},  {X=29, Y=43}, {X=29, Y=46}, {X=29, Y=44},  {X=30, Y=48}, {X=31, Y=48}, {X=33, Y=43}, {X=33, Y=46}, {X=34, Y=45}, },
 		RandomSpawn = true, -- true : random choice in spawn list
 		CivID = FRANCE,
-		Frequency = 10, -- probability (in percent) of partisan spawning at each turn
+		Frequency = 50, -- probability (in percent) of partisan spawning at each turn
 		Condition = NorthFranceInvaded, -- Must refer to a function, remove this line to use the default condition (true)
 		},
 	}

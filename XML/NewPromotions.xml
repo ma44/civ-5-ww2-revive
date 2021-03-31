@@ -23,7 +23,7 @@
 			<PediaType>NONE</PediaType>
 		</Row>
 	</UnitPromotions>
-
+	
 	<!-- NO SUPPLY FOR MECHANIZED (use Lua for effect) -->
 	<UnitPromotions>
 		<Row>

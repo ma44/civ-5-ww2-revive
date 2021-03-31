@@ -45,7 +45,7 @@ INITIAL_PERSONNEL_VALUE				= 0		-- Personnel reserve at start
 INITIAL_OIL_VALUE					= 5000	-- Oil reserve at start
 REINFORCEMENT_RATIO					= 5		-- 1 = 100 personnel+materiel needed for 1 HP, 5 = 20 personnel+materiel, 10 = 10 personnel+materiel... MUST be > 0 (see next value)
 REINFORCEMENT_BASE					= 100 / REINFORCEMENT_RATIO
-MAX_HP_HEALED						= 10		-- Max number of HP healed each turn
+MAX_HP_HEALED						= 5		-- Max number of HP healed each turn
 RESISTANCE_REINFORCEMENT_PERCENT	= 0		-- ratio of reinforcement recieved from cities in resistance
 OCCUPIED_REINFORCEMENT_PERCENT		= 15	-- ratio of reinforcement recieved from occupied cities
 CAPTURED_REINFORCEMENT_PERCENT		= 100	-- ratio of reinforcement recieved from captured cities with Administrative building (non-occupied)
@@ -68,14 +68,14 @@ RESOURCE_CONNECTION					= RESOURCE_ROAD_TO_ANY_CITY	-- Default connection type (
 RESOURCE_FROM_FRIENDS				= true						-- If true you get resources from friendly territory (friendly CS or major with open border), else only from your territory
 
 UNIT_BLEEDING						= true	-- when true, unit will lose HP each turn when their supply line is cut
-BLEEDING_PER_TURN					= 10
+BLEEDING_PER_TURN					= 2
 
 -- Convoy
 TRANSPORT_DEFAULT					= TRANSPORT_MATERIEL	-- default type (1 = materiel...)
 TRANSPORT_DEFAULT_REFERENCE			= 250					-- default value
 
 -- Senario
-WAR_MINIMUM_STARTING_TURN		= 1		-- can't manually start war before this turn (but forced DOW via SetMajorRelations or SetMinorDOW are possible)
+WAR_MINIMUM_STARTING_TURN		= 3		-- can't manually start war before this turn (but forced DOW via SetMajorRelations or SetMinorDOW are possible)
 PERMANENT_WAR_DECLARATION		= true	-- can't make peace once a war is declared (but forced peace via scenario event is still possible)
 
 CAN_BUILD_UNIT_IN_OCCUPIED_CITY = false -- need special building to build unit in occupied cities
@@ -88,9 +88,9 @@ ALLOW_SCRIPTED_EVENTS	= true -- allow scripted events like "Fall of France", "Fa
 ALLOW_ALTERNATE_HISTORY = true -- allow declarations of war outside the historic calendar
 HARDCORE_MODE			= false -- takes off the unit limit for the AI and allows suicide attacks
 
-SCENARIO_MATERIEL_PER_TURN	= 100 -- / ((HANDICAP + 2 ) /2) = materiel for reinforcement bonus each turn
-SCENARIO_PERSONNEL_PER_TURN = 200 -- / ((HANDICAP + 2 ) /2) = personnel for reinforcement bonus each turn
-SCENARIO_OIL_PER_TURN		= 25 -- / ((HANDICAP + 2 ) /2) = oil for resource bonus each turn
+SCENARIO_MATERIEL_PER_TURN	= 500 -- / ((HANDICAP + 2 ) /2) = materiel for reinforcement bonus each turn
+SCENARIO_PERSONNEL_PER_TURN = 350 -- / ((HANDICAP + 2 ) /2) = personnel for reinforcement bonus each turn
+SCENARIO_OIL_PER_TURN		= 100 -- / ((HANDICAP + 2 ) /2) = oil for resource bonus each turn
 
 SCENARIO_MAX_MATERIEL_BONUS		= 0
 SCENARIO_MAX_OIL_BONUS			= 5000

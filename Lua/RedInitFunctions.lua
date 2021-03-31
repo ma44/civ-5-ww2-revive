@@ -155,7 +155,7 @@ function CommonOnNewTurn()
 	Dprint("Starting CommonOnNewTurn ...")
 	ShowResourceData()
 	InitializeProjects()
-	--MapUpdate() --check for culture consistency
+	MapUpdate() -- check for culture consistency
 	SetMinorRelations()
 	SetMinorDOW()
 	SetMajorRelations()
@@ -164,7 +164,7 @@ function CommonOnNewTurn()
 	LaunchMilitaryOperation()
 	Events.SerialEventUnitCreated.Add( InitializeUnit )
 	SetGlobalAIStrategicValues()
-	--SaveAllTable()
+	SaveAllTable()
 end
 
 -- functions to call at beginning of each active player turn
@@ -180,13 +180,13 @@ end
 -- functions to call at end of each turn
 function CommonOnEndTurn()
 	  Dprint("Starting CommonOnEndTurn ...")
-	  --SaveAllTable()
+	  SaveAllTable()
 end
 
 -- functions to call at end of 1st turn
 function CommonOnFirstTurnEnd()
 	 Dprint("Starting CommonOnFirstTurnEnd ...")
-	 SaveAllTable()
+     SaveAllTable()
 end
 
 -- functions to call ASAP after loading this file when game is launched for the first time
@@ -197,7 +197,6 @@ end
 -- functions to call ASAP after loading a saved game
 function CommonOnLoading()
 	 Dprint("Starting CommonOnLoading ...")
-	 LoadAllTable()
 end
 
 -- functions to call after first game initialization (DoM screen button "Begin your journey" appears)
@@ -211,7 +210,6 @@ function CommonOnGameInit()
 	CreateTerritoryMap()
 	SetInitialCityBuilds()
 	InitializeProjects()
-	MapUpdate() -- check for culture consistency
 	SetMinorRelations()
 	SetMinorDOW()
 	SetMajorRelations()

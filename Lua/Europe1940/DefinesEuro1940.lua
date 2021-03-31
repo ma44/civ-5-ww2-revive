@@ -62,7 +62,7 @@ end
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") == 0) then
 	g_Calendar = {}
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
-	local dayList = { "1", "15" }
+	local dayList = { "1", "10", "20" }
 	local turn = 0
 	for year = 1939, 1947 do -- see large
 		for month = 1, #monthList do
@@ -179,7 +179,7 @@ g_Combat_Type_Ratio = {
 	-- Land		<= military units / land units
 	-- ( 1 = no limit )
 	[FRANCE] 	= {Air = 5,		Sea = 10,	 	Land = 1.4,	},
-	[ENGLAND]	= {Air = 2.5,		Sea = 4,		Land = 1.5,	},
+	[ENGLAND]	= {Air = 4,		Sea = 4,		Land = 2,	},
 	[USSR]		= {Air = 5,		Sea = 10,		Land = 1.4,	},
 	[GERMANY]	= {Air = 4,		Sea = 6.6,		Land = 1.6,	},
 	[ITALY]		= {Air = 5,		Sea = 5,		Land = 1.6,	},

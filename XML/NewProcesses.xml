@@ -23,14 +23,13 @@
 		<Update>
 			<Where Type="ROUTE_ROAD"/>
 			<Set>
-				<FlatMovement>15</FlatMovement>	
 				<GoldMaintenance>0</GoldMaintenance>
 			</Set>
 		</Update>
 		<Update>
 			<Where Type="ROUTE_RAILROAD"/>
 			<Set>
-				<FlatMovement>5</FlatMovement>			
+				<FlatMovement>15</FlatMovement>			
 				<GoldMaintenance>0</GoldMaintenance>
 			</Set>
 		</Update>

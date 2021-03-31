@@ -13,10 +13,14 @@ print("-------------------------------------")
 -- units capture tiles
 --------------------------------------------------------------
 
-function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
+function UnitCaptureTile(playerID, UnitID, x, y)
 	local bDebug = false
 	local plot = Map.GetPlot(x,y)
 	if (plot == nil) then
+		return
+	end
+	
+	if ( plot:IsCity() or plot:IsWater() ) then
 		return
 	end
 
@@ -30,17 +34,7 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 
 	local plotKey = GetPlotKey ( plot )
 	local ownerID = plot:GetOwner()
-	if ( norepeat == 0 or not norepeat ) then
-		for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
-			if ( plot2:GetNumUnits() <= 0 ) then
-				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
-			end
-		end
-	end
-
-	if ( plot:IsCity() or plot:IsWater() or plot:IsMountain()) then
-		return
-	end
+	
 
 	-- If the unit is moving on another player territory...
 	if (playerID ~= ownerID and ownerID ~= -1) then
@@ -257,7 +251,7 @@ function UnitName(playerID, unitID, num) -- num = number of unit of this type
 		end
 		if ( unitType == FR_FANTASQUE ) then
 			local name = { "Chacal", "Jaguar", "Leopard", "Lynx", "Panthere", "Tigre", "Fantasque", "Malin", "Terrible", "Indomptable", "Audacieux", "Triomphant",
-			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "Maillï¿½ Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
+			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "Maillé Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
 			"Bison", "Guepard", "Lion", "Valmy", "Verdun", "Vauban"}	
 			if (num <= # name) then
 				str = name[num]
@@ -1544,25 +1538,6 @@ function CanGetSupply (playerID, unitID, bShow )
 		-- for now don't check naval supply lines
 		return true
 	end
---[[
-	--City in the same area, this unit and all others of the same player have supply here
-	Dprint(" ".. unitPlot:Area():GetCitiesPerPlayer(playerID) .." " )
-	if(unitPlot:Area():GetCitiesPerPlayer(playerID) > 1) then
-		return true
-	end
-]]--
-	-- Check all cities in our current area and see if there's one
---[[
-	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
-	local closeCityInArea = GetCloseCityInArea( playerID, unitPlot, false, unitPlot:GetArea() )
-	if( closeCityInArea ) then
-		local cityPlot = closeCityInArea:Plot()
-		if ( isPlotConnected(player, unitPlot, cityPlot, "Land", bHighlight, nil, PathBlocked) ) then
-			Dprint ("   - Found path with close city (".. cityPlot:GetName() ..")", bDebug )
-			return true
-		end
-	end
-]]--
 
 	-- first check closest own cities
 	Dprint (" - Search supply line for " .. unit:GetName() .. " (unitID =".. unit:GetID() ..", playerID =".. playerID ..")", bDebug)
@@ -1585,8 +1560,6 @@ function CanGetSupply (playerID, unitID, bShow )
 			return true
 		end	
 	end
-
-
 
 	-- try logistic entry plots if they are defined
 	if g_LogisticEntryPlot then
@@ -1647,7 +1620,6 @@ function CanGetSupply (playerID, unitID, bShow )
 			end
 		end
 	end
-	return false
 end
 
 -- check if units can embark from plot
@@ -1849,9 +1821,6 @@ function InitializeUnit(playerID, unitID)
 		Dprint("-------------------------------------", bDebug)
 	else
 		Dprint ("- WARNING : tried to initialize nil unit for ".. player:GetName(), bDebug)
-
-	unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) ) -- Makes making units have a bit of a delay until full health, useful for stopping massive spamming of units and costs resources
-
 	end
 
 end
@@ -2461,19 +2430,8 @@ function DynamicUnitPromotion(playerID)
 
 	local bDebug = false
 
-	local turn = Game.GetGameTurn()
-	local date = g_Calendar[turn] or " "
-	g_startTurnTime = os.clock()
-	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-	print("------------------------------------------------------------------------------------ BEGIN DYNAMIC UNIT PROMOTIONS -------------------------------------------------------------------------------------------------")
-	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
 	local player = Players[playerID]
 	if ( player:IsAlive() ) then	
-		local team = player:GetTeam() --Don't check for out of supply if not at war
-		if(team:GetAtWarCount(false) == 0) then
-			return
-		end
 		Dprint("-------------------------------------", bDebug)
 		Dprint("Add and remove dynamic promotions for ".. player:GetName() .." units ...", bDebug)
 		for unit in player:Units() do
@@ -2514,13 +2472,6 @@ function DynamicUnitPromotion(playerID)
 
 		end
 	end
-
-	g_endTurnTime = os.clock()
-	if g_endTurnTime > 0 then
-		print ("Time for dynamic unit promotions = " .. g_startTurnTime - g_endTurnTime )	
-	end
-	print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
 end
 -- add to GameEvents.PlayerDoTurn on loading / reloading a game.
 
