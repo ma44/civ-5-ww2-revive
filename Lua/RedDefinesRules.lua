@@ -68,7 +68,7 @@ RESOURCE_CONNECTION					= RESOURCE_ROAD_TO_ANY_CITY	-- Default connection type (
 RESOURCE_FROM_FRIENDS				= true						-- If true you get resources from friendly territory (friendly CS or major with open border), else only from your territory
 
 UNIT_BLEEDING						= true	-- when true, unit will lose HP each turn when their supply line is cut
-BLEEDING_PER_TURN					= 10
+BLEEDING_PER_TURN					= 5
 
 -- Convoy
 TRANSPORT_DEFAULT					= TRANSPORT_MATERIEL	-- default type (1 = materiel...)
@@ -99,7 +99,7 @@ SCENARIO_MAX_PERSONNEL_BONUS	= 0
 CLOSE_MINOR_NEUTRAL_CIV_BORDERS = true -- if true will close neutral territories unless for civs which have reached the allied treshold
 
 CHECK_FOR_ORPHAN_TILE	= true	-- if true will flip back captured tiles that are not linked to a close city or unit 
-MAX_PLOT_CONTROL_RANGE	= 1		-- distance at which a unit or city can control an enemy orphan plot
+MAX_PLOT_CONTROL_RANGE	= 6		-- distance at which a unit or city can control an enemy orphan plot
 
 NUM_BUILDINGS_IMPORTANT_CITY = 1 -- city with at least NUM_BUILDINGS_IMPORTANT_CITY number of buildings are flagged important and won't be on auto-wealth at start
 

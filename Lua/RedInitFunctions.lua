@@ -162,7 +162,7 @@ function CommonOnNewTurn()
 	ClearAIairSweep()
 	RepairImprovements()
 	LaunchMilitaryOperation()
-	Events.SerialEventUnitCreated.Add( InitializeUnit )
+	--Events.SerialEventUnitCreated.Add( InitializeUnit )
 	SetGlobalAIStrategicValues()
 	SaveAllTable()
 end
@@ -173,7 +173,7 @@ function CommonOnActivePlayerTurn()
 	ShowResourceData()
 	InitializeActivePlayerTurn()
 	LaunchMilitaryOperation()
-	Events.SerialEventUnitCreated.Add( InitializeUnit )
+	--Events.SerialEventUnitCreated.Add( InitializeUnit )
 	SaveAllTable()
 end
 
