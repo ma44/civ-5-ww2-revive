@@ -13,10 +13,14 @@ print("-------------------------------------")
 -- units capture tiles
 --------------------------------------------------------------
 
-function UnitCaptureTile(playerID, UnitID, x, y)
+function UnitCaptureTile(playerID, UnitID, x, y, no_repeat)
 	local bDebug = false
 	local plot = Map.GetPlot(x,y)
 	if (plot == nil) then
+		return
+	end
+	
+	if( plot:IsCity() or plot:IsWater() ) then
 		return
 	end
 	
@@ -35,6 +39,17 @@ function UnitCaptureTile(playerID, UnitID, x, y)
 	local plotKey = GetPlotKey ( plot )
 	local ownerID = plot:GetOwner()
 	
+	if ( norepeat == 0 or not norepeat ) then
+		for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
+			if ( plot2:GetNumUnits() <= 0 ) then
+				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
+			end
+		end
+	end
+
+	if ( plot:IsCity() or plot:IsWater() or plot:IsMountain()) then
+		return
+	end
 
 	-- If the unit is moving on another player territory...
 	if (playerID ~= ownerID and ownerID ~= -1) then
@@ -1821,6 +1836,10 @@ function InitializeUnit(playerID, unitID)
 		Dprint("-------------------------------------", bDebug)
 	else
 		Dprint ("- WARNING : tried to initialize nil unit for ".. player:GetName(), bDebug)
+
+	-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
+	-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
+	unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
 	end
 
 end
