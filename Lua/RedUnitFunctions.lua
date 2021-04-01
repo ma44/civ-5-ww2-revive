@@ -1801,7 +1801,7 @@ function InitializeUnit(playerID, unitID)
 	
 		-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
 		-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
-		unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
+		--unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
 	
 		local unitKey = GetUnitKey(unit)
 
