@@ -57,11 +57,6 @@ function MapUpdate() -- to do : check culture tile consistency. for example, a c
 				bCapturedPlot = false
 			end	
 			
-			--Keep the border gore, I guess
-			if(team:GetAtWarCount(false) == 0) then
-				return
-			end
-			
 			local t_start = os.clock()
 			if CHECK_FOR_ORPHAN_TILE and not IsUnderControl ( plot, bCapturedPlot ) then
 				local bChangedOwner = TestEnemyControl(plot, bCapturedPlot)
