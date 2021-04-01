@@ -99,7 +99,7 @@ SCENARIO_MAX_PERSONNEL_BONUS	= 0
 CLOSE_MINOR_NEUTRAL_CIV_BORDERS = true -- if true will close neutral territories unless for civs which have reached the allied treshold
 
 CHECK_FOR_ORPHAN_TILE	= true	-- if true will flip back captured tiles that are not linked to a close city or unit 
-MAX_PLOT_CONTROL_RANGE	= 6		-- distance at which a unit or city can control an enemy orphan plot
+MAX_PLOT_CONTROL_RANGE	= 1		-- distance at which a unit or city can control an enemy orphan plot
 
 NUM_BUILDINGS_IMPORTANT_CITY = 1 -- city with at least NUM_BUILDINGS_IMPORTANT_CITY number of buildings are flagged important and won't be on auto-wealth at start
 
