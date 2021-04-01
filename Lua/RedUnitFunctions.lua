@@ -13,18 +13,14 @@ print("-------------------------------------")
 -- units capture tiles
 --------------------------------------------------------------
 
-function UnitCaptureTile(playerID, UnitID, x, y, no_repeat)
+function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	local bDebug = false
 	local plot = Map.GetPlot(x,y)
 	if (plot == nil) then
 		return
 	end
 	
-	if( plot:IsCity() or plot:IsWater() ) then
-		return
-	end
-	
-	if ( plot:IsCity() or plot:IsWater() ) then
+	if( plot:IsCity() or plot:IsWater() or plot:IsMountain() ) then
 		return
 	end
 
@@ -45,10 +41,6 @@ function UnitCaptureTile(playerID, UnitID, x, y, no_repeat)
 				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
 			end
 		end
-	end
-
-	if ( plot:IsCity() or plot:IsWater() or plot:IsMountain()) then
-		return
 	end
 
 	-- If the unit is moving on another player territory...
@@ -266,7 +258,7 @@ function UnitName(playerID, unitID, num) -- num = number of unit of this type
 		end
 		if ( unitType == FR_FANTASQUE ) then
 			local name = { "Chacal", "Jaguar", "Leopard", "Lynx", "Panthere", "Tigre", "Fantasque", "Malin", "Terrible", "Indomptable", "Audacieux", "Triomphant",
-			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "Maillé Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
+			"Mogador", "Volta", "Cassard", "Chevalier Paul", "Kersaint", "MaillÃ© Breze", "Tartu", "Vauquelin", "Aigle", "Vautour", "Albatros", "Gerfaut", "Milan", "Epervier",
 			"Bison", "Guepard", "Lion", "Valmy", "Verdun", "Vauban"}	
 			if (num <= # name) then
 				str = name[num]
@@ -1806,6 +1798,11 @@ function InitializeUnit(playerID, unitID)
 	local player = Players[ playerID ]
 	local unit = player:GetUnitByID( unitID )
 	if unit then
+	
+		-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
+		-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
+		unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
+	
 		local unitKey = GetUnitKey(unit)
 
 		-- initialize only new units...
@@ -1837,9 +1834,6 @@ function InitializeUnit(playerID, unitID)
 	else
 		Dprint ("- WARNING : tried to initialize nil unit for ".. player:GetName(), bDebug)
 
-	-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
-	-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
-	unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
 	end
 
 end
