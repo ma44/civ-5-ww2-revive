@@ -90,7 +90,7 @@ function RequestedReinforcementsPerHP(iUnitType, unit)
 	end
 	reqPersonnel = reqPersonnel - bonusPersonnel + malusPersonnel
 	reqMateriel = reqMateriel - bonusMateriel + malusMateriel
-	return reqMateriel, reqPersonnel
+	return reqMateriel / 2, reqPersonnel / 2
 end
 
 -- check if the unit is elligible for reinforcement

@@ -1,4 +1,5 @@
-- Europe + USA 1939 is set to "quick speed", 1 turn = 1 month and faster construction, quick speed is adjusted to be even more quick for constructing stuff
+- Europe + USA 1939 is set to "quick speed" to try for a 3x game speed, 1 turn = 1 month and faster construction, quick game speed is buffed to 0.33x production cost for units/buildings
+- To adjust for the increased speed, all units need 1/2 the materiel and personnel per hit point
 - 5 hp healed per turn -> 15, resource stockpiles are pretty useful now
 - Territority capture is now 3x3, encirclements become slightly easier and beelining off of a railroad is real effective now
 - Newly constructed units start at 1/2 hp, stockpile those resources carefully!
