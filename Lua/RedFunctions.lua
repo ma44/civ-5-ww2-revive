@@ -117,6 +117,23 @@ function HandleCityCapture  (playerID, bCapital, iX, iY, newPlayerID)
 		local player = Players [ originalCityOwner ]
 		local newPlayer = Players [ newPlayerID ]
 
+	-- Remove or Restore buildings in key cities
+	for i, cityData in pairs(g_Cities) do
+		if cityData.Buildings then
+			local plot = GetPlot(cityData.X, cityData.Y)
+			if plot == cityPlot then
+				if city:GetNumBuildings() > 0 then -- other side has captured a city with buildings, remove them...
+					for j, building in ipairs (cityData.Buildings) do
+						Dprint ("   - Remove building type =  "..building, bDebug)
+						if  building == OPEN_CITY then
+							city:SetNumRealBuilding(building, 0)
+						end
+					end
+				end
+			end
+		end
+	end
+
 		g_NoCityCapture = true
 		player:AcquireCity(city, false, true) -- void player:acquireCity(<City> pCity, boolean bConquest, boolean bTrade)
 		g_NoCityCapture = false

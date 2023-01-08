@@ -2625,7 +2625,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<RangeAttackIgnoreLOS>1</RangeAttackIgnoreLOS>
-			<CityAttack>20</CityAttack>
+			<CityAttack>100</CityAttack>
 			<OnlyDefensive>1</OnlyDefensive>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -2741,7 +2741,7 @@
 			<OnlyDefensive>1</OnlyDefensive>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<CanMoveImpassable>true</CanMoveImpassable>
-			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
+			<CanMoveAfterAttacking>false</CanMoveAfterAttacking>
 			<!-- <IgnoreZOC>true</IgnoreZOC> Need DLL modification -> Must port the mod to BNW to use it. -->
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
