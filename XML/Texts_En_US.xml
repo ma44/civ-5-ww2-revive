@@ -4872,7 +4872,7 @@
 			<Text>Battleship</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_BATTLESHIP_DESC">
-			<Text>+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.</Text>
+			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_CARRIER">
 			<Text>Light Aircraft Carrier</Text>
@@ -4904,7 +4904,7 @@
 			<Text>Submarine</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE_DESC">
-			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking.</Text> <!-- Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR]. -->
+			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.</Text> <!-- Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR]. -->
 		</Row>
 		
 		<Row Tag="TXT_KEY_PROMOTION_CRUISER">

@@ -4,9 +4,10 @@
 - Territority capture is now 3x3, encirclements become slightly easier and beelining off of a railroad is real effective now
 - Newly constructed units start at 1/2 hp, stockpile those resources carefully!
 - Arsenal/military barracks can't be rushed with gold anymore, consider building defenses ahead of time
-- Battleships do substantially more damage to cities, making naval landings pretty easy as long as you have them
 - Submarines can no longer move after attacking
+- Battleships +20% -> +100% damage bonus against cities; be sure to use them for naval landings
 - Unit bleeding when out of supply -2 -> -10 a turn
 - "Open city" effect is removed when the city is captured; this mainly applies to Germany's ability to more easily defend France once it conquers it
 - Factories are no longer restricted; you can build all of them in one city
 - Turn order is changed for allies/soviets to go first then the axis; this gives axis a slight edge as "out of supply" check is performed at the end of everyone's turns
+- 100% chance for a convoy to spawn every turn; hopefully they don't get sunk
