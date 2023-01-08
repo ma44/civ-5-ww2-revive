@@ -7,10 +7,16 @@
 --------------------------------------------------------------------------------------------
 -- Gamespeed
 --------------------------------------------------------------------------------------------
-DELETE FROM GameSpeed_Turns WHERE GameSpeedType='GAMESPEED_STANDARD';
+DELETE FROM GameSpeed_Turns WHERE GameSpeedType='GAMESPEED_QUICK';
 INSERT INTO GameSpeed_Turns (GameSpeedType, MonthIncrement,TurnsPerIncrement) VALUES ('GAMESPEED_STANDARD', '1', '360');
 UPDATE GameSpeeds SET DealDuration = 100;
-
+UPDATE GameSpeeds SET TrainPercent = 33;
+UPDATE GameSpeeds SET ConstructPercent = 33;
+UPDATE GameSpeeds SET CreatePercent = 33;
+UPDATE GameSpeeds SET GoldPercent = 33;
+UPDATE GameSpeeds SET BuildPercent = 33;
+UPDATE GameSpeeds SET UnitHurryPercent = 100;
+UPDATE GameSpeeds SET HurryPercent = 100;
 --------------------------------------------------------------------------------------------
 -- Cities
 --------------------------------------------------------------------------------------------

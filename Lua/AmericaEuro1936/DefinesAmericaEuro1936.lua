@@ -43,7 +43,7 @@ end
 ----------------------------------------------------------------------------------------------------------------------------
 
 REAL_WORLD_ENDING_DATE	= 19470105
-MAX_FALL_OF_FRANCE_DATE = 19420101 -- France will not surrender if Paris fall after this date...
+MAX_FALL_OF_FRANCE_DATE = 19470101 -- France will not surrender if Paris fall after this date...
 
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") > 0) then
 	g_Calendar = {}
@@ -69,7 +69,7 @@ end
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") == 0) then
 	g_Calendar = {}
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
-	local dayList = { "1", "10", "20" }
+	local dayList = { "1"}
 	local turn = 0
 	for year = 1939, 1947 do -- see large
 		for month = 1, #monthList do

@@ -2,4 +2,4 @@
 -- Author: Gedemon
 --------------------------------------------------------------
 
-g_RED_Version = "R.E.D. WWII Edition RV v.1 alpha"
+g_RED_Version = "ma44 R.E.D. WWII Edition RV v.1 alpha"

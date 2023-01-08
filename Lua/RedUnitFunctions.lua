@@ -1789,7 +1789,6 @@ function RegisterNewUnit(playerID, unit, bNoAutoNaming) -- unit is object, not I
 		end
 	end
 	--]]
-
 	LuaEvents.NewUnitCreated()
 end
 
@@ -1799,11 +1798,11 @@ function InitializeUnit(playerID, unitID)
 	local unit = player:GetUnitByID( unitID )
 	if unit then
 	
+		local unitKey = GetUnitKey(unit)
+
 		-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
 		-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
-		--unit.SetDamage( unit.GetMaxHitPoints() - (unit.GetMaxHitPoints / 2 ) )
-	
-		local unitKey = GetUnitKey(unit)
+		unit:SetDamage(MAX_HP / 2)
 
 		-- initialize only new units...
 		if unit:GetGameTurnCreated() ~= Game.GetGameTurn() then
@@ -1814,7 +1813,6 @@ function InitializeUnit(playerID, unitID)
 			Dprint("  - Unit (TypeID=".. unit:GetID() ..") is a Settler, don't initialize... ", bDebug) 
 			return
 		end
-
 
 		if ( SetMinorUU(playerID, unitID) ) then
 			-- unit was changed to Minor UU during the above test, don't initialize now, this will be recalled by the new UU creation

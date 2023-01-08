@@ -113,7 +113,7 @@ Controls.StartButton:RegisterCallback(Mouse.eLClick, function()
 	PreGame.SetMapScript(scenarioMap.EvaluatedPath)
 	PreGame.SetLoadWBScenario(true)
 	--UI.ResetScenarioPlayerSlots(true); -- why do that ?
-	PreGame.SetGameSpeed(2)  -- Standard speed
+	PreGame.SetGameSpeed(3)  -- Quick speed
 	PreGame.SetOverrideScenarioHandicap(true)
 
 	if ( not g_bCanLoad ) then

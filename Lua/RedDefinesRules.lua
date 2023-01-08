@@ -45,7 +45,7 @@ INITIAL_PERSONNEL_VALUE				= 0		-- Personnel reserve at start
 INITIAL_OIL_VALUE					= 5000	-- Oil reserve at start
 REINFORCEMENT_RATIO					= 5		-- 1 = 100 personnel+materiel needed for 1 HP, 5 = 20 personnel+materiel, 10 = 10 personnel+materiel... MUST be > 0 (see next value)
 REINFORCEMENT_BASE					= 100 / REINFORCEMENT_RATIO
-MAX_HP_HEALED						= 5		-- Max number of HP healed each turn
+MAX_HP_HEALED						= 15		-- Max number of HP healed each turn
 RESISTANCE_REINFORCEMENT_PERCENT	= 0		-- ratio of reinforcement recieved from cities in resistance
 OCCUPIED_REINFORCEMENT_PERCENT		= 15	-- ratio of reinforcement recieved from occupied cities
 CAPTURED_REINFORCEMENT_PERCENT		= 100	-- ratio of reinforcement recieved from captured cities with Administrative building (non-occupied)
@@ -68,7 +68,7 @@ RESOURCE_CONNECTION					= RESOURCE_ROAD_TO_ANY_CITY	-- Default connection type (
 RESOURCE_FROM_FRIENDS				= true						-- If true you get resources from friendly territory (friendly CS or major with open border), else only from your territory
 
 UNIT_BLEEDING						= true	-- when true, unit will lose HP each turn when their supply line is cut
-BLEEDING_PER_TURN					= 5
+BLEEDING_PER_TURN					= 10
 
 -- Convoy
 TRANSPORT_DEFAULT					= TRANSPORT_MATERIEL	-- default type (1 = materiel...)
