@@ -231,7 +231,7 @@ function CommonOnGameInitReloaded()
 	InitializeGameOption()								-- before everything else !
 	LoadAllTable()										-- before any change on tables...
 	OnLoadMapUpdate()
-	--Events.SerialEventUnitCreated.Add( InitializeUnit )
+	Events.SerialEventUnitCreated.Add( InitializeUnit )
 	GameEvents.UnitSetXY.Add( DynamicTilePromotion )
 	ReinitUnitsOnLoad()
 	InitializeHotseat()

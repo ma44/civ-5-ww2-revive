@@ -5,5 +5,7 @@
 - Arsenal/military barracks can't be rushed with gold anymore, consider building defenses ahead of time
 - Battleships do substantially more damage to cities, making naval landings pretty easy as long as you have them
 - Submarines can no longer move after attacking
-- Unit bleeding when out of supply -5 -> -10 a turn
+- Unit bleeding when out of supply -2 -> -10 a turn
 - "Open city" effect is removed when the city is captured; this mainly applies to Germany's ability to more easily defend France once it conquers it
+- Factories are no longer restricted; you can build all of them in one city
+- Turn order is changed for allies/soviets to go first then the axis; this gives axis a slight edge as "out of supply" check is performed at the end of everyone's turns

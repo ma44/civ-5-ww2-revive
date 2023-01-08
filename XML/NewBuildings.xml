@@ -95,7 +95,7 @@
 			<Set>
 				<Cost>250</Cost>
 				<GoldMaintenance>10</GoldMaintenance>
-				<HurryCostModifier>999</HurryCostModifier>
+				<HurryCostModifier>9999</HurryCostModifier>
 				<IconAtlas>WW2_BUILDINGS</IconAtlas>
 				<PortraitIndex>32</PortraitIndex>
 			</Set>
@@ -105,7 +105,7 @@
 			<Set>
 				<Cost>150</Cost>
 				<GoldMaintenance>3</GoldMaintenance>
-				<HurryCostModifier>999</HurryCostModifier>
+				<HurryCostModifier>9999</HurryCostModifier>
 				<IconAtlas>WW2_BUILDINGS</IconAtlas>
 				<PortraitIndex>31</PortraitIndex>
 			</Set>
