@@ -2302,7 +2302,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = FRANCE,
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFrance, -- Must refer to a function, remove this line to use the default condition (true)
 		UnloadCondition = function() return true; end, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoFranceTransport, -- Must refer to a function, remove this line to use the default function
@@ -2315,7 +2315,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = FRANCE,
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenLendLease, -- Must refer to a function, remove this line to use the default condition (true)
 		--UnloadCondition = function() return true; end, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoFranceTransport, -- Must refer to a function, remove this line to use the default function
@@ -2328,7 +2328,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ENGLAND,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		-- Condition = IsRouteOpenUStoUK, -- no special condition here, let the spawning function do the job...
 		Transport = GetUStoUKTransport,
 	},
@@ -2340,7 +2340,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ENGLAND,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenLendLease, 
 		Transport = GetUStoUKTransport,
 	},
@@ -2352,7 +2352,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ENGLAND,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenLendLease, 
 		Transport = GetUStoUKTransport,
 	},
@@ -2364,7 +2364,7 @@ g_Convoy = {
 		RandomDestination = false,
 		CivID = GERMANY,
 		MaxFleet = 1, 
-		Frequency = 100,
+		Frequency = 66,
 		Condition = IsRouteOpenFinlandtoGermany,
 		Transport = GetFinlandtoGermanyTransport,
 	},
@@ -2376,7 +2376,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ENGLAND,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoUKTransport,
 	},
@@ -2388,7 +2388,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ENGLAND,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoUKTransport,
 	},
@@ -2400,7 +2400,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = FRANCE,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoFranceTransport,
 	},
@@ -2412,7 +2412,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = ITALY,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezOccupied,
 		Transport = GetSueztoItalyTransport,
 	},
@@ -2424,7 +2424,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = USSR,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRailOpenMurmansktoMoscow,
 		Transport = GetSueztoUSSRTransport,
 	},
@@ -2436,7 +2436,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = USSR,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenLendLease, 
 		Transport = GetSueztoUSSRTransport,
 	},
@@ -2448,7 +2448,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = GERMANY,
 		MaxFleet = 1, 
-		Frequency = 100,
+		Frequency = 66,
 		Condition = IsRouteOpenNorwaytoGermany,
 		Transport = GetNorwaytoGermanyTransport,
 	},
@@ -2460,7 +2460,7 @@ g_Convoy = {
 		RandomDestination = false,
 		CivID = GERMANY,
 		MaxFleet = 1, 
-		Frequency = 100,
+		Frequency = 66,
 		Condition = IsRouteOpenSwedentoGermany, 
 		Transport = GetFinlandtoGermanyTransport, -- re-use Finland values...
 	},
@@ -2472,7 +2472,7 @@ g_Convoy = {
 		RandomDestination = false, -- false : sequential try in destination list
 		CivID = AMERICA,
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoUSTransport,
 	},
@@ -2485,7 +2485,7 @@ g_Convoy = {
 		CivID = USSR,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_USSR"},
 		MaxFleet = 5,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRailOpenRostowtoStalingrad,
 		Transport = GetSueztoUSSRTransport,
 	},
@@ -2498,7 +2498,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_AFRICA_TO_FRANCE"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsFranceStanding, -- Must refer to a function, remove this line to use the default function
 		Transport = GetAfricatoFranceTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2511,7 +2511,7 @@ g_Convoy = {
 		CivID = ITALY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_AFRICA_TO_ITALY"},
 		MaxFleet = 1, 
-		Frequency = 100,
+		Frequency = 66,
 		Condition = IsLibyaAlly, -- Must refer to a function, remove this line to use the default function
 		Transport = GetAfricatoItalyTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2549,7 +2549,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_USAF_1"},
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUSAFtoUK1,
 		Transport = GetUSAFtoUKTransport1,
 	},
@@ -2562,7 +2562,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_USAF_Oil"},
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUSAFtoUK1,
 		Transport = GetUStoEuropeArmyResources,
 	},
@@ -2575,7 +2575,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_FRANCE_MIL"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFranceTroops1, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoEuropeTroops1, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2588,7 +2588,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_FRANCE_RES"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFranceTroops1, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoEuropeArmyResources, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2601,7 +2601,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_MIL"},
 		MaxFleet = 1,
-		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 66, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoUKTroops1,
 		Transport = GetUStoEuropeTroops1,
 	},
