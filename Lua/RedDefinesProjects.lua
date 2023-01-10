@@ -1322,7 +1322,7 @@ g_ProjectsTable = {
 		Buildings = {BASE},	
 		Scenarios = {"Earth1936", "Euro1940", "AmericaEuro1936" },	
 		Trigger = {Type = TRIGGER_DATE, Date = 19400401, ProbPerTurn = 100},
-		AIOnly = true,
+		AIOnly = false,
 		TopSecret = true,
 	},	
 	
@@ -1342,14 +1342,14 @@ g_ProjectsTable = {
 		Buildings = {BASE},	
 		Scenarios = {"Earth1936", "AmericaEuro1936"},	
 		Trigger = {Type = TRIGGER_DATE, Date = 19410101, ProbPerTurn = 100},
-		AIOnly = true,
+		AIOnly = false,
 		TopSecret = true,
 	},
 	[OPERATION_TWENTYFIVE] =  {
 		Buildings = {BASE},	
 		Scenarios = {"Earth1936", "Euro1940","AmericaEuro1936"},	
 		Trigger = {Type = TRIGGER_DATE, Date = 19410101, ProbPerTurn = 100},
-		AIOnly = true,
+		AIOnly = false,
 		TopSecret = true,
 	},
 	[OPERATION_SONNENBLUME] =  {
@@ -1383,7 +1383,7 @@ g_ProjectsTable = {
 		Buildings = {BASE},	
 		Scenarios = {"Earth1936", "Euro1940", "AmericaEuro1936"},	
 		Trigger = {Type = TRIGGER_DATE, Date = 19391101, ProbPerTurn = 100},
-		AIOnly = true,
+		AIOnly = false,
 		TopSecret = true,
 	},	
 	[OPERATION_HUSKY] =  {

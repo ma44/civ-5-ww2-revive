@@ -10,4 +10,3 @@
 - "Open city" effect is removed when the city is captured; this mainly applies to Germany's ability to more easily defend France once it conquers it
 - Factories are no longer restricted; you can build all of them in one city
 - Turn order is changed for allies/soviets to go first then the axis; this gives axis a slight edge as "out of supply" check is performed at the end of everyone's turns
-- 100% chance for a convoy to spawn every turn; hopefully they don't get sunk
