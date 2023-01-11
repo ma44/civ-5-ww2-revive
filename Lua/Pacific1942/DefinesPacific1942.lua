@@ -67,7 +67,7 @@ end
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") == 0) then
 	g_Calendar = {}
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
-	local dayList = { "1", "10", "20" }
+	local dayList = { "1"}
 	local turn = 0
 	for year = 1942, 1947 do -- see large
 		for month = 1, #monthList do

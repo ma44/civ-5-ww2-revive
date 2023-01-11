@@ -678,7 +678,7 @@ end
 
 function ManageResources(playerID) 
 
-	local bDebug = false
+	local bDebug = true
 	local player = Players[playerID]
 	if ( player:IsAlive() ) then
 			
@@ -823,7 +823,9 @@ function ManageResources(playerID)
 						-- reinforce the units if the requested resources are available
 						if (reqMateriel <= MapModData.RED.ResourceData[playerID].Materiel) and (reqPersonnel <= MapModData.RED.ResourceData[playerID].Personnel) then
 							Dprint("  - reinforcement pass num".. healHP .." in the [" .. n .. "hp row] : ".. unit:GetName() .. " get 1 hp from ".. reqPersonnel .." personnel and " .. reqMateriel .." materiel", bDebug)
-							healTable[key] = healTable[key] + 1 -- store +1 HP for this unit
+							--healTable[key] = healTable[key] + 1 -- store +1 HP for this unit
+							local damage = unit:GetDamage()
+							unit:SetDamage(damage-1)
 							fluxPersonnel = fluxPersonnel - reqPersonnel
 							fluxMateriel = fluxMateriel - reqMateriel
 							MapModData.RED.ResourceData[playerID].Materiel = MapModData.RED.ResourceData[playerID].Materiel - reqMateriel
@@ -835,13 +837,13 @@ function ManageResources(playerID)
 		end
 
 		-- Apply reinforcement from all passes to units in one call to SetDamage (fix visual display of one "+1" when the unit was getting possibly more)
-		for key, hp in pairs (healTable) do
-			local unit = GetUnitFromKey (key)
-			if unit then
-				local damage = unit:GetDamage()
-				unit:SetDamage(damage-hp)
-			end
-		end
+		--for key, hp in pairs (healTable) do
+		--	local unit = GetUnitFromKey (key)
+		--	if unit then
+		--		local damage = unit:GetDamage()
+		--		unit:SetDamage(damage-hp)
+		--	end
+		--end
 
 		-- Apply fuel consumption
 		local fuelConsumption = GetUnitsFuelConsumption(playerID)
