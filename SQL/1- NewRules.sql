@@ -148,16 +148,16 @@ UPDATE Defines SET Value = 3		WHERE Name = 'MAX_FORTIFY_TURNS'; -- default = 2
 UPDATE Defines SET Value = 5000		WHERE Name = 'AI_GOLD_PRIORITY_UNIT'; -- default = 500
 --UPDATE PostDefines SET Key = 'ROUTE_RAILROAD' WHERE Name = 'INITIAL_CITY_ROUTE_TYPE'; -- don't work
 
-UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_ATTACKING_CITY_AIR'; -- default = 4
-UPDATE Defines SET Value = 3 WHERE Name = 'EXPERIENCE_ATTACKING_CITY_MELEE'; -- default = 5
+UPDATE Defines SET Value = 4 WHERE Name = 'EXPERIENCE_ATTACKING_CITY_AIR'; -- default = 4
+UPDATE Defines SET Value = 5 WHERE Name = 'EXPERIENCE_ATTACKING_CITY_MELEE'; -- default = 5
 UPDATE Defines SET Value = 0 WHERE Name = 'EXPERIENCE_ATTACKING_CITY_RANGED'; -- default = 3
-UPDATE Defines SET Value = 3 WHERE Name = 'EXPERIENCE_ATTACKING_AIR_SWEEP'; -- default = 5
-UPDATE Defines SET Value = 3 WHERE Name = 'EXPERIENCE_DEFENDING_AIR_SWEEP_AIR'; -- default = 5
-UPDATE Defines SET Value = 1 WHERE Name = 'EXPERIENCE_DEFENDING_AIR_SWEEP_GROUND'; -- default = 2
-UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_ATTACKING_UNIT_AIR'; -- default = 4
-UPDATE Defines SET Value = 1 WHERE Name = 'EXPERIENCE_DEFENDING_UNIT_AIR'; -- default = 2
-UPDATE Defines SET Value = 3 WHERE Name = 'EXPERIENCE_ATTACKING_UNIT_MELEE'; -- default = 5
-UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_DEFENDING_UNIT_MELEE'; -- default = 4
+UPDATE Defines SET Value = 5 WHERE Name = 'EXPERIENCE_ATTACKING_AIR_SWEEP'; -- default = 5
+UPDATE Defines SET Value = 5 WHERE Name = 'EXPERIENCE_DEFENDING_AIR_SWEEP_AIR'; -- default = 5
+UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_DEFENDING_AIR_SWEEP_GROUND'; -- default = 2
+UPDATE Defines SET Value = 4 WHERE Name = 'EXPERIENCE_ATTACKING_UNIT_AIR'; -- default = 4
+UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_DEFENDING_UNIT_AIR'; -- default = 2
+UPDATE Defines SET Value = 5 WHERE Name = 'EXPERIENCE_ATTACKING_UNIT_MELEE'; -- default = 5
+UPDATE Defines SET Value =42 WHERE Name = 'EXPERIENCE_DEFENDING_UNIT_MELEE'; -- default = 4
 UPDATE Defines SET Value = 2 WHERE Name = 'EXPERIENCE_ATTACKING_UNIT_RANGED'; -- default = 2
 UPDATE Defines SET Value = 1 WHERE Name = 'EXPERIENCE_DEFENDING_UNIT_RANGED'; -- default = 2
 
