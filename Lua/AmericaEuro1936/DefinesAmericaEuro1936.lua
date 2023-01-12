@@ -12,8 +12,8 @@ print("-------------------------------------")
 ----------------------------------------------------------------------------------------------------------------------------
 
 WAR_MINIMUM_STARTING_TURN		= 5
-REVEAL_ALL_CITIES				= true	-- cities tiles are always visible for every civs
-EMBARK_FROM_HARBOR				= true	-- allow embarking only from a city with a port (and adjacent tiles)
+REVEAL_ALL_CITIES				= false	-- cities tiles are always visible for every civs
+EMBARK_FROM_HARBOR				= false	-- allow embarking only from a city with a port (and adjacent tiles)
 BEACHHEAD_DAMAGE				= true	-- Amphibious assault on an empty tile owned by enemy civ will cause damage to the landing unit (not implemented)
 CLOSE_MINOR_NEUTRAL_CIV_BORDERS = true	-- if true neutral territories is impassable
 RESOURCE_CONSUMPTION			= true	-- Use resource consumption (fuel, ...)
