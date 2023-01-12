@@ -1803,7 +1803,9 @@ function InitializeUnit(playerID, unitID)
 		-- "Mobilization" mechanic; units won't start at full HP and need time to get back to full strength
 		-- This also buffs the AI due to their resource bonuses and will put resource costs onto units as a side effect
 		local unitType = unit:GetUnitType()
-		if(not unit:IsEmbarked()) then
+		local unitClassType = unit:GetUnitClassType()
+		local numType = g_Unit_Classes[unitClassType].NumType or -1
+		if(not unit:IsEmbarked() and (numType ~= CLASS_PARATROOPER)) then
 			unit:SetDamage(MAX_HP / 2)
 		end
 
