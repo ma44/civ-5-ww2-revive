@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mod id="1fa4b768-ae75-4260-b727-6a2becc6530e" version="6">
   <Properties>
-    <Name>ma44 R.E.D. WWII Edition RV 2.0</Name>
+    <Name>ma44's R.E.D. WWII Edition RV 2.0</Name>
     <Teaser>R.E.D. WWII Edition is a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Fr</Teaser>
     <Description>R.E.D. WWII Edition is a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Frontline: units can capture tiles (or liberate your allied/friends tiles)[NEWLINE][ICON_BULLET]Supply lines: units that are not connected to a city won't get reinforcement and a malus in combat[NEWLINE][ICON_BULLET]Reinforcements: personnel and materiel are needed to "heal" your units.[NEWLINE][ICON_BULLET]National units: each great power have it's own set of units models[NEWLINE][NEWLINE][COLOR_RED]The[/COLOR] [COLOR_YELLOW]R.E.D. WWII RV Data Files (v.1)[/COLOR][COLOR_RED] mod must be activated to play this mod[/COLOR]</Description>
     <Authors>Gedemon, bacononaboat, Urzahil, Pimmkm, ma44</Authors>

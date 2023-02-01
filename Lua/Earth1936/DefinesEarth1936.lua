@@ -530,7 +530,7 @@ g_MinorProtector = {
 -- Major Civilizations
 -- to do in all table : add entry bCheck = function() return true or false, apply change only if true or nill
 g_Major_Diplomacy = {
-	[19380901] = { 
+	[19380910] = { 
 		{Type = DOW, Civ1 = JAPAN, Civ2 = CHINA},
 	},
 	[19380901] = { 
@@ -590,7 +590,7 @@ g_Major_Diplomacy = {
 
 -- Minor Civilizations
 g_Minor_Relation = {
-	[19380901] = { 
+	[19380910] = { 
 		{Value = -120, Major = CHINA, Minor = COMCHINA},
 		{Value = 50, Major = USSR, Minor = RSPAIN},
 		{Value = -50, Major = USSR, Minor = FINLAND},
@@ -617,11 +617,11 @@ g_Minor_Relation = {
 		{Value = 50, Major = ITALY, Minor = ROMANIA},
 		{Value = 50, Major = ITALY, Minor = AUSTRIA},
 	},
-	[19380901] = { 
+	[19380910] = { 
 		{Value = -50, Major = GERMANY, Minor = AUSTRIA},
 		{Value = -50, Major = ITALY, Minor = AUSTRIA},
 	},
-	[19390901] = { 
+	[19380910] = { 
 		{Value = 120, Major = ENGLAND, Minor = POLAND},
 		{Value = 120, Major = FRANCE, Minor = POLAND},
 		{Value = 50, Major = ENGLAND, Minor = BELGIUM},
@@ -754,7 +754,7 @@ g_Minor_Relation = {
 	},									
 }
 g_Major_Minor_DoW = {
-	[19380901] = {
+	[19380910] = {
 	 	{Major = CHINA, Minor = COMCHINA},
 	},
 	[19390901] = { 
@@ -800,7 +800,7 @@ g_Major_Minor_DoW = {
 	},
 }
 g_Major_Minor_Peace = {
-	[19380901] = {
+	[19380910] = {
 	 	{Major = CHINA, Minor = COMCHINA},
 	},
 	[19400313] = { 
@@ -815,7 +815,7 @@ g_Major_Minor_Peace = {
 	},
 }
 g_Minor_Minor_DoW = {
-	[19380901] = {
+	[19380910] = {
 		{Minor1 = RSPAIN, Minor2 = NSPAIN},
 	},
 	[19410410] = {
@@ -966,8 +966,8 @@ g_Cities = {
 	-- GERMANY
 	    {X = 23, Y = 70, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL }, AIBuildings = {}, }, -- BERLIN
 		{X = 20, Y = 73, Key = true, Buildings = { BANK, BARRACKS, SHIPYARD, BASE, ARSENAL, HARBOR, ACADEMY, FACTORY}, AIBuildings = {}, }, -- HAMBURG
-		{X = 21, Y = 64, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, HARBOR, ACADEMY}, AIBuildings = {}, }, -- MÜNCHEN
-		{X = 20, Y = 67, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, HARBOR, ACADEMY}, AIBuildings = {}, }, -- FRANKFURT
+		{X = 21, Y = 64, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- MÜNCHEN
+		{X = 20, Y = 67, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- FRANKFURT
 		{X = 19, Y = 70, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- KÖLN
 		{X = 24, Y = 64, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- Wien
 		{X = 23, Y = 67, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- Prag
