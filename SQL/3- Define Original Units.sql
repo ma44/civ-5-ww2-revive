@@ -224,9 +224,9 @@ UPDATE ArtDefine_UnitMemberInfos SET Model = 'Battleship_Generic.fxsxml' WHERE T
 
 -- BOMBER				
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.09 WHERE Type = 'ART_DEF_UNIT_MEMBER_BOMBER';
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 2.25 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 2*TurnRateMin WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 2*TurnRateMax WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
+UPDATE ArtDefine_UnitMemberCombats SET MoveRate = MoveRate*8 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 8*TurnRateMin WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 8*TurnRateMax WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_BOMBER';
 UPDATE ArtDefine_UnitInfoMemberInfos SET NumMembers = 3 WHERE UnitMemberInfoType = 'ART_DEF_UNIT_MEMBER_BOMBER';
 
 -- CARRIER
@@ -245,9 +245,9 @@ UPDATE ArtDefine_UnitMemberInfos SET Model = 'Destroyer_Generic.fxsxml' WHERE Ty
 
 -- FIGHTER
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.07 WHERE Type = 'ART_DEF_UNIT_MEMBER_FIGHTER';
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 2.5 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 2*TurnRateMin WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
-UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 2*TurnRateMax WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
+UPDATE ArtDefine_UnitMemberCombats SET MoveRate = MoveRate*8 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 8*TurnRateMin WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 8*TurnRateMax WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
 UPDATE ArtDefine_UnitInfoMemberInfos SET NumMembers = 4 WHERE UnitMemberInfoType = 'ART_DEF_UNIT_MEMBER_FIGHTER';
 UPDATE ArtDefine_UnitInfos SET Formation = 'FighterDiamond' WHERE Type = 'ART_DEF_UNIT_FIGHTER';
 
@@ -271,7 +271,7 @@ UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.10 WHERE Type = 'ART_DEF_UNIT_MEM
 
 -- JETFIGHTER
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.09 WHERE Type = 'ART_DEF_UNIT_MEMBER_JETFIGHTER';
-UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 3.0 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER';
+UPDATE ArtDefine_UnitMemberCombats SET MoveRate = MoveRate*8 WHERE UnitMemberType = 'ART_DEF_UNIT_MEMBER_JETFIGHTER';
 
 -- MODERN ARMOR
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.10 WHERE Type = 'ART_DEF_UNIT_MEMBER_MODERNARMOR';

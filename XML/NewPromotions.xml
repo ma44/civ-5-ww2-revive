@@ -738,7 +738,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<IgnoreTerrainCost>true</IgnoreTerrainCost>
-			<CityAttack>-33</CityAttack>
+			<!--<CityAttack>-33</CityAttack>-->
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<!-- make it ignored by flag promotion -->
@@ -749,7 +749,7 @@
 		<Row>
 			<PromotionType>PROMOTION_PARATROOPER</PromotionType>
 			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-			<Modifier>-25</Modifier>
+			<Modifier>-50</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_PARATROOPER</PromotionType>
@@ -2741,7 +2741,7 @@
 			<OnlyDefensive>1</OnlyDefensive>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<CanMoveImpassable>true</CanMoveImpassable>
-			<CanMoveAfterAttacking>false</CanMoveAfterAttacking>
+			<CanMoveAfterAttacking>true</CanMoveAfterAttacking>
 			<!-- <IgnoreZOC>true</IgnoreZOC> Need DLL modification -> Must port the mod to BNW to use it. -->
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>

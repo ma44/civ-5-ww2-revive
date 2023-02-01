@@ -40,7 +40,7 @@ AI_SEA_MINIMAL_RESERVE		= 8
 ----------------------------------------------------------------------------------------------------------------------------
 -- Calendar
 ----------------------------------------------------------------------------------------------------------------------------
-REAL_WORLD_ENDING_DATE	= 19470105
+REAL_WORLD_ENDING_DATE	= 19500105
 MAX_FALL_OF_FRANCE_DATE = 19420101 -- France will not surrender if Paris fall after this date...
 
 if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("PlayEpicGame") > 0) then
@@ -48,11 +48,11 @@ if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("Pla
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
 	local dayList = { "1", "5", "10", "15", "20", "25" }
 	local turn = 0
-	for year = 1937, 1947 do -- see large
+	for year = 1938, 1947 do -- see large
 		for month = 1, #monthList do
 			for day = 1, #dayList do
-				local bStart = (month >= 3 and year == 1937) -- Start date !
-				if bStart or (year > 1937) then
+				local bStart = (month >= 3 and year == 1938) -- Start date !
+				if bStart or (year > 1938) then
 					local numMonth, numDay
 					if month < 10 then numMonth = "0"..month; else numMonth = month; end
 					if tonumber(dayList[day]) < 10 then numDay = "0"..dayList[day]; else numDay = dayList[day]; end
@@ -69,11 +69,11 @@ if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("Pla
 	local monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
 	local dayList = { "1"}
 	local turn = 0
-	for year = 1937, 1946 do -- see large
+	for year = 1938, 1946 do -- see large
 		for month = 1, #monthList do
 			for day = 1, #dayList do
-				local bStart = (month >= 3 and year == 1937) -- Start date !
-				if bStart or (year > 1937) then
+				local bStart = (month >= 3 and year == 1938) -- Start date !
+				if bStart or (year > 1938) then
 					local numMonth, numDay
 					if month < 10 then numMonth = "0"..month; else numMonth = month; end
 					if tonumber(dayList[day]) < 10 then numDay = "0"..dayList[day]; else numDay = dayList[day]; end

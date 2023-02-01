@@ -4587,7 +4587,7 @@
 			<Text>Paratrooper</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_PARATROOPER_DESC">
-			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].</Text>
+			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].</Text>
 		</Row>
 		
 		<Row Tag="TXT_KEY_PROMOTION_INFANTRY">
@@ -4904,7 +4904,7 @@
 			<Text>Submarine</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE_DESC">
-			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.</Text> <!-- Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR]. -->
+			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking</Text> <!-- Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR]. -->
 		</Row>
 		
 		<Row Tag="TXT_KEY_PROMOTION_CRUISER">

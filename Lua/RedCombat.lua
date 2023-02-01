@@ -77,6 +77,9 @@ function CombatResult (iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 		local defendingPlayerName = pDefendingPlayer:GetCivilizationShortDescription()
 		local defendingUnitName
 
+		defenderFinalDamage = defenderFinalDamage * 2
+		attackerFinalDamage = attackerFinalDamage * 2
+
 		local defenderHealth = defenderMaxHP - defenderFinalDamage
 
 		if pDefendingUnit then

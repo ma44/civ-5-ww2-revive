@@ -1805,8 +1805,8 @@ function InitializeUnit(playerID, unitID)
 		local unitType = unit:GetUnitType()
 		local unitClassType = unit:GetUnitClassType()
 		local numType = g_Unit_Classes[unitClassType].NumType or -1
-		if(not unit:IsEmbarked() and (numType ~= CLASS_PARATROOPER)) then
-			unit:SetDamage(MAX_HP / 2)
+		if(not unit:IsEmbarked() and (numType ~= CLASS_PARATROOPER) and (unit:GetGameTurnCreated() == Game.GetGameTurn()) and not Game.GetGameTurn() == 0) then
+			unit:SetDamage(MAX_HP / 3)
 		end
 
 		-- initialize only new units...
