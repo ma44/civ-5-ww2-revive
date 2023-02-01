@@ -1536,7 +1536,7 @@
 		<Row>
 			<PromotionType>PROMOTION_OLD_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1570,7 +1570,7 @@
 			<CityAttack>-25</CityAttack>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -1580,7 +1580,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1612,7 +1612,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-30</RangedAttackModifier>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1624,7 +1624,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1656,7 +1656,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-30</RangedAttackModifier>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1668,7 +1668,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_B</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1700,7 +1700,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-30</RangedAttackModifier>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1712,7 +1712,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_C</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1744,7 +1744,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-30</RangedAttackModifier>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1756,7 +1756,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_D</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>133</Modifier>
+			<Modifier>233</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1788,7 +1788,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CityAttack>-25</CityAttack>
 			<RangedAttackModifier>-10</RangedAttackModifier>
-			<NumInterceptionChange>2</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1800,7 +1800,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_3</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>150</Modifier>
+			<Modifier>250</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1830,7 +1830,7 @@
 			<Help>TXT_KEY_PROMOTION_JET_FIGHTER_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<NumInterceptionChange>3</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1842,7 +1842,7 @@
 		<Row>
 			<PromotionType>PROMOTION_JET_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>150</Modifier>
+			<Modifier>250</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 
@@ -1869,7 +1869,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_BOMBER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>75</Modifier>
+			<Modifier>125</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1901,7 +1901,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<RangedAttackModifier>-25</RangedAttackModifier>
 			<CityAttack>-25</CityAttack>
-			<NumInterceptionChange>1</NumInterceptionChange>
+			<NumInterceptionChange>0</NumInterceptionChange>
 			<InterceptChanceChange>100</InterceptChanceChange>
 			<AirSweepCapable>true</AirSweepCapable>
 			<PortraitIndex>58</PortraitIndex>
@@ -1913,7 +1913,7 @@
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
 			<UnitClassType>DOMAIN_AIR</UnitClassType>
-			<Modifier>100</Modifier>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>

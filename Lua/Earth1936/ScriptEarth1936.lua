@@ -413,7 +413,7 @@ function RomaniaAnnexation()
 	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
 	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
 
-	if 19410101 <= turnDate and 19410101 > prevDate then
+	if 19380910 <= turnDate and 19380910 > prevDate then
 		Dprint ("-------------------------------------")
 		Dprint ("Scripted Event : Romania Annexed !")
 
@@ -497,7 +497,7 @@ function HungaryAnnexation()
 	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
 	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
 
-	if 19410101 <= turnDate and 19410101 > prevDate then
+	if 19380910 <= turnDate and 19380910 > prevDate then
 		Dprint ("-------------------------------------")
 		Dprint ("Scripted Event : Hungary Annexed !")
 
@@ -581,7 +581,7 @@ function BulgariaAnnexation()
 	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
 	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
 
-	if 19410101 <= turnDate and 19410101 > prevDate then
+	if 19380910 <= turnDate and 19380910 > prevDate then
 		Dprint ("-------------------------------------")
 		Dprint ("Scripted Event : Bulgaria Annexed !")
 

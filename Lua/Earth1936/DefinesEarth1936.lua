@@ -973,16 +973,16 @@ g_Cities = {
 		{X = 23, Y = 67, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- Prag
 
 	-- FRANCE
-		{X = 13, Y = 65, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, ACADEMY, HOSPITAL, OPEN_CITY, }, AIBuildings = {LAND_FACTORY}, }, -- PARIS	
-		{X = 15, Y = 59, Buildings = { HARBOR}, AIBuildings = {FACTORY, SHIPYARD}, }, -- MARSEILLE
-		{X = 15, Y = 62, Buildings = { FACTORY, ACADEMY, ARSENAL}, AIBuildings = {SMALL_AIR_FACTORY, BASE}, }, -- LYON
+		{X = 13, Y = 65, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, ACADEMY, HOSPITAL, OPEN_CITY, ALLIEDCITY }, AIBuildings = {LAND_FACTORY}, }, -- PARIS	
+		{X = 15, Y = 59, Buildings = { HARBOR, ALLIEDCITY}, AIBuildings = {FACTORY, SHIPYARD}, }, -- MARSEILLE
+		{X = 15, Y = 62, Buildings = { FACTORY, ACADEMY, ARSENAL, ALLIEDCITY}, AIBuildings = {SMALL_AIR_FACTORY, BASE}, }, -- LYON
 		{X = 11, Y = 62, Key = true,  AIBuildings = {ARSENAL}, }, -- BORDEAUX
 		{X = 10, Y = 67, Key = true,  Buildings = { HARBOR, ALLIEDCITY },  }, -- CAEN
 		{X = 15, Y = 67, Key = true,  Buildings = { ALLIEDCITY },  }, -- METZ
 		{X = 7, Y = 67, Key = true,  Buildings = { HARBOR, ALLIEDCITY }, }, -- BREST
 		{X = 4, Y = 46, Buildings = { HARBOR, ALLIEDCITY }, }, -- CASABLANCA
 		{X = 10, Y = 47, Buildings = { HARBOR, ALLIEDCITY }, }, -- ORAN
-		{X = 12, Y = 49, Buildings = { HARBOR, BARRACKS, LEGION_HQ },}, -- ALGIER
+		{X = 12, Y = 49, Buildings = { HARBOR, BARRACKS, LEGION_HQ, ALLIEDCITY },}, -- ALGIER
 		{X = 17, Y = 49, Buildings = { HARBOR, ALLIEDCITY }, }, -- TUNIS
 		{X = 41, Y = 50, Buildings = { FACTORY, ALLIEDCITY }, AIBuildings = {ARSENAL}, }, -- DAMASCUS
 		{X = 79, Y = 39, Buildings = { HARBOR, ALLIEDCITY },}, -- SAIGON

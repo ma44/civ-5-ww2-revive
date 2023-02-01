@@ -124,7 +124,7 @@ Controls.StartButton:RegisterCallback(Mouse.eLClick, function()
 	PreGame.SetMapScript(scenarioMap.EvaluatedPath)
 	PreGame.SetLoadWBScenario(true)
 	--UI.ResetScenarioPlayerSlots(true); -- why do that ?
-	PreGame.SetGameSpeed(3)  -- Standard speed
+	PreGame.SetGameSpeed(2)  -- Standard speed; Modified to standard unit building speed for earth map
 	PreGame.SetOverrideScenarioHandicap(true)
 
 	if ( not g_bCanLoad ) then
