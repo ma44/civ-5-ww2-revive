@@ -18,8 +18,8 @@ INSERT INTO UnitConfiguration
 	(		UnitKey,			CivKey,		Var,	Name,					fxsxml,						Template,			Nb,		Form,				Scl,	Cbt,	Rgcbt,	Cst,	Mvt,	Imb,	Rng,	Mat,	Pers,	Fuel,	Flag,	Icon,	IcAtl,				FlagAtl,			Sv,				Embark  	)
 --		Key Name							Variation						Model file										Figures						Scale			RangedCombat	Move			Range			Pers	FuelCons.		IconIndex					FlagAtlas							Embarked 
 --								Nation Name			Unit Name											Template Unit				Formation					Combat			Cost			Immobile		Mat						FlagIndex		IconAtlas								SV Icon
-SELECT	'SPECIAL_FORCES',		NULL,		'',		'Special Forces',		'Paratrooper_Generic_v3',	'INFANTRY',			10,		NULL,				NULL,	32,		35,		500,	3,		NULL,	1,		1,		30,		0,		12,		NULL,	NULL,				'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
-SELECT	'MECHANIZED_INFANTRY',	NULL,		'',		'Mechanized Infantry',	NULL,						'INFANTRY',			NULL,	'MechInfantry',		NULL,	38,		NULL,	300,	4,		NULL,	NULL,	7,		15,		2,		2,		NULL,	NULL,				'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
+SELECT	'SPECIAL_FORCES',		NULL,		'',		'Special Forces',		'Paratrooper_Generic_v3',	'INFANTRY',			10,		NULL,				NULL,	32,		35,		250,	3,		NULL,	1,		1,		30,		0,		12,		NULL,	NULL,				'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
+SELECT	'MECHANIZED_INFANTRY',	NULL,		'',		'Mechanized Infantry',	NULL,						'INFANTRY',			NULL,	'MechInfantry',		NULL,	38,		NULL,	150,	4,		NULL,	NULL,	7,		15,		2,		2,		NULL,	NULL,				'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
 SELECT	'LIGHT_TANK',			NULL,		'',		'Light Tank',			'LightTank_Generic',		'TANK',				NULL,	NULL,				0.11,	40,		NULL,	300,	5,		NULL,	NULL,	12,		10,		3,		1,		9,		'WW2_UNIT_ICONS',	'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
 SELECT	'CRUISER_TANK',			NULL,		'',		'Cruiser Tank',			'LightTank_Generic',		'TANK',				NULL,	NULL,				NULL,	40,		NULL,	375,	6,		NULL,	NULL,	15,		4,		4,		1,		NULL,	NULL,				'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL
 SELECT	'LIGHT_INFANTRY_TANK',	NULL,		'',		'Light Infantry Tank',	'LightTank_Generic',		'TANK',				NULL,	NULL,				NULL,	40,		NULL,	300,	3,		NULL,	NULL,	14,		8,		4,		1,		9,		'WW2_UNIT_ICONS',	'WW2_UNIT_FLAGS',	NULL,			NULL	UNION ALL

@@ -77,8 +77,8 @@ function CombatResult (iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 		local defendingPlayerName = pDefendingPlayer:GetCivilizationShortDescription()
 		local defendingUnitName
 
-		defenderFinalDamage = defenderFinalDamage * 2
-		attackerFinalDamage = attackerFinalDamage * 2
+		defenderFinalDamage = defenderFinalDamage
+		attackerFinalDamage = attackerFinalDamage
 
 		local defenderHealth = defenderMaxHP - defenderFinalDamage
 
@@ -233,15 +233,23 @@ function CombatResult (iAttackingPlayer, iAttackingUnit, attackerDamage, attacke
 			Dprint ("Intercepting Unit:						".. interceptingUnitName, g_DebugCombat);
 			Dprint ("From Interceptor:		".. interceptorDamage, g_DebugCombat);
 			Dprint ("From Opponent:		".. attackerDamage .."					".. defenderDamage, g_DebugCombat);
-		else	
+		else
 			Dprint ("Receveid Damage:		".. attackerDamage .."					".. defenderDamage, g_DebugCombat);
 		end
+		Dprint ("combat ".. combatType .." domain ".. pAttackingUnit:GetDomainType())
+		if (combatType == AIRBOMB) then
+			if pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_FIGHTER_BOMBER.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_ATTACK_AIRCRAFT.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_LIGHT_BOMBER.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_FAST_BOMBER.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_FAST_BOMBER_2.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_JET_BOMBER.ID ) or pAttackingUnit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_JET_BOMBER_2.ID ) then
+				pDefendingUnit:SetHasPromotion(GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID, true)	
+			end
+		end
+
 		Dprint ("Final Damage:		".. attackerFinalDamage .."					"..  defenderFinalDamage, g_DebugCombat);
 		if pAttackingUnit:IsRanged() and pAttackingUnit:GetDomainType() ~= DomainTypes.DOMAIN_AIR then -- fix bad leftHP calculation for ranged unit
 			Dprint ("HitPoints left:		".. attackerMaxHP - pAttackingUnit:GetDamage() .."					"..  defenderHealth, g_DebugCombat);
 		else
 			Dprint ("HitPoints left:		".. attackerMaxHP - attackerFinalDamage .."					"..  defenderHealth, g_DebugCombat);
 		end
+
 		-- retreat ?
 		local bRetreat = false
 		local diffDamage = defenderDamage - attackerDamage;
@@ -809,6 +817,7 @@ function Retreat (iAttackingPlayer, iAttackingUnit, iDefendingPlayer, iDefending
 		end
 
 	end
+
 
 	return false
 end 

@@ -866,6 +866,7 @@
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 		</Row>
 	</UnitPromotions>
+
 	<UnitPromotions_UnitCombatMods>
 		<Row>
 			<PromotionType>PROMOTION_PARTISAN</PromotionType>
@@ -883,6 +884,40 @@
 			<PromotionType>PROMOTION_PARTISAN</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
 			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+
+	<!-- Reworked CAS; discourage doomstacking -->
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_CAS_SURPRESSED</Type>
+			<Description>TXT_KEY_TXT_KEY_PROMOTION_CAS_SURPRESSED</Description>
+			<PediaEntry>TXT_KEY_TXT_KEY_PROMOTION_CAS_SURPRESSED</PediaEntry>
+			<Help>PROMOTION_CAS_SURPRESSED_DESC</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<VisibilityChange>1</VisibilityChange>
+			<PortraitIndex>57</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+	</UnitPromotions>
+
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_CAS_SURPRESSED</PromotionType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>-25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CAS_SURPRESSED</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CAS_SURPRESSED</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>100</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 
@@ -1501,7 +1536,7 @@
 		<Row>
 			<PromotionType>PROMOTION_OLD_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1545,7 +1580,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1589,7 +1624,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1633,7 +1668,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_B</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1677,7 +1712,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_C</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1721,7 +1756,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_2_D</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>33</Modifier>
+			<Modifier>133</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1765,7 +1800,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_3</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>50</Modifier>
+			<Modifier>150</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1807,7 +1842,7 @@
 		<Row>
 			<PromotionType>PROMOTION_JET_FIGHTER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>50</Modifier>
+			<Modifier>150</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 
@@ -1834,7 +1869,7 @@
 		<Row>
 			<PromotionType>PROMOTION_FIGHTER_BOMBER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>25</Modifier>
+			<Modifier>75</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 	<UnitPromotions_UnitClasses>
@@ -1877,28 +1912,33 @@
 	<UnitPromotions_UnitClasses>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
-			<UnitClassType>UNITCLASS_BOMBER</UnitClassType>
+			<UnitClassType>DOMAIN_AIR</UnitClassType>
 			<Modifier>100</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
+			<UnitClassType>UNITCLASS_BOMBER</UnitClassType>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
 			<UnitClassType>UNITCLASS_OLD_HEAVY_BOMBER</UnitClassType>
-			<Modifier>100</Modifier>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
 			<UnitClassType>UNITCLASS_HEAVY_BOMBER</UnitClassType>
-			<Modifier>100</Modifier>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
 			<UnitClassType>UNITCLASS_HEAVY_BOMBER_2</UnitClassType>
-			<Modifier>100</Modifier>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>
 			<UnitClassType>UNITCLASS_HEAVY_BOMBER_3</UnitClassType>
-			<Modifier>100</Modifier>
+			<Modifier>200</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_HEAVY_FIGHTER</PromotionType>

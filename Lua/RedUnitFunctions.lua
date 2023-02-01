@@ -36,9 +36,12 @@ function UnitCaptureTile(playerID, UnitID, x, y, norepeat)
 	local ownerID = plot:GetOwner()
 	
 	if ( norepeat == 0 or not norepeat ) then
-		for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
-			if ( plot2:GetNumUnits() <= 0 ) then
-				UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
+		local numType = g_Unit_Classes[unitClassID].NumType or -1
+		if (numType ~= CLASS_PARATROOPER) then
+			for plot2 in PlotAreaSpiralIterator(plot, 1, sector, anticlock, DIRECTION_OUTWARDS, false) do
+				if ( plot2:GetNumUnits() <= 0 ) then
+					UnitCaptureTile(playerID, UnitID, plot2:GetX(), plot2:GetY(), 1)
+				end
 			end
 		end
 	end
@@ -1541,6 +1544,11 @@ function CanGetSupply (playerID, unitID, bShow )
 	local unitArea = unitPlot:GetArea()
 	local bHighlight = bShow or false
 
+	if unit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID ) then
+		unit:SetHasPromotion(PROMOTION_CAS_SURPRESSED, false)	
+		return false
+	end
+
 	if ( GameInfo.Units[unitType].Domain == "DOMAIN_SEA" or GameInfo.Units[unitType].Domain == "DOMAIN_AIR" or unit:IsEmbarked() ) then
 		-- for now don't check naval supply lines
 		return true
@@ -1805,8 +1813,10 @@ function InitializeUnit(playerID, unitID)
 		local unitType = unit:GetUnitType()
 		local unitClassType = unit:GetUnitClassType()
 		local numType = g_Unit_Classes[unitClassType].NumType or -1
-		if(not unit:IsEmbarked() and (numType ~= CLASS_PARATROOPER) and (unit:GetGameTurnCreated() == Game.GetGameTurn()) and not Game.GetGameTurn() == 0) then
-			unit:SetDamage(MAX_HP / 3)
+		local unitPlot = Map.GetPlot(unit:GetX(), unit:GetY())
+		
+		if(unitPlot:IsCity() and (unit:GetGameTurnCreated() == Game.GetGameTurn()) and (Game.GetGameTurn() ~= 0)) then
+			unit:SetDamage(MAX_HP / 1.25)
 		end
 
 		-- initialize only new units...

@@ -72,7 +72,7 @@ if(PreGame.GetGameOption("PlayEpicGame") ~= nil) and (PreGame.GetGameOption("Pla
 	for year = 1938, 1946 do -- see large
 		for month = 1, #monthList do
 			for day = 1, #dayList do
-				local bStart = (month >= 3 and year == 1938) -- Start date !
+				local bStart = (month >= 8 and year == 1938) -- Start date !
 				if bStart or (year > 1938) then
 					local numMonth, numDay
 					if month < 10 then numMonth = "0"..month; else numMonth = month; end
@@ -295,15 +295,16 @@ g_Initial_OOB = {
 	{Name = "USSR fortification", X = 33, Y = 77, Domain = "Land", AI = true, CivID = USSR, Group = {FORTIFIED_GUN}, UnitsName = {"Krepost Oreshek"}, },
 
 -- Germany
-	{Name = "German central army", X = 21, Y = 69, Domain = "Land", CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_I, GE_PANZER_35, GE_PANZER_II, AT_GUN}, UnitsXP = {9,9,9,9,9},  },
-	{Name = "German north army", X = 19, Y = 71, Domain = "Land", CivID = GERMANY, Group = {GE_MARDER_I, GE_PANZER_38, GE_PANZER_35, GE_PANZER_II, AT_GUN}, UnitsXP = {9,9,9,9,9},  },
-	{Name = "German Berlin army", X = 23, Y = 70, Domain = "City", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_35, GE_PANZER_II, GE_PANZER_I, AT_GUN}, UnitsXP = {9,9,9,9,9},  },
-	{Name = "German Luftwaffe", X = 23, Y = 70, Domain = "Air", CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_HE111, GE_JU87, GE_JU87, GE_JU87}, UnitsXP = {9,9,9,9,9,9,9},  }, 
-	{Name = "German Luftwaffe AI Bonus", X = 20, Y = 67, Domain = "Air", AI = true, CivID = GERMANY, Group = {GE_BF109, GE_HE111, GE_JU87}, UnitsXP = {9,9,9}, },
-	{Name = "German Fleet", X = 26, Y = 74, Domain = "Sea", CivID = GERMANY, Group = {GE_BATTLESHIP, GE_DESTROYER}, UnitsXP = {9,9},  },
-	{Name = "German Submarine Fleet", X = 18, Y = 74, Domain = "Sea", CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE, GE_DESTROYER}, UnitsXP = {9,9,9,9},  },
-	{Name = "German Submarine AI Bonus", X = 1, Y = 62, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE}, UnitsXP = {9,9,9}, },
-	{Name = "German Fleet AI bonus", X = 17, Y = 77, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_LEIPZIG, GE_DESTROYER, GE_DESTROYER }, UnitsXP = {9,9,9},  },
+	{Name = "German central I army", X = 21, Y = 69, Domain = "Land", CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_I, GE_PANZER_35, GE_PANZER_II, AT_GUN}, UnitsXP = {60,60,60,60,60},  },
+	{Name = "German central II army", X = 23, Y = 67, Domain = "Land", CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_I, GE_PANZER_35, GE_PANZER_II, AT_GUN}, UnitsXP = {60,60,60,60,60},  },
+	{Name = "German north army", X = 19, Y = 71, Domain = "Land", CivID = GERMANY, Group = {GE_MARDER_I, GE_PANZER_38, GE_PANZER_35, GE_PANZER_II, AT_GUN}, UnitsXP = {60,60,60,60,60},  },
+	{Name = "German Berlin army", X = 23, Y = 70, Domain = "City", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_35, GE_PANZER_II, GE_PANZER_I, AT_GUN}, UnitsXP = {60,60,60,60,60},  },
+	{Name = "German Luftwaffe", X = 23, Y = 70, Domain = "Air", CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_HE111, GE_JU87, GE_JU87, GE_JU87}, UnitsXP = {60,60,60,60,60,60,60},  }, 
+	{Name = "German Luftwaffe AI Bonus", X = 20, Y = 67, Domain = "Air", AI = true, CivID = GERMANY, Group = {GE_BF109, GE_HE111, GE_JU87}, UnitsXP = {60,60,60}, },
+	{Name = "German Fleet", X = 26, Y = 74, Domain = "Sea", CivID = GERMANY, Group = {GE_BATTLESHIP, GE_DESTROYER}, UnitsXP = {60,60},  },
+	{Name = "German Submarine Fleet", X = 18, Y = 74, Domain = "Sea", CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE, GE_DESTROYER}, UnitsXP = {60,60,60,60},  },
+	{Name = "German Submarine AI Bonus", X = 1, Y = 62, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE}, UnitsXP = {60,60,60}, },
+	{Name = "German Fleet AI bonus", X = 17, Y = 77, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_LEIPZIG, GE_DESTROYER, GE_DESTROYER }, UnitsXP = {60,60,60},  },
 
 -- Italy
 	{Name = "Italian army", X = 19, Y = 60, Domain = "Land", CivID = ITALY, Group = {IT_INFANTRY, IT_INFANTRY, IT_INFANTRY, IT_INFANTRY, AT_GUN, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
@@ -328,15 +329,23 @@ g_Initial_OOB = {
 	{Name = "Fortress Corregidor", X = 85, Y = 37, Domain = "Land", CivID = AMERICA, Group = {FORTIFIED_GUN}, UnitsName = {"Fortress Corregidor"},  },
 
 -- Japan
-	{Name = "Japanese Manchurian Army I", X = 89, Y = 66, Domain = "Land", CivID = JAPAN, Group = {JP_TYPE95, JP_TYPE97_SHINHOTO, JP_INFANTRY, JP_INFANTRY, ARTILLERY, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
+	{Name = "Japanese Manchurian Army I", X = 80, Y = 61, Domain = "Land", CivID = JAPAN, Group = {JP_TYPE95, JP_TYPE97_SHINHOTO, JP_INFANTRY, JP_INFANTRY, ARTILLERY, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
+	{Name = "China Army I", X = 84, Y = 56, Domain = "Land", CivID = JAPAN, Group = {JP_TYPE95, JP_TYPE97_SHINHOTO, JP_INFANTRY, JP_INFANTRY, ARTILLERY, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
+	{Name = "China Army II", X = 84, Y = 52, Domain = "Land", CivID = JAPAN, Group = {JP_TYPE95, JP_TYPE97_SHINHOTO, JP_INFANTRY, JP_INFANTRY, ARTILLERY, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
+	{Name = "China Army III", X = 82, Y = 46, Domain = "Land", CivID = JAPAN, Group = {JP_TYPE95, JP_TYPE97_SHINHOTO, JP_INFANTRY, JP_INFANTRY, ARTILLERY, ARTILLERY}, UnitsXP = {9,9,9,9,9,9},  },
 	{Name = "Japanese Manchurian Air", X = 89, Y = 61, Domain = "Air", CivID = JAPAN, Group = {JP_A5M, JP_A5M, JP_KI27, JP_KI27}, UnitsXP = {9,9,9,9},  },
 	{Name = "Japanese Korea Air", X = 86, Y = 67, Domain = "Air", CivID = JAPAN, Group = {JP_KI21, JP_AICHI, JP_KI21}, UnitsXP = {9,9,9},  },
 	{Name = "Japanese Western fleet", X = 94, Y = 62, Domain = "Sea", CivID = JAPAN, Group = {JP_SUBMARINE, JP_KAGERO, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_TAKAO,}, UnitsXP = {9,9,9,9,9,9},  },
 	{Name = "Japanese Eastern Fleet", X = 97, Y = 54, Domain = "Sea", CivID = JAPAN, Group = {JP_SUBMARINE, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_KAGERO, JP_TAKAO}, UnitsXP = {9,9,9,9,9,9},  },
 
 -- China
-	{Name = "Chinese north army", X = 81, Y = 62, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
-	{Name = "Chinese south army", X = 82, Y = 46, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese north army", X = 78, Y = 59, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese south army", X = 81, Y = 54, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese east army", X = 84, Y = 49, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese west army", X = 79, Y = 50, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese more army", X = 76, Y = 49, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+	{Name = "Chinese even more army", X = 75, Y = 53, Domain = "Land", CivID = CHINA, Group = {CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_INFANTRY, CH_T26B}, UnitsXP = {7,7,7,7,7,7,7},  },
+
 	{Name = "Chinese fleet I", X = 88, Y = 58, Domain = "Sea", CivID = CHINA, Group = {DESTROYER, DESTROYER}, UnitsXP = {7,7},  },
 	{Name = "Chinese fleet II", X = 80, Y = 43, Domain = "Sea", CivID = CHINA, Group = {DESTROYER, DESTROYER}, UnitsXP = {7,7},  },
 	{Name = "Chinese fleet III", X = 84, Y = 40, Domain = "Sea", CivID = CHINA, Group = {DESTROYER, DESTROYER}, UnitsXP = {7,7},  },
@@ -521,13 +530,13 @@ g_MinorProtector = {
 -- Major Civilizations
 -- to do in all table : add entry bCheck = function() return true or false, apply change only if true or nill
 g_Major_Diplomacy = {
-	[19370707] = { 
+	[19380901] = { 
 		{Type = DOW, Civ1 = JAPAN, Civ2 = CHINA},
 	},
-	[19380310] = { 
+	[19380901] = { 
 		{Type = DOF, Civ1 = GERMANY, Civ2 = ITALY},
 	},
-	[19380316] = { 
+	[19380901] = { 
 		{Type = DEN, Civ1 = FRANCE, Civ2 = GERMANY},
 		{Type = DEN, Civ1 = ENGLAND, Civ2 = GERMANY},
 	},
@@ -581,7 +590,7 @@ g_Major_Diplomacy = {
 
 -- Minor Civilizations
 g_Minor_Relation = {
-	[19370301] = { 
+	[19380901] = { 
 		{Value = -120, Major = CHINA, Minor = COMCHINA},
 		{Value = 50, Major = USSR, Minor = RSPAIN},
 		{Value = -50, Major = USSR, Minor = FINLAND},
@@ -608,7 +617,7 @@ g_Minor_Relation = {
 		{Value = 50, Major = ITALY, Minor = ROMANIA},
 		{Value = 50, Major = ITALY, Minor = AUSTRIA},
 	},
-	[19380310] = { 
+	[19380901] = { 
 		{Value = -50, Major = GERMANY, Minor = AUSTRIA},
 		{Value = -50, Major = ITALY, Minor = AUSTRIA},
 	},
@@ -745,7 +754,7 @@ g_Minor_Relation = {
 	},									
 }
 g_Major_Minor_DoW = {
-	[19370301] = {
+	[19380901] = {
 	 	{Major = CHINA, Minor = COMCHINA},
 	},
 	[19390901] = { 
@@ -791,7 +800,7 @@ g_Major_Minor_DoW = {
 	},
 }
 g_Major_Minor_Peace = {
-	[19370710] = {
+	[19380901] = {
 	 	{Major = CHINA, Minor = COMCHINA},
 	},
 	[19400313] = { 
@@ -806,7 +815,7 @@ g_Major_Minor_Peace = {
 	},
 }
 g_Minor_Minor_DoW = {
-	[19370301] = {
+	[19380901] = {
 		{Minor1 = RSPAIN, Minor2 = NSPAIN},
 	},
 	[19410410] = {
@@ -818,7 +827,7 @@ g_Minor_Minor_DoW = {
 	},
 }
 g_Minor_Major_DoW = {
-	[19370710] = {
+	[19380910] = {
 	 	{Minor = COMCHINA, Major = JAPAN},
 	},
 	[19390903] = { 
@@ -955,11 +964,13 @@ g_Cities = {
 		{X = 161, Y = 77, Buildings = { HARBOR, COLONY }, }, -- GOOSE BAY
 
 	-- GERMANY
-	    {X = 23, Y = 70, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL }, AIBuildings = {LAND_FACTORY}, }, -- BERLIN
-		{X = 20, Y = 73, Key = true, Buildings = { BANK, HARBOR, FACTORY}, AIBuildings = {BARRACKS, SHIPYARD, BASE, OIL_REFINERY}, }, -- HAMBURG
-		{X = 21, Y = 64, Key = true, Buildings = { BANK, FACTORY }, AIBuildings = {FACTORY, BARRACKS, LAND_FACTORY, ARSENAL, BASE, OIL_REFINERY}, }, -- MÜNCHEN
-		{X = 20, Y = 67, Key = true, Buildings = { BANK, FACTORY}, AIBuildings = {LARGE_AIR_FACTORY}, }, -- FRANKFURT
-		{X = 19, Y = 70, Buildings = { FACTORY, BANK}, AIBuildings = {SMALL_AIR_FACTORY}, }, -- KÖLN
+	    {X = 23, Y = 70, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL }, AIBuildings = {}, }, -- BERLIN
+		{X = 20, Y = 73, Key = true, Buildings = { BANK, BARRACKS, SHIPYARD, BASE, ARSENAL, HARBOR, ACADEMY, FACTORY}, AIBuildings = {}, }, -- HAMBURG
+		{X = 21, Y = 64, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, HARBOR, ACADEMY}, AIBuildings = {}, }, -- MÜNCHEN
+		{X = 20, Y = 67, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, HARBOR, ACADEMY}, AIBuildings = {}, }, -- FRANKFURT
+		{X = 19, Y = 70, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- KÖLN
+		{X = 24, Y = 64, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- Wien
+		{X = 23, Y = 67, Buildings = { FACTORY, BANK, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {}, }, -- Prag
 
 	-- FRANCE
 		{X = 13, Y = 65, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, ACADEMY, HOSPITAL, OPEN_CITY, }, AIBuildings = {LAND_FACTORY}, }, -- PARIS	
@@ -1092,7 +1103,7 @@ g_Cities = {
 
 	-- COMMUNIST CHINA
 		{X = 75, Y = 60, Buildings = { FACTORY, BARRACKS, ARSENAL },}, -- XINING
-		{X = 82, Y = 51, Buildings = { FACTORY, BARRACKS, ARSENAL },}, -- NANCHANG
+		{X = 72, Y = 60, Buildings = { FACTORY, BARRACKS, ARSENAL },}, -- NANCHANG
 }
 
 

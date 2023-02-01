@@ -85,7 +85,7 @@
 			<Where Type="BUILDING_MILITARY_ACADEMY"/>
 			<Set>
 				<Cost>200</Cost>
-				<GoldMaintenance>5</GoldMaintenance>
+				<GoldMaintenance>1</GoldMaintenance>
 				<IconAtlas>WW2_BUILDINGS</IconAtlas>
 				<PortraitIndex>30</PortraitIndex>
 			</Set>
@@ -94,8 +94,7 @@
 			<Where Type="BUILDING_MILITARY_BASE"/>
 			<Set>
 				<Cost>250</Cost>
-				<GoldMaintenance>10</GoldMaintenance>
-				<HurryCostModifier>9999</HurryCostModifier>
+				<GoldMaintenance>1</GoldMaintenance>
 				<IconAtlas>WW2_BUILDINGS</IconAtlas>
 				<PortraitIndex>32</PortraitIndex>
 			</Set>
@@ -104,8 +103,7 @@
 			<Where Type="BUILDING_ARSENAL"/>
 			<Set>
 				<Cost>150</Cost>
-				<GoldMaintenance>3</GoldMaintenance>
-				<HurryCostModifier>9999</HurryCostModifier>
+				<GoldMaintenance>1</GoldMaintenance>
 				<IconAtlas>WW2_BUILDINGS</IconAtlas>
 				<PortraitIndex>31</PortraitIndex>
 			</Set>

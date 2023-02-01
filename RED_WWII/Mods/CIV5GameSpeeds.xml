@@ -133,7 +133,7 @@
 			<Help>TXT_KEY_GAMESPEED_QUICK_HELP</Help>
 			<DealDuration>25</DealDuration>
 			<GrowthPercent>33</GrowthPercent>
-			<TrainPercent>33</TrainPercent>
+			<TrainPercent>66</TrainPercent>
 			<ConstructPercent>33</ConstructPercent>
 			<CreatePercent>33</CreatePercent>
 			<ResearchPercent>33</ResearchPercent>

@@ -778,7 +778,7 @@ function ManageResources(playerID)
 
 		for unit in player:Units() do
 			-- don't reinforce units out of range or totally healed
-			if not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY))
+			if not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY) and not unit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID ))
 				and not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY_SPECIAL_FORCES))
 				and not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY_MECHANIZED))
 				and ( unit:GetCurrHitPoints() < unit:GetMaxHitPoints() )
@@ -797,6 +797,8 @@ function ManageResources(playerID)
 					local key = GetUnitKey(unit)
 					healTable[key] = 0
 				end
+			else
+				unit:SetHasPromotion(PROMOTION_CAS_SURPRESSED, false)	
 			end
 		end
 
