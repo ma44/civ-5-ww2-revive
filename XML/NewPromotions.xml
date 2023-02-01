@@ -2691,6 +2691,7 @@
 			<CannotBeChosen>true</CannotBeChosen>
 			<CargoChange>3</CargoChange>
 			<Recon>true</Recon>
+			<VisibilityChange>3</VisibilityChange>
 			<OnlyDefensive>1</OnlyDefensive>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
@@ -2746,7 +2747,7 @@
 			<OnlyDefensive>1</OnlyDefensive>
 			<InterceptChanceChange>40</InterceptChanceChange>
 			<NumInterceptionChange>2</NumInterceptionChange>
-			<VisibilityChange>3</VisibilityChange>
+			<VisibilityChange>2</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -2841,7 +2842,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<OnlyDefensive>1</OnlyDefensive>
-			<VisibilityChange>2</VisibilityChange>
+			<VisibilityChange>1</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>

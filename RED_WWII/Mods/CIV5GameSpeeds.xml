@@ -146,7 +146,7 @@
 			<BarbPercent>33</BarbPercent>
 			<FeatureProductionPercent>33</FeatureProductionPercent>
 			<UnitDiscoverPercent>33</UnitDiscoverPercent>
-			<UnitHurryPercent>33</UnitHurryPercent>
+			<UnitHurryPercent>66</UnitHurryPercent>
 			<UnitTradePercent>33</UnitTradePercent>
 			<GoldenAgePercent>80</GoldenAgePercent>
 			<HurryPercent>100</HurryPercent>

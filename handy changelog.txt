@@ -15,7 +15,7 @@
 - Arsenal and military bases can now be bought out at normal prices and no longer murders gold income
 - Buffed up germany's starting army and economic situation
 - Paratroopers no longer get AoE tile capture; -50% instead of -25% combat strength vs armor
-- Non-CAS and bomber airplanes get an additional +100% combat bonus; this hopefully makes interception deadly
+- Non-CAS and bomber airplanes get an additional +100% combat bonus vs air; this hopefully makes interception deadly
 - Attacking an enemy target with CAS related airplane induces a temporary combat debuff that stops 1 reinforcement tick
 - Modified game speed to make all units relatively 2x more expensive to initially build
 - Units that are primarly infantry or artillery/field guns are 1/2th the hammer cost
