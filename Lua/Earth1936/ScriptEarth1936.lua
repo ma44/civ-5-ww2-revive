@@ -406,6 +406,258 @@ function CzechAnnexation()
 	end
 end
 
+function RomaniaAnnexation()
+	
+	local turn = Game.GetGameTurn()
+	local turnDate, prevDate = 0, 0
+	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
+	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
+
+	if 19410101 <= turnDate and 19410101 > prevDate then
+		Dprint ("-------------------------------------")
+		Dprint ("Scripted Event : Romania Annexed !")
+
+		local iGermany = GetPlayerIDFromCivID (GERMANY, false, true)
+		local pGermany = Players[iGermany]
+			
+		local team = Teams[ pGermany:GetTeam() ]
+		Dprint("- Germany Selected ...")
+		local savedData = Modding.OpenSaveData()
+		local iValue = savedData.GetValue("RomaniaHasFalled")
+		if (iValue ~= 1) then
+			Dprint("- First occurence, launching Fall of Romania script ...")
+
+			local iRomania = GetPlayerIDFromCivID (ROMANIA, true, true)
+			local pRomania = Players[iRomania]
+
+			for unit in pRomania:Units() do 
+				unit:Kill()
+			end						
+
+			Dprint("- Change Romania cities ownership ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local plotKey = GetPlotKey ( plot )
+				if plot:IsCity() then
+					city = plot:GetPlotCity()
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if city:GetOwner() == iRomania and originalOwner ~= iRomania then -- liberate cities captured by Czechoslovakia
+						Dprint(" - " .. city:GetName() .. " was captured, liberate...")	
+						local originalPlayer = Players[originalOwner]
+						originalPlayer:AcquireCity(city, false, true)
+						--city:SetOccupied(false) -- needed in this case ?
+					elseif originalOwner == iRomania then
+						if (x > 1 and x < 100)  then -- Germany
+							Dprint(" - " .. city:GetName() .. " is in Germany sphere...")	
+							if city:GetOwner() ~= iGermany then 
+								pGermany:AcquireCity(city, false, true)
+								city:SetPuppet(false)
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							else -- just remove resistance if city was already occupied
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							end
+						end					
+					end
+				end
+			end
+
+			Dprint("Updating territory map ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local ownerID = plot:GetOwner()
+				-- check only owned plot...
+				if (ownerID ~= -1) then
+					local plotKey = GetPlotKey ( plot )
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if originalOwner ~= iRomania and ownerID == iRomania then -- liberate plot captured by Hungary
+						plot:SetOwner(originalOwner, -1 ) 
+								 
+					elseif originalOwner == iRomania and (x > 1 and x < 100)  then -- German territory
+						plot:SetOwner(iGermany, -1 ) 
+
+					end
+				end
+			end			
+				
+			Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_DIPLOMACY_DECLARATION, pCzechoslovakia:GetName() .. " has beeen annexed by Germany, Germany has now united with Czechoslovakia and created the Puppet Regime Slovakia.", pCzechoslovakia:GetName() .. " has been annexed !", -1, -1)
+
+			savedData.SetValue("RomaniaHasFalled", 1)
+		end
+	end
+end
+
+function HungaryAnnexation()
+	
+	local turn = Game.GetGameTurn()
+	local turnDate, prevDate = 0, 0
+	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
+	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
+
+	if 19410101 <= turnDate and 19410101 > prevDate then
+		Dprint ("-------------------------------------")
+		Dprint ("Scripted Event : Hungary Annexed !")
+
+		local iGermany = GetPlayerIDFromCivID (GERMANY, false, true)
+		local pGermany = Players[iGermany]
+			
+		local team = Teams[ pGermany:GetTeam() ]
+		Dprint("- Germany Selected ...")
+		local savedData = Modding.OpenSaveData()
+		local iValue = savedData.GetValue("HungaryHasFalled")
+		if (iValue ~= 1) then
+			Dprint("- First occurence, launching Fall of Hungary script ...")
+
+			local iHungary = GetPlayerIDFromCivID (HUNGARY, true, true)
+			local pHungary = Players[iHungary]
+
+			for unit in pHungary:Units() do 
+				unit:Kill()
+			end						
+
+			Dprint("- Change Hungary cities ownership ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local plotKey = GetPlotKey ( plot )
+				if plot:IsCity() then
+					city = plot:GetPlotCity()
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if city:GetOwner() == iHungary and originalOwner ~= iHungary then -- liberate cities captured by Czechoslovakia
+						Dprint(" - " .. city:GetName() .. " was captured, liberate...")	
+						local originalPlayer = Players[originalOwner]
+						originalPlayer:AcquireCity(city, false, true)
+						--city:SetOccupied(false) -- needed in this case ?
+					elseif originalOwner == iHungary then
+						if (x > 1 and x < 100)  then -- Germany
+							Dprint(" - " .. city:GetName() .. " is in Germany sphere...")	
+							if city:GetOwner() ~= iGermany then 
+								pGermany:AcquireCity(city, false, true)
+								city:SetPuppet(false)
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							else -- just remove resistance if city was already occupied
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							end
+						end					
+					end
+				end
+			end
+
+			Dprint("Updating territory map ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local ownerID = plot:GetOwner()
+				-- check only owned plot...
+				if (ownerID ~= -1) then
+					local plotKey = GetPlotKey ( plot )
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if originalOwner ~= iHungary and ownerID == iHungary then -- liberate plot captured by Hungary
+						plot:SetOwner(originalOwner, -1 ) 
+								 
+					elseif originalOwner == iHungary and (x > 1 and x < 100)  then -- German territory
+						plot:SetOwner(iGermany, -1 ) 
+
+					end
+				end
+			end			
+				
+			Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_DIPLOMACY_DECLARATION, pCzechoslovakia:GetName() .. " has beeen annexed by Germany, Germany has now united with Czechoslovakia and created the Puppet Regime Slovakia.", pCzechoslovakia:GetName() .. " has been annexed !", -1, -1)
+
+			savedData.SetValue("HungaryHasFalled", 1)
+		end
+	end
+end
+
+function BulgariaAnnexation()
+	
+	local turn = Game.GetGameTurn()
+	local turnDate, prevDate = 0, 0
+	if g_Calendar[turn] then turnDate = g_Calendar[turn].Number else turnDate = 19470105 end
+	if g_Calendar[turn-1] then prevDate = g_Calendar[turn-1].Number else  prevDate = turnDate - 1 end
+
+	if 19410101 <= turnDate and 19410101 > prevDate then
+		Dprint ("-------------------------------------")
+		Dprint ("Scripted Event : Bulgaria Annexed !")
+
+		local iGermany = GetPlayerIDFromCivID (GERMANY, false, true)
+		local pGermany = Players[iGermany]
+			
+		local team = Teams[ pGermany:GetTeam() ]
+		Dprint("- Germany Selected ...")
+		local savedData = Modding.OpenSaveData()
+		local iValue = savedData.GetValue("BulgariaHasFalled")
+		if (iValue ~= 1) then
+			Dprint("- First occurence, launching Fall of Bulgaria script ...")
+
+			local iBulgaria = GetPlayerIDFromCivID (BULGARIA, true, true)
+			local pBulgaria = Players[iBulgaria]
+
+			for unit in pBulgaria:Units() do 
+				unit:Kill()
+			end						
+
+			Dprint("- Change Bulgaria cities ownership ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local plotKey = GetPlotKey ( plot )
+				if plot:IsCity() then
+					city = plot:GetPlotCity()
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if city:GetOwner() == iBulgaria and originalOwner ~= iBulgaria then -- liberate cities captured by Czechoslovakia
+						Dprint(" - " .. city:GetName() .. " was captured, liberate...")	
+						local originalPlayer = Players[originalOwner]
+						originalPlayer:AcquireCity(city, false, true)
+						--city:SetOccupied(false) -- needed in this case ?
+					elseif originalOwner == iBulgaria then
+						if (x > 1 and x < 100)  then -- Germany
+							Dprint(" - " .. city:GetName() .. " is in Germany sphere...")	
+							if city:GetOwner() ~= iGermany then 
+								pGermany:AcquireCity(city, false, true)
+								city:SetPuppet(false)
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							else -- just remove resistance if city was already occupied
+								city:ChangeResistanceTurns(-city:GetResistanceTurns())
+							end
+						end					
+					end
+				end
+			end
+
+			Dprint("Updating territory map ...")	
+			for iPlotLoop = 0, Map.GetNumPlots()-1, 1 do
+				local plot = Map.GetPlotByIndex(iPlotLoop)
+				local x = plot:GetX()
+				local y = plot:GetY()
+				local ownerID = plot:GetOwner()
+				-- check only owned plot...
+				if (ownerID ~= -1) then
+					local plotKey = GetPlotKey ( plot )
+					local originalOwner = GetPlotFirstOwner(plotKey)
+					if originalOwner ~= iBulgaria and ownerID == iBulgaria then -- liberate plot captured by Hungary
+						plot:SetOwner(originalOwner, -1 ) 
+								 
+					elseif originalOwner == iBulgaria and (x > 1 and x < 100)  then -- German territory
+						plot:SetOwner(iGermany, -1 ) 
+
+					end
+				end
+			end			
+				
+			Players[Game.GetActivePlayer()]:AddNotification(NotificationTypes.NOTIFICATION_DIPLOMACY_DECLARATION, pCzechoslovakia:GetName() .. " has beeen annexed by Germany, Germany has now united with Czechoslovakia and created the Puppet Regime Slovakia.", pCzechoslovakia:GetName() .. " has been annexed !", -1, -1)
+
+			savedData.SetValue("BulgariaHasFalled", 1)
+		end
+	end
+end
+
 -----------------------------------------
 -- Annexation of the Baltic States
 -----------------------------------------

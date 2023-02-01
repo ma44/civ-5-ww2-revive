@@ -19,5 +19,7 @@
 - Attacking an enemy target with CAS related airplane induces a temporary combat debuff that stops 1 reinforcement tick
 - Modified game speed to make all units relatively 2x more expensive to initially build
 - Units that are primarly infantry or artillery/field guns are 1/2th the hammer cost
-- 
-- 
+- Freshly created units (not on the first turn of the game) now start with 15/75 instead of 37/75 hitpoints
+- Cruisers, destroyers, submarines and carriers get extra vision range
+- Destroyers and cruisers have a +200% and +100% (respectively) bonus towards intercepting air units now; their base strength is extremely low
+- Germany will annex all the balkan axis minors in Jan 1941

@@ -896,7 +896,7 @@
 			<Help>PROMOTION_CAS_SURPRESSED_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
-			<VisibilityChange>1</VisibilityChange>
+			<VisibilityChange>-1</VisibilityChange>
 			<PortraitIndex>57</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -2746,6 +2746,7 @@
 			<OnlyDefensive>1</OnlyDefensive>
 			<InterceptChanceChange>40</InterceptChanceChange>
 			<NumInterceptionChange>2</NumInterceptionChange>
+			<VisibilityChange>3</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -2768,6 +2769,13 @@
 			<Modifier>200</Modifier>
 		</Row>
 	</UnitPromotions_UnitClasses>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_DESTROYER</PromotionType>
+			<DomainType>DOMAIN_AIR</DomainType>
+			<Modifier>200</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
 
 	<!-- SUBMARINES -->
 	<UnitPromotions>
@@ -2778,6 +2786,7 @@
 			<Help>TXT_KEY_PROMOTION_SUBMARINE_DESC</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
+			<VisibilityChange>1</VisibilityChange>
 			<OnlyDefensive>1</OnlyDefensive>
 			<Invisible>INVISIBLE_SUBMARINE</Invisible>
 			<CanMoveImpassable>true</CanMoveImpassable>
@@ -2832,6 +2841,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<CannotBeChosen>true</CannotBeChosen>
 			<OnlyDefensive>1</OnlyDefensive>
+			<VisibilityChange>2</VisibilityChange>
 			<PortraitIndex>58</PortraitIndex>
 			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
@@ -2841,7 +2851,7 @@
 		<Row>
 			<PromotionType>PROMOTION_CRUISER</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>25</Modifier>
+			<Modifier>100</Modifier>
 		</Row>
 		<Row>
 			<PromotionType>PROMOTION_CRUISER</PromotionType>

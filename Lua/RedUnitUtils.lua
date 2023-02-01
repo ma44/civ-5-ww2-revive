@@ -98,6 +98,11 @@ function CanGetReinforcement(unit)
 	if not unit then
 		return false
 	end
+	if (unit:IsHasPromotion(PROMOTION_CAS_SURPRESSED)) then
+		unit:SetHasPromotion(PROMOTION_CAS_SURPRESSED, false)	
+		return false
+	end
+
 	if not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY))
 		and not (unit:IsHasPromotion(PROMOTION_NO_SUPPLY_SPECIAL_FORCES))
 		and ( unit:GetCurrHitPoints() < unit:GetMaxHitPoints() )
