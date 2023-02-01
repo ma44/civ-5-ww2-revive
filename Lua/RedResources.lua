@@ -784,10 +784,13 @@ function ManageResources(playerID)
 				and ( unit:GetCurrHitPoints() < unit:GetMaxHitPoints() )
 				and not unit:IsEmbarked() -- land unit won't heal on sea or near harbor...
 				and not unit:IsDead()
+				and not unit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID )
 				then
 
 				local unitType = unit:GetUnitType()
 				local plot = unit:GetPlot()
+
+
 				if ( GameInfo.Units[unitType].Domain ~= "DOMAIN_SEA" ) 
 					or (GameInfo.Units[unitType].Domain == "DOMAIN_SEA" and (IsNearNavalFriendlyCity(plot, playerID) or plot:IsCity() )) 
 					then -- To do : aircraft on carrier
@@ -798,6 +801,7 @@ function ManageResources(playerID)
 					healTable[key] = 0
 				end
 			end
+			unit:SetHasPromotion(GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID, false)
 		end
 
 		-- try to reinforce the selected units

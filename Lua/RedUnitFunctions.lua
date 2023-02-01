@@ -1544,11 +1544,6 @@ function CanGetSupply (playerID, unitID, bShow )
 	local unitArea = unitPlot:GetArea()
 	local bHighlight = bShow or false
 
-	if unit:IsHasPromotion( GameInfo.UnitPromotions.PROMOTION_CAS_SURPRESSED.ID ) then
-		unit:SetHasPromotion(PROMOTION_CAS_SURPRESSED, false)	
-		return false
-	end
-
 	if ( GameInfo.Units[unitType].Domain == "DOMAIN_SEA" or GameInfo.Units[unitType].Domain == "DOMAIN_AIR" or unit:IsEmbarked() ) then
 		-- for now don't check naval supply lines
 		return true

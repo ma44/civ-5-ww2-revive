@@ -925,10 +925,10 @@ g_Minor_Major_DoW = {
 -- Key cities are cities that need to be occupied to trigger victory
 g_Cities = {
 	-- UNITED KINGDOM
-		{X = 11, Y = 71, Key = true, Buildings = { HARBOR, BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL }, AIBuildings = {LAND_FACTORY}, }, -- LONDON
-		{X = 10, Y = 77, Key = true, Buildings = { HARBOR, FACTORY}, AIBuildings = {SHIPYARD}, }, -- EDINBURGH
-		{X = 9,  Y = 74, Key = true, Buildings = { HARBOR, FACTORY}, AIBuildings = {SMALL_AIR_FACTORY}, }, -- LIVERPOOL
-		{X = 10, Y = 72, Key = true, Buildings = { FACTORY}, AIBuildings = {LARGE_AIR_FACTORY}, }, -- BIRMINGHAM
+		{X = 11, Y = 71, Key = true, Buildings = { HARBOR, BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL, ALLIEDCITY }, AIBuildings = {LAND_FACTORY}, }, -- LONDON
+		{X = 10, Y = 77, Key = true, Buildings = { HARBOR, FACTORY, ALLIEDCITY}, AIBuildings = {SHIPYARD}, }, -- EDINBURGH
+		{X = 9,  Y = 74, Key = true, Buildings = { HARBOR, FACTORY, ALLIEDCITY}, AIBuildings = {SMALL_AIR_FACTORY}, }, -- LIVERPOOL
+		{X = 10, Y = 72, Key = true, Buildings = { FACTORY, ALLIEDCITY}, AIBuildings = {LARGE_AIR_FACTORY}, }, -- BIRMINGHAM
 		{X = 8,  Y = 70, Buildings = { HARBOR, ALLIEDCITY }, }, -- PLYMOUTH
 		{X = 7, Y = 51, Buildings = { HARBOR, BASE, ALLIEDCITY }, AIBuildings = {ARSENAL, FACTORY}, }, -- GIBRALTAR
 		{X = 38, Y = 46, Buildings = { HARBOR, ALLIEDCITY }, AIBuildings = {ARSENAL, FACTORY}, }, -- SUEZ
@@ -1036,11 +1036,11 @@ g_Cities = {
 
 
 	-- AMERICA
-		{X = 156, Y = 62, Key = true, Buildings = { HARBOR, ACADEMY, BANK, ARSENAL}, AIBuildings = {RADIO, HOSPITAL, FACTORY, BARRACKS, BASE}, }, -- Washington
+		{X = 156, Y = 62, Key = true, Buildings = { HARBOR, ACADEMY, BANK, ARSENAL, ALLIEDCITY}, AIBuildings = {RADIO, HOSPITAL, FACTORY, BARRACKS, BASE}, }, -- Washington
 		{X = 144, Y = 56, Key = true, Buildings = { BANK, ALLIEDCITY }, AIBuildings = {RADIO, ARSENAL, HOSPITAL, FACTORY}, }, -- DALLAS
 		{X = 132, Y = 62, Key = true, Buildings = { BANK, HARBOR, ALLIEDCITY }, AIBuildings = {RADIO, ARSENAL, HOSPITAL, FACTORY}, }, -- SAN FRANCISCO
-		{X = 132, Y = 59, Key = true, Buildings = { BANK, HARBOR}, AIBuildings = {RADIO, ARSENAL, HOSPITAL, FACTORY, ALLIEDCITY}, }, -- LOS ANGELES
-		{X = 157, Y = 65, Key = true, Buildings = { HARBOR, BANK, RADIO}, AIBuildings = {ARSENAL, HOSPITAL, FACTORY, ALLIEDCITY}, }, -- NEW YORK
+		{X = 132, Y = 59, Key = true, Buildings = { BANK, HARBOR, ALLIEDCITY}, AIBuildings = {RADIO, ARSENAL, HOSPITAL, FACTORY, ALLIEDCITY}, }, -- LOS ANGELES
+		{X = 157, Y = 65, Key = true, Buildings = { HARBOR, BANK, RADIO, ALLIEDCITY}, AIBuildings = {ARSENAL, HOSPITAL, FACTORY, ALLIEDCITY}, }, -- NEW YORK
 		{X = 150, Y = 65, Key = true, Buildings = { BANK, ALLIEDCITY }, AIBuildings = {RADIO, RADIO, HOSPITAL, FACTORY, BARRACKS}, }, -- CHICAGO
 		{X = 132, Y = 67, Buildings = { HARBOR, ALLIEDCITY}, AIBuildings = {FACTORY},}, -- SEATTLE
 		{X = 134, Y = 56, Buildings = { HARBOR, ALLIEDCITY}, AIBuildings = {FACTORY},}, -- SAN DIEGO
