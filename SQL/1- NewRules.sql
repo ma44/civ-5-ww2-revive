@@ -10,7 +10,7 @@
 DELETE FROM GameSpeed_Turns WHERE GameSpeedType='GAMESPEED_STANDARD';
 INSERT INTO GameSpeed_Turns (GameSpeedType, MonthIncrement,TurnsPerIncrement) VALUES ('GAMESPEED_STANDARD', '1', '360');
 UPDATE GameSpeeds SET DealDuration = 100;
-UPDATE GameSpeeds SET TrainPercent = 33;
+UPDATE GameSpeeds SET TrainPercent = 66;
 UPDATE GameSpeeds SET ConstructPercent = 33;
 UPDATE GameSpeeds SET CreatePercent = 33;
 UPDATE GameSpeeds SET GoldPercent = 33;
