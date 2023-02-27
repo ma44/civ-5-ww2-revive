@@ -24,7 +24,7 @@ EXPERIENCE_INTERCEPTING_UNIT_AIR		= 1
 FORCE_UNIT_SPAWNING_ON_OCCUPIED_PLOT	= true	-- will try to place an unit (Order of Battle initialization, Reinforcement spawning) even if spawning plot is occupied
 NO_AUTO_NAMING							= false -- if set to true, units won't be automatically named
 
-RETREAT_RATIO							= 7		-- health/damage ratio to force retreat (was 5, higher means more retreats)
+RETREAT_RATIO							= 10		-- health/damage ratio to force retreat (was 5, higher means more retreats)
 
 -- diplomacy
 LIBERATE_MINOR_TERRITORY_BONUS	= 5		-- bonus for liberating minor civ territory
@@ -68,7 +68,7 @@ RESOURCE_CONNECTION					= RESOURCE_ROAD_TO_ANY_CITY	-- Default connection type (
 RESOURCE_FROM_FRIENDS				= true						-- If true you get resources from friendly territory (friendly CS or major with open border), else only from your territory
 
 UNIT_BLEEDING						= true	-- when true, unit will lose HP each turn when their supply line is cut
-BLEEDING_PER_TURN					= 10
+BLEEDING_PER_TURN					= 15
 
 -- Convoy
 TRANSPORT_DEFAULT					= TRANSPORT_MATERIEL	-- default type (1 = materiel...)

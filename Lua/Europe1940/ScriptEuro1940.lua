@@ -2100,7 +2100,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_FRANCE"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFrance, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoFranceTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2113,7 +2113,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK"},
 		MaxFleet = 1,
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoUK,
 		Transport = GetUStoUKTransport,
 	},
@@ -2126,7 +2126,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_AFRICA_TO_FRANCE"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsFranceStanding, -- Must refer to a function, remove this line to use the default function
 		Transport = GetAfricatoFranceTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2139,7 +2139,7 @@ g_Convoy = {
 		CivID = ITALY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_AFRICA_TO_ITALY"},
 		MaxFleet = 1, 
-		Frequency = 25,
+		Frequency = 75,
 		Condition = IsLibyaAlly, -- Must refer to a function, remove this line to use the default function
 		Transport = GetAfricatoItalyTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2152,7 +2152,7 @@ g_Convoy = {
 		CivID = GERMANY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_FINLAND_TO_GERMANY"},
 		MaxFleet = 3, 
-		Frequency = 50,
+		Frequency = 100,
 		Condition = IsRouteOpenFinlandtoGermany,
 		Transport = GetFinlandtoGermanyTransport,
 	},
@@ -2165,7 +2165,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_UK"},
 		MaxFleet = 8,
-		Frequency = 20, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 60, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoUKTransport,
 	},
@@ -2178,7 +2178,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_FRANCE"},
 		MaxFleet = 5,
-		Frequency = 15, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 45, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenSueztoFrance,
 		Transport = GetSueztoFranceTransport,
 	},
@@ -2191,7 +2191,7 @@ g_Convoy = {
 		CivID = ITALY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_ITALY"},
 		MaxFleet = 1,
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezOccupied,
 		Transport = GetSueztoItalyTransport,
 	},
@@ -2204,7 +2204,7 @@ g_Convoy = {
 		CivID = USSR,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_USSR"},
 		MaxFleet = 5,
-		Frequency = 35, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 70, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRailOpenRostowtoStalingrad,
 		Transport = GetSueztoUSSRTransport,
 	},
@@ -2217,7 +2217,7 @@ g_Convoy = {
 		CivID = USSR,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_USSR"},
 		MaxFleet = 5,
-		Frequency = 30, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 60, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRailOpenMurmansktoMoscow,
 		Transport = GetUStoUSSRTransport,
 	},
@@ -2230,7 +2230,7 @@ g_Convoy = {
 		CivID = GERMANY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_NORWAY_TO_GERMANY"},
 		MaxFleet = 4, 
-		Frequency = 50,
+		Frequency = 100,
 		Condition = IsRouteOpenNorwaytoGermany,
 		Transport = GetNorwaytoGermanyTransport,
 	},
@@ -2243,7 +2243,7 @@ g_Convoy = {
 		CivID = GERMANY,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SWEDEN_TO_GERMANY"},
 		MaxFleet = 3, 
-		Frequency = 50,
+		Frequency = 100,
 		Condition = IsRouteOpenSwedentoGermany, 
 		Transport = GetFinlandtoGermanyTransport, -- re-use Finland values...
 	},
@@ -2256,7 +2256,7 @@ g_Convoy = {
 		CivID = GREECE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_SUEZ_TO_GREECE"},
 		MaxFleet = 1,
-		Frequency = 15, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 45, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsSuezAlly,
 		Transport = GetSueztoGreeceTransport,
 	},
@@ -2269,7 +2269,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_CARAIB_TO_FRANCE"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsFranceStanding, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetCaraibOilTransport, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2282,7 +2282,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_CARAIB_TO_UK"},
 		MaxFleet = 1,
-		Frequency = 25, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
 		Transport = GetCaraibOilTransport,
 	},
 	[CARAIB_TO_GREECE] = {
@@ -2306,7 +2306,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_USAF_1"},
 		MaxFleet = 1,
-		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUSAFtoUK1,
 		Transport = GetUSAFtoUKTransport1,
 	},
@@ -2319,7 +2319,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_USAF_Oil"},
 		MaxFleet = 1,
-		Frequency = 45, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUSAFtoUK1,
 		Transport = GetUStoEuropeArmyResources,
 	},
@@ -2332,7 +2332,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_FRANCE_MIL"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 75, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFranceTroops1, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoEuropeTroops1, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2345,7 +2345,7 @@ g_Convoy = {
 		CivID = FRANCE,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_FRANCE_RES"},
 		MaxFleet = 1, -- how many convoy can use that route at the same time (not implemented)
-		Frequency = 45, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoFranceTroops1, -- Must refer to a function, remove this line to use the default condition (true)
 		Transport = GetUStoEuropeArmyResources, -- Must refer to a function, remove this line to use the default function
 	},
@@ -2358,7 +2358,7 @@ g_Convoy = {
 		CivID = ENGLAND,
 		UnitsName = {"TXT_KEY_UNIT_CONVOY_US_TO_UK_MIL"},
 		MaxFleet = 1,
-		Frequency = 65, -- probability (in percent) of convoy spawning at each turn
+		Frequency = 100, -- probability (in percent) of convoy spawning at each turn
 		Condition = IsRouteOpenUStoUKTroops1,
 		Transport = GetUStoEuropeTroops1,
 	},
@@ -3251,25 +3251,25 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Para Group 1", X = 44, Y = 50, Domain = "City", CivID = GERMANY, -- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER, GE_PARATROOPER,	},
-					UnitsXP = {		9,				9,	              9,}, 
+					UnitsXP = {	60,			60,	              60,}, 
 					InitialObjective = "51,85", -- Narvik
 					LaunchType = "ParaDrop",
 					LaunchX = 51, -- Destination plot
 					LaunchY = 83, -- (51,83) = Near Narvik
 					LaunchImprecision = 3, -- landing area
 				},
-				{	Name = "Para Group 2", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Berlin
+				{	Name = "Para Group 2", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER,	},
-					UnitsXP = {		9,				9,				}, 
+					UnitsXP = {	60,			60,				}, 
 					InitialObjective = "44,66", -- Oslo
 					LaunchType = "ParaDrop",
 					LaunchX = 43, -- Destination plot
 					LaunchY = 66, -- (43,66) = West of Oslo
 					LaunchImprecision = 2, -- landing area
 				},
-				{	Name = "Para Group 3", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Berlin
+				{	Name = "Para Group 3", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER,	},
-					UnitsXP = {		9,				9,				}, 
+					UnitsXP = {	60,			60,				}, 
 					InitialObjective = "44,66", -- Oslo
 					LaunchType = "ParaDrop",
 					LaunchX = 44, -- Destination plot
@@ -3282,25 +3282,25 @@ g_Military_Project = {
 		[OPERATION_SEELOWE] =  { -- projectID as index !
 			Name = "TXT_KEY_OPERATION_SEELOWE",
 			OrderOfBattle = {
-				{	Name = "Para Group 1", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true,-- spawn at Berlin
+				{	Name = "Para Group 1", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false,-- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER, GE_PARATROOPER,	},
-					UnitsXP = {		15,				15,				15,   }, 
+					UnitsXP = {		60,				60,				60,   }, 
 					InitialObjective =  "25,54", -- Birmingham 
 					LaunchType = "ParaDrop",
 					LaunchX = 25, -- Destination plot
 					LaunchY = 55, -- (25,55) = Near Birmingham
 					LaunchImprecision = 2, -- landing area
 				}, 
-				{	Name = "Amphibious Army 1", X = 38, Y = 55, Domain = "Land", CivID = GERMANY, AI = true,-- spawn west of Kiel
+				{	Name = "Amphibious Army 1", X = 38, Y = 55, Domain = "Land", CivID = GERMANY, AI = false,-- spawn west of Kiel
 					Group = {		GE_INFANTRY,	GE_INFANTRY,	ARTILLERY,	GE_PANZER_III,	GE_PANZER_II},
-					UnitsXP = {		15,				15,				 15,             15,             15,    }, 
+					UnitsXP = {		60,				60,				 60,             60,             60,    }, 
 					InitialObjective = "28,58", -- Newcastle  
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_GERMANY_SEELOWE_KIEL, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Amphibious Army 2", X = 19, Y = 43, Domain = "Land", CivID = GERMANY, AI = true,-- spawn west of St Nazaire / La rochelle
+				{	Name = "Amphibious Army 2", X = 19, Y = 43, Domain = "Land", CivID = GERMANY, AI = false,-- spawn west of St Nazaire / La rochelle
 					Group = {		GE_INFANTRY,	GE_INFANTRY,	ARTILLERY,	GE_PANZER_IV,	GE_PANZER_II},
-					UnitsXP = {		15,				15,				 15,          15,            15,     }, 
+					UnitsXP = {		60,				60,				 60,          60,            60,     }, 
 					InitialObjective = "22,52", -- Plymouth  
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_GERMANY_SEELOWE_ST_NAZAIRE, -- must define a troops route for amphibious operation in g_TroopsRoutes !
@@ -3311,42 +3311,42 @@ g_Military_Project = {
 		[OPERATION_FALLGELB] =  { -- projectID as index !
 			Name = "TXT_KEY_OPERATION_FALLGELB",
 			OrderOfBattle = {
-				{	Name = "Para Group 1", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true,-- spawn at Berlin
+				{	Name = "Para Group 1", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false,-- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER	},
-					UnitsXP = {		9,				9,}, 
+					UnitsXP = {	60,			60,}, 
 					InitialObjective = "34,52", -- Amsterdam
 					LaunchType = "ParaDrop",
 					LaunchX = 33, -- Destination plot
 					LaunchY = 51, -- (51,83) = Near Amsterdam
 					LaunchImprecision = 2, -- landing area
 				},
-				{	Name = "Para Group 2", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true,-- spawn at Berlin
+				{	Name = "Para Group 2", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false,-- spawn at Berlin
 					Group = {		GE_PARATROOPER,	GE_PARATROOPER,	},
-					UnitsXP = {		9,				9,				}, 
+					UnitsXP = {	60,			60,				}, 
 					InitialObjective = "32,49", -- Brussel
 					LaunchType = "ParaDrop",
 					LaunchX = 33, -- Destination plot
 					LaunchY = 49, -- (44,74) = Near Brussel
 					LaunchImprecision = 1, -- landing area
 				},
-				{	Name = "Army 1", X = 36, Y = 50, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Essen
+				{	Name = "Army 1", X = 36, Y = 50, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Essen
 					Group = {		GE_INFANTRY,	GE_INFANTRY,	GE_INFANTRY,	GE_PANZER_IV,	GE_PANZER_II,	GE_SS_INFANTRY,	GE_MECH_INFANTRY},
-					UnitsXP = {		9,				9,				9,				9,				9,				9,			9,	}, 
+					UnitsXP = {	60,			60,			60,			60,			60,			60,		60,	}, 
 					InitialObjective = "34,52", -- Amsterdam 
 				},
-				{	Name = "Support 1", X = 36, Y = 50, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Essen
+				{	Name = "Support 1", X = 36, Y = 50, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Essen
 					Group = {		ARTILLERY,	ARTILLERY,	AT_GUN,	AT_GUN,	GE_STUG_III},
-					UnitsXP = {		9,				9,				9,				9, }, 
+					UnitsXP = {	60,			60,			60,			60, }, 
 					InitialObjective = "34,52", -- Amsterdam 
 				},
-				{	Name = "Army 2", X = 36, Y = 49, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Cologne
+				{	Name = "Army 2", X = 36, Y = 49, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Cologne
 					Group = {		GE_INFANTRY,	GE_INFANTRY,	GE_INFANTRY,	GE_PANZER_III,	GE_PANZER_II,	GE_SS_INFANTRY,	GE_MECH_INFANTRY},
-					UnitsXP = {		9,				9,				9,				9,				9,				9,			9,	}, 
+					UnitsXP = {	60,			60,			60,			60,			60,			60,		60,	}, 
 					InitialObjective = "32,49", -- Brussel 
 				},
-				{	Name = "Support 2", X = 36, Y = 49, Domain = "City", CivID = GERMANY, AI = true, -- spawn at Cologne
+				{	Name = "Support 2", X = 36, Y = 49, Domain = "City", CivID = GERMANY, AI = false, -- spawn at Cologne
 					Group = {		ARTILLERY,	ARTILLERY,	AT_GUN,	AT_GUN,	GE_STUG_III},
-					UnitsXP = {		9,				9,				9,				9, }, 
+					UnitsXP = {	60,			60,			60,			60, }, 
 					InitialObjective = "32,49", -- Brussel  
 				},
 
@@ -3358,16 +3358,16 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Afrika Korps I", X = 44, Y = 50, Domain = "City", CivID = GERMANY,
 					Group = {		GE_INFANTRY, GE_INFANTRY,	GE_PANZER_III,	GE_INFANTRY,	GE_PANZER_III,	},
-					UnitsXP = {		9,	         9,			9,		         9,	    	 9,	}, 
+					UnitsXP = {	60,	         60,		60,		         60,	    	 60,	}, 
 					InitialObjective = "56,5", -- Tobruk
 					LaunchType = "ParaDrop",
 					LaunchX = 53, -- Destination plot
 					LaunchY = 5, -- (53,5) = Near Tobruk
 					LaunchImprecision = 2, -- landing area
 				},
-				{	Name = "Afrika Korps II", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = true,
+				{	Name = "Afrika Korps II", X = 44, Y = 50, Domain = "City", CivID = GERMANY, AI = false,
 					Group = {		GE_PANZER_IV,	ARTILLERY,	AT_GUN,	},
-					UnitsXP = {		9,	             9,		     9,		}, 
+					UnitsXP = {	60,	             60,		     60,		}, 
 					InitialObjective = "56,5", -- Tobruk
 					LaunchType = "ParaDrop",
 					LaunchX = 53, -- Destination plot
@@ -3380,14 +3380,14 @@ g_Military_Project = {
 		[OPERATION_TWENTYFIVE] =  { -- projectID as index !
 			Name = "Operation 25",
 			OrderOfBattle = {
-				{	Name = "Belgrade Assault Force", X = 47, Y = 40, Domain = "City", CivID = GERMANY,  AI = true,
+				{	Name = "Belgrade Assault Force", X = 47, Y = 40, Domain = "City", CivID = GERMANY,  AI = false,
 					Group = {		GE_INFANTRY,	GE_PANZER_III, GE_PANZER_III, GE_PANZER_IV,	},
-					UnitsXP = {		9,				9,				9,				9, }, 
+					UnitsXP = {	60,			60,			60,			60, }, 
 					InitialObjective = "52,32", -- Belgrade
 				},
-				{	Name = "Zagreb Assault Force", X = 47, Y = 40, Domain = "City", CivID = GERMANY, AI = true,
+				{	Name = "Zagreb Assault Force", X = 47, Y = 40, Domain = "City", CivID = GERMANY, AI = false,
 					Group = {		GE_INFANTRY,	GE_INFANTRY, GE_PANZER_II,	},
-					UnitsXP = {		9,				9,				9,	 }, 
+					UnitsXP = {	60,			60,			60,	 }, 
 					InitialObjective = "46,35", -- Zagreb
 				},
 			},			
@@ -3404,20 +3404,21 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Army Group 1", X = 106, Y = 70, Domain = "Land", CivID = USSR, -- spawn near Berezovo
 					Group = {		RU_NAVAL_INFANTRY,	RU_T34, RU_T34, RU_T34, RU_INFANTRY, RU_INFANTRY, RU_INFANTRY,	},
-					UnitsXP = {		15,					15,	     15,     15,     15,          15,          15,}, 
+					UnitsXP = {		60,					60,	     60,     60,     60,          60,          60,}, 
 					InitialObjective = "44,50", -- Berlin
 				},
 				{	Name = "Support Group 1", X = 106, Y = 70, Domain = "Land", CivID = USSR, -- spawn near Berezovo
 					Group = {		RU_ZIS30,	RU_ZIS30, RU_AT_GUN, RU_AT_GUN, RU_ARTILLERY, RU_ARTILLERY, RU_ARTILLERY,	},
 					InitialObjective = "44,50", -- Berlin
 				},
-				{	Name = "Army Group 2", X = 103, Y = 55, Domain = "Land", CivID = USSR, AI = true, -- spawn near Tscheljabinsk
+				{	Name = "Army Group 2", X = 103, Y = 55, Domain = "Land", CivID = USSR, AI = false, -- spawn near Tscheljabinsk
 					Group = {		RU_NAVAL_INFANTRY,	RU_T34, RU_T34, RU_T34, RU_INFANTRY, RU_INFANTRY, RU_INFANTRY,	},
-					UnitsXP = {		15,					15,       15,    15,     15,           15,          15,	}, 
+					UnitsXP = {		60,					60,       60,    60,     60,           60,          60,	}, 
 					InitialObjective = "44,50", -- Berlin
 				},
-				{	Name = "Support Group 2", X = 103, Y = 55, Domain = "Land", CivID = USSR, AI = true, -- spawn near Tscheljabinsk
+				{	Name = "Support Group 2", X = 103, Y = 55, Domain = "Land", CivID = USSR, AI = false, -- spawn near Tscheljabinsk
 					Group = {		RU_ZIS30,	RU_ZIS30, RU_AT_GUN, RU_AT_GUN, RU_ARTILLERY, RU_ARTILLERY, RU_ARTILLERY,	},
+					UnitsXP = {		60,					60,       60,    60,     60,           60,          60,	}, 
 					InitialObjective = "44,50", -- Berlin
 				},
 			},			
@@ -3429,21 +3430,22 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Army Group 1", X = 83, Y = 51, Domain = "Land", CivID = USSR, -- spawn north of Stalingrad
 					Group = {		RU_NAVAL_INFANTRY,	RU_T34, RU_T34, RU_T34, RU_KV1, RU_INFANTRY, RU_INFANTRY,	},
-					UnitsXP = {		9,					9,       9,    9,     9,           9,          9,	}, 
+					UnitsXP = {	60,				60,       60,    60,     60,           60,          60,	}, 
 					InitialObjective = "84,48", -- Stalingrad
 				},
-				{	Name = "Support Group 1", X = 83, Y = 51, Domain = "Land", CivID = USSR, AI = true,-- spawn north of Stalingrad
+				{	Name = "Support Group 1", X = 83, Y = 51, Domain = "Land", CivID = USSR, AI = false,-- spawn north of Stalingrad
 					Group = {		RU_SU26,	RU_ZIS30, RU_ZIS30, RU_ARTILLERY, RU_ARTILLERY, RU_BM13, RU_BM13,	},
 					InitialObjective = "84,48", -- Stalingrad
 				},
 				{	Name = "Army Group 2", X = 83, Y = 45, Domain = "Land", CivID = USSR,  -- spawn south of Stalingrad
 					Group = {		RU_NAVAL_INFANTRY,	RU_T34, RU_T34, RU_T34, RU_ISU122, RU_INFANTRY, RU_INFANTRY,	},
-					UnitsXP = {		9,					9,       9,    9,     9,           9,          9,	}, 
+					UnitsXP = {	60,				60,       60,    60,     60,           60,          60,	}, 
 					InitialObjective = "84,48", -- Stalingrad
 				},
-				{	Name = "Support Group 2", X = 83, Y = 45, Domain = "Land", CivID = USSR, AI = true, -- spawn south of Stalingrad
+				{	Name = "Support Group 2", X = 83, Y = 45, Domain = "Land", CivID = USSR, AI = false, -- spawn south of Stalingrad
 					Group = {		RU_SU26,	RU_ZIS30, RU_ZIS30, RU_ARTILLERY, RU_ARTILLERY, RU_BM13, RU_BM13,	},
 					InitialObjective = "84,48", -- Stalingrad
+					UnitsXP = {	60,				60,       60,    60,     60,           60,          60,	}, 
 				},
 			},			
 			Condition = StalingradOccupied, -- Must refer to a function, remove this line to use the default condition (always true)
@@ -3457,43 +3459,43 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Western Task Force", X = 3, Y = 20, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_INFANTRY, US_INFANTRY,	US_M24CHAFFEE},
-					UnitsXP = {		9,				9,			9,             9}, 
+					UnitsXP = {	60,			60,		60,             60}, 
 					InitialObjective = "4,17", -- Casablanca 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_CASABLANCA, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Western Group", X = 4, Y = 21, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Western Group", X = 4, Y = 21, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		ARTILLERY, AT_GUN,	},
 					InitialObjective = "4,17", -- Casablanca 
 					RouteID = TROOPS_LIBERATE_CASABLANCA, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Central Task Force", X = 13, Y = 21, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_MARINES, US_SHERMAN,	},
-					UnitsXP = {		9,				9,        9}, 
+					UnitsXP = {	60,			60,        60}, 
 					InitialObjective =  "15,20", -- Oran 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_ORAN, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Central Group", X = 12, Y = 22, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Central Group", X = 12, Y = 22, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		ARTILLERY, AT_GUN,	},
 					InitialObjective =  "15,20", -- Oran 
 					RouteID = TROOPS_LIBERATE_ORAN, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},				
 				{	Name = "Eastern Task Force (American)", X = 19, Y = 23, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_MARINES, US_SHERMAN },
-					UnitsXP = {		9,				9,        9}, 
+					UnitsXP = {	60,			60,        60}, 
 					InitialObjective = "21,21", -- Algiers 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_ALGIERS, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Eastern Task Force (British)", X = 25, Y = 22, Domain = "Land", CivID = ENGLAND,
 					Group = {		UK_INFANTRY, },
-					UnitsXP = {		9,	}, 
+					UnitsXP = {	60,	}, 
 					InitialObjective = "21,21", -- Algiers 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_ALGIERSBRITISH, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Eastern Group", X = 26, Y = 22, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Eastern Group", X = 26, Y = 22, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		ARTILLERY,	},
 					InitialObjective = "21,21", -- Algiers 
 					LaunchType = "Amphibious",
@@ -3501,7 +3503,7 @@ g_Military_Project = {
 				},		
 				{	Name = "Paradrop Force", X = 27, Y = 52, Domain = "City", CivID = ENGLAND,
 					Group = {		US_PARATROOPER, },
-					UnitsXP = {		9,	 }, 
+					UnitsXP = {	60,	 }, 
 					InitialObjective = "15,20", -- Oran
 					LaunchType = "ParaDrop",
 					LaunchX = 16, -- Destination plot
@@ -3510,7 +3512,7 @@ g_Military_Project = {
 				},
 				{	Name = "French Resistance", X = 16, Y = 18, Domain = "City", CivID = FRANCE,
 					Group = {		FR_LEGION, },
-					UnitsXP = {		9,	 }, 
+					UnitsXP = {	60,	 }, 
 					InitialObjective = "21,21", -- Algiers
 					LaunchType = "ParaDrop",
 					LaunchX = 21, -- Destination plot
@@ -3527,14 +3529,14 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Western Task Force (USA)", X = 37, Y = 20, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_MARINES, ARTILLERY},
-					UnitsXP = {		9,				9,			9}, 
+					UnitsXP = {	60,			60,		45}, 
 					InitialObjective = "40,19", -- Palermo
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_SICILY, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Eastern Task Force (British)", X = 43, Y = 14, Domain = "Land", CivID = ENGLAND,
 					Group = {		UK_INFANTRY, UK_INFANTRY, ARTILLERY},
-					UnitsXP = {		9,	             9,          9}, 
+					UnitsXP = {	60,	             60,          60}, 
 					InitialObjective = "42,17", -- Catania
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_SICILYBRITISH, -- must define a troops route for amphibious operation in g_TroopsRoutes !
@@ -3549,14 +3551,14 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Northern Task Force (USA)", X = 41, Y = 22, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_MARINES, US_M7, US_M12},
-					UnitsXP = {		9,				9,			9,       9}, 
+					UnitsXP = {	60,			60,		60,       60}, 
 					InitialObjective = "41,25", -- Napoli
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_ITALY, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Southern Task Force (British)", X = 47, Y = 20, Domain = "Land", CivID = ENGLAND,
 					Group = {		UK_INFANTRY, UK_MECH_INFANTRY, UK_MOBILE_BISHOP},
-					UnitsXP = {		9,	             9,          9}, 
+					UnitsXP = {	60,	             60,          60}, 
 					InitialObjective = "46,24", -- Bari
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_LIBERATE_ITALYBRITISH, -- must define a troops route for amphibious operation in g_TroopsRoutes !
@@ -3571,35 +3573,35 @@ g_Military_Project = {
 			OrderOfBattle = {
 				{	Name = "Western Task Force I", X = 17, Y = 45, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_INFANTRY, US_INFANTRY, US_INFANTRY,	US_INFANTRY, US_MARINES, US_MARINES, US_MARINES, },
-					UnitsXP = {		9,				9,			9,             9,              9,        9,        9   }, 
+					UnitsXP = {	60,			60,		60,             60,              60,        60,        60   }, 
 					InitialObjective = "21,45", -- Saint Nazaire 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_1, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Western Group I", X = 16, Y = 48, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Western Group I", X = 16, Y = 48, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		ARTILLERY, ARTILLERY, ARTILLERY, AT_GUN, AT_GUN, AT_GUN, US_M10	},
-					UnitsXP = {		9,			9,			9,          9,    9,        9,      9   }, 
+					UnitsXP = {	60,		60,		60,          60,    60,        60,      60   }, 
 					InitialObjective = "21,45", -- Saint Nazaire 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_1, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Western Task Force II", X = 14, Y = 45, Domain = "Land", CivID = ENGLAND,
 					Group = {		US_SHERMAN_IIA, US_SHERMAN_IIA, US_SHERMAN_III,	US_SHERMAN_III, US_M24CHAFFEE, US_M24CHAFFEE, US_MECH_INFANTRY, },
-					UnitsXP = {		      9,				9,			9,             9,              9,             9,               9   }, 
+					UnitsXP = {		      60,			60,		60,             60,              60,             60,               60   }, 
 					InitialObjective = "21,45", -- Saint Nazaire 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_1, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Western Group II", X = 13, Y = 48, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Western Group II", X = 13, Y = 48, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		US_M18, US_M18, US_M12, US_M12, US_M16A1, US_M16A1, US_SEXTON	},
-					UnitsXP = {		9,		9,		9,      9,      9,        9,        9   }, 
+					UnitsXP = {	60,	60,	60,      60,      60,        60,        60   }, 
 					InitialObjective = "21,45", -- Saint Nazaire 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_1, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},				
 				{	Name = "Western Paradrop Force", X = 27, Y = 52, Domain = "City", CivID = ENGLAND,
 					Group = {US_PARATROOPER, US_PARATROOPER, US_PARATROOPER, US_SPECIAL_FORCES},
-					UnitsXP = {		9,				9,			9,             29,            }, 
+					UnitsXP = {	60,			60,		60,             60,            }, 
 					InitialObjective = "21,45", -- Saint Nazaire 
 					LaunchType = "ParaDrop",
 					LaunchX = 23, -- Destination plot
@@ -3608,35 +3610,35 @@ g_Military_Project = {
 				},
 				{	Name = "Central Task Force I", X = 21, Y = 50, Domain = "Land", CivID = ENGLAND,
 					Group = {		UK_INFANTRY, UK_INFANTRY, UK_INFANTRY,	UK_INFANTRY, UK_INFANTRY, UK_INFANTRY, UK_INFANTRY, },
-					UnitsXP = {		9,				9,			9,             9,              9,        9,        9			}, 
+					UnitsXP = {	60,			60,		60,             60,              60,        60,        60			}, 
 					InitialObjective = "25,46", -- Caen 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_2, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Central Group I", X = 18, Y = 50, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Central Group I", X = 18, Y = 50, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		ARTILLERY, ARTILLERY, ARTILLERY, AT_GUN, AT_GUN, AT_GUN, UK_ACHILLES	},
-					UnitsXP = {		9,			9,			9,          9,    9,        9,      9           }, 
+					UnitsXP = {	60,		60,		60,          60,    60,        60,      60           }, 
 					InitialObjective = "25,46", -- Caen
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_2, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Central Task Force II", X = 18, Y = 53, Domain = "Land", CivID = ENGLAND,
 					Group = {		UK_M4_FIREFLY, UK_M4_FIREFLY, UK_CHURCHILL,	UK_CHURCHILL, UK_A24, UK_A24, UK_MECH_INFANTRY, },
-					UnitsXP = {		      9,				9,			9,             9,              9,             9,               9   }, 
+					UnitsXP = {		      60,			60,		60,             60,              60,             60,               60   }, 
 					InitialObjective = "25,46", -- Caen 
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_2, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Central Group II", X = 16, Y = 53, Domain = "Land", CivID = ENGLAND, AI = true,
+				{	Name = "Support Central Group II", X = 16, Y = 53, Domain = "Land", CivID = ENGLAND, AI = false,
 					Group = {		UK_MOBILE_BISHOP, UK_MOBILE_BISHOP, UK_MOBILE_AA_VICKERS, UK_MOBILE_AA_VICKERS, UK_MOBILE_BISHOP, UK_MOBILE_BISHOP, UK_MOBILE_AA_GUN	},
-					UnitsXP = {		9,		             9,		        9,                        9,                 9,              9,                    9   }, 
+					UnitsXP = {	60,		             60,		        60,                        60,                 60,              60,                    60   }, 
 					InitialObjective = "25,46", -- Caen
 					LaunchType = "Amphibious", 
 					RouteID = TROOPS_OVERLORD_2, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},				
 				{	Name = "Central Paradrop Force", X = 27, Y = 52, Domain = "City", CivID = ENGLAND,
 					Group = {UK_PARATROOPER, UK_PARATROOPER, UK_SPECIAL_FORCES, UK_SPECIAL_FORCES},
-					UnitsXP = {		9,				9,			29,             29,              }, 
+					UnitsXP = {	60,			60,			60,             60,              }, 
 					InitialObjective = "25,46", -- Caen 
 					LaunchType = "ParaDrop",
 					LaunchX = 25, -- Destination plot
@@ -3645,21 +3647,21 @@ g_Military_Project = {
 				},				
 				{	Name = "Eastern Task Force I", X = 27, Y = 50, Domain = "Land", CivID = FRANCE,
 					Group = {		FR_INFANTRY, FR_INFANTRY, FR_INFANTRY, },
-					UnitsXP = {		9,				9,			9,       }, 
+					UnitsXP = {	60,			60,		60,       }, 
 					InitialObjective = "29,50", -- Dunkerque
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_3, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
-				{	Name = "Support Eastern Group I", X = 25, Y = 50, Domain = "Land", CivID = FRANCE, AI = true, 
+				{	Name = "Support Eastern Group I", X = 25, Y = 50, Domain = "Land", CivID = FRANCE, AI = false, 
 					Group = {		ARTILLERY, AT_GUN, FR_SAU40	},
-					UnitsXP = {		9,			9,			9   }, 
+					UnitsXP = {	60,		60,		45   }, 
 					InitialObjective = "29,50", -- Dunkerque
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_3, -- must define a troops route for amphibious operation in g_TroopsRoutes !
 				},
 				{	Name = "Eastern Task Force II", X = 29, Y = 52, Domain = "Land", CivID = FRANCE,
 					Group = {		INFANTRY, INFANTRY, INFANTRY,	 },
-					UnitsXP = {		    9,	   9,			9,		 }, 
+					UnitsXP = {		    60,	   60,		60,		 }, 
 					InitialObjective = "29,50", -- Dunkerque
 					LaunchType = "Amphibious",
 					RouteID = TROOPS_OVERLORD_3, -- must define a troops route for amphibious operation in g_TroopsRoutes !

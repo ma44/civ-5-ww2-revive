@@ -774,11 +774,11 @@ function Retreat (iAttackingPlayer, iAttackingUnit, iDefendingPlayer, iDefending
 		pDefendingUnit:SetMoves(pDefendingUnit:MovesLeft() - (MOVE_DENOMINATOR)) -- 1 moves removed
 
 		SetDirection (pDefendingUnit, attackDirection);
-		
+		local originalMoves = pAttackingUnit:MovesLeft() - 1
 		pAttackingUnit:SetMoves(pAttackingUnit:MovesLeft() + MOVE_DENOMINATOR) -- allow at least one move
 		pAttackingUnit:PopMission()
 		pAttackingUnit:PushMission(MissionTypes.MISSION_MOVE_TO, defendingX, defendingY, 0, 0, 1, MissionTypes.MISSION_MOVE_TO, defendingPlot, pDefendingUnit)
-		pAttackingUnit:SetMoves(pAttackingUnit:MovesLeft() - MOVE_DENOMINATOR) -- remove free move from above
+		pAttackingUnit:SetMoves(originalMoves)
 
 		return true
 	end

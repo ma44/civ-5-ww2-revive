@@ -269,16 +269,16 @@ g_Initial_OOB = {
 	{Name = "USSR Central fleet", X = 52, Y = 62, Domain = "Sea", AI = true, CivID = USSR, Group = {RU_GANGUT, RU_KIROV, RU_GNEVNY}, UnitsXP = {9,9,9},  },
 	{Name = "USSR fortification", X = 63, Y = 65, Domain = "Land", AI = true, CivID = USSR, Group = {FORTIFIED_GUN}, UnitsName = {"Krepost Oreshek"}, },
 
-	{Name = "German central army", X = 42, Y = 46, Domain = "Land", CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_II, AT_GUN}, UnitsXP = {9,9,9,9,9,9},  },
-	{Name = "German north army", X = 42, Y = 50, Domain = "Land", CivID = GERMANY, Group = {GE_MARDER_I, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_II, AT_GUN}, UnitsXP = {9,9,9,9,9,9},  },
-	{Name = "German east army", X = 48, Y = 46, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_I, AT_GUN}, UnitsXP = {9,9,9,9,9,9},  },
-	{Name = "German Berlin army", X = 44, Y = 50, Domain = "City", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_II, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {9,9,9,9,9,9},  },
-	{Name = "German Luftwaffe", X = 44, Y = 50, Domain = "Air", CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_HE111, GE_JU87, GE_JU87, GE_JU87}, UnitsXP = {9,9,9,9,9,9,9},  }, 
-	{Name = "German Luftwaffe AI Bonus", X = 44, Y = 50, Domain = "Air", AI = true, CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_JU87}, UnitsXP = {9,9,9,9}, },
-	{Name = "German Fleet", X = 47, Y = 54, Domain = "Sea", CivID = GERMANY, Group = {GE_BATTLESHIP_2, GE_DESTROYER, GE_BATTLESHIP, GE_DESTROYER}, UnitsXP = {9,9,9,9},  },
-	{Name = "German Submarine Fleet", X = 10, Y = 72, Domain = "Sea", CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE, GE_DESTROYER, GE_DEUTSCHLAND}, UnitsXP = {9,9,9,9,9},  },
-	{Name = "German Submarine AI Bonus", X = 2, Y = 34, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE}, UnitsXP = {9,9,9}, },
-	{Name = "German Fleet AI bonus", X = 38, Y = 61, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_LEIPZIG, GE_DESTROYER, GE_DESTROYER, GE_DESTROYER}, UnitsXP = {9,9,9,9},  },
+	{Name = "German central army", X = 42, Y = 46, Domain = "Land", CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_II, AT_GUN}, UnitsXP = {60,60,60,60,60,60},  },
+	{Name = "German north army", X = 42, Y = 50, Domain = "Land", CivID = GERMANY, Group = {GE_MARDER_I, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_II, AT_GUN}, UnitsXP = {60,60,60,60,60,60},  },
+	{Name = "German east army", X = 48, Y = 46, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_I, AT_GUN}, UnitsXP = {60,60,60,60,60,60},  },
+	{Name = "German Berlin army", X = 44, Y = 50, Domain = "City", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_II, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {60,60,60,60,60,60},  },
+	{Name = "German Luftwaffe", X = 44, Y = 50, Domain = "Air", CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_HE111, GE_JU87, GE_JU87, GE_JU87}, UnitsXP = {60,60,60,60,60,60,60},  }, 
+	{Name = "German Luftwaffe AI Bonus", X = 44, Y = 50, Domain = "Air", AI = true, CivID = GERMANY, Group = {GE_BF109, GE_BF109, GE_HE111, GE_JU87}, UnitsXP = {60,60,60,60}, },
+	{Name = "German Fleet", X = 47, Y = 54, Domain = "Sea", CivID = GERMANY, Group = {GE_BATTLESHIP_2, GE_DESTROYER, GE_BATTLESHIP, GE_DESTROYER}, UnitsXP = {60,60,60,60},  },
+	{Name = "German Submarine Fleet", X = 10, Y = 72, Domain = "Sea", CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE, GE_DESTROYER, GE_DEUTSCHLAND}, UnitsXP = {60,60,60,60,60},  },
+	{Name = "German Submarine AI Bonus", X = 2, Y = 34, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_SUBMARINE, GE_SUBMARINE, GE_SUBMARINE}, UnitsXP = {60,60,60}, },
+	{Name = "German Fleet AI bonus", X = 38, Y = 61, Domain = "Sea", AI = true, CivID = GERMANY, Group = { GE_LEIPZIG, GE_DESTROYER, GE_DESTROYER, GE_DESTROYER}, UnitsXP = {60,60,60,60},  },
 
 	{Name = "Italian army", X = 37, Y = 33, Domain = "Land", CivID = ITALY, Group = {IT_INFANTRY, IT_INFANTRY, IT_M11_39, IT_INFANTRY, IT_INFANTRY, AT_GUN, ARTILLERY}, UnitsXP = {9,9,9,9,9,9,9},  },
 	{Name = "Italian colonial army", X = 53, Y = 5, Domain = "Land", CivID = ITALY, Group = {IT_INFANTRY, IT_INFANTRY, IT_INFANTRY, IT_INFANTRY, AT_GUN, IT_L6_40, ARTILLERY}, UnitsXP = {9,9,9,9,9,9,9},  },
@@ -700,20 +700,20 @@ g_Cities = {
 
 	-- GERMANY
 	{X = 44, Y = 50, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, BASE, ACADEMY, HOSPITAL, ARSENAL }, AIBuildings = {LAND_FACTORY}, }, -- BERLIN
-	{X = 39, Y = 46, Key = true, Buildings = { BANK }, AIBuildings = {FACTORY, SMALL_AIR_FACTORY}, }, -- FRANKFURT
-	{X = 39, Y = 53, Key = true, Buildings = { BANK, HARBOR }, AIBuildings = {FACTORY, BARRACKS, SHIPYARD, BASE, OIL_REFINERY}, }, -- HAMBURG
-	{X = 41, Y = 41, Key = true, Buildings = { BANK }, AIBuildings = {FACTORY, BARRACKS, LAND_FACTORY, ARSENAL, BASE, OIL_REFINERY}, }, -- MUNICH
-	{X = 45, Y = 43, Buildings = { FACTORY }, }, -- PRAGUE
-	{X = 40, Y = 55, Buildings = { HARBOR }, AIBuildings = {FACTORY, OIL_REFINERY}, }, -- KIEL
-	{X = 39, Y = 43, AIBuildings = {FACTORY}, }, -- NUREMBERG
-	{X = 52, Y = 53, Buildings = { HARBOR }, AIBuildings = {FACTORY}, }, -- KONIGSBERG
-	{X = 46, Y = 52, Buildings = { HARBOR }, AIBuildings = {FACTORY}, }, -- STETTIN
-	{X = 36, Y = 50, Buildings = { FACTORY }, }, -- ESSEN
-	{X = 36, Y = 49, Buildings = { FACTORY }, }, -- COLOGNE
-	{X = 48, Y = 46, AIBuildings = {FACTORY}, }, -- BRESLAU
-	{X = 45, Y = 46, AIBuildings = {FACTORY}, }, -- DRESDEN
-	{X = 42, Y = 48, AIBuildings = {FACTORY}, }, -- LEIPZIG
-	{X = 47, Y = 40, Buildings = { FACTORY }, }, -- VIENNA
+	{X = 39, Y = 46, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {FACTORY, SMALL_AIR_FACTORY}, }, -- FRANKFURT
+	{X = 39, Y = 53, Key = true, Buildings = { BANK, HARBOR, FACTORY , BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {FACTORY, BARRACKS, SHIPYARD, BASE, OIL_REFINERY}, }, -- HAMBURG
+	{X = 41, Y = 41, Key = true, Buildings = { BANK, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, AIBuildings = {BARRACKS, LAND_FACTORY, ARSENAL, BASE, OIL_REFINERY}, }, -- MUNICH
+	{X = 45, Y = 43, Buildings = { FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- PRAGUE
+	{X = 40, Y = 55, Buildings = { HARBOR, FACTORY, OIL_REFINERY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- KIEL
+	{X = 39, Y = 43, Buildings = {FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY},}, -- NUREMBERG
+	{X = 52, Y = 53, Buildings = { HARBOR, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- KONIGSBERG
+	{X = 46, Y = 52, Buildings = { HARBOR, FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- STETTIN
+	{X = 36, Y = 50, Buildings = { FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- ESSEN
+	{X = 36, Y = 49, Buildings = { FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- COLOGNE
+	{X = 48, Y = 46, Buildings = {FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- BRESLAU
+	{X = 45, Y = 46, Buildings = {FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- DRESDEN
+	{X = 42, Y = 48, Buildings = {FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- LEIPZIG
+	{X = 47, Y = 40, Buildings = { FACTORY, BARRACKS, BASE, ARSENAL, ACADEMY}, }, -- VIENNA
 
 	-- FRANCE
 	{X = 28, Y = 45, Key = true, Buildings = { BANK, FACTORY, RADIO, BARRACKS, OIL_REFINERY, ACADEMY, HOSPITAL, OPEN_CITY }, AIBuildings = {LAND_FACTORY}, }, -- PARIS	

@@ -189,6 +189,10 @@ UPDATE UnitPromotions SET DefenseMod = -25 WHERE Type = 'PROMOTION_DEFENSE_PENAL
 -- Rescaling, change formation & set default models for base units
 -----------------------------------------------------------------------------
 
+UPDATE ArtDefine_UnitMemberCombats SET MoveRate = 8*MoveRate;
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMin = 8*TurnRateMin WHERE MoveRate > 0;
+UPDATE ArtDefine_UnitMemberCombats SET TurnRateMax = 8*TurnRateMax WHERE MoveRate > 0;
+
 -- ANTI-AIRCRAFT GUN
 UPDATE ArtDefine_UnitMemberInfos SET Scale = 0.09 WHERE Type = 'ART_DEF_UNIT_MEMBER_ANTI_AIRCRAFT_GUN';
 UPDATE ArtDefine_UnitInfoMemberInfos SET NumMembers = 4 WHERE UnitMemberInfoType = 'ART_DEF_UNIT_MEMBER_ANTI_AIRCRAFT_GUN';

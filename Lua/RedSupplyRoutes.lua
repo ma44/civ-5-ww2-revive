@@ -234,7 +234,8 @@ function UnloadConvoy(unit, playerID, x, y)
 		player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "Convoy has reached " .. strDestination .. ", delivering an equiped unit", "Convoy unloading at " .. strDestination .." !", x, y)
 		Dprint("      - was transporting an unit", bDebug)
 		local newUnit = player:InitUnit(transportReference, x, y)
-		newUnit:SetDamage( unit:GetMaxHitPoints() - (unit:GetMaxHitPoints()*healthRatio * 2) )
+		newUnit:ChangeExperience(45, 100, false, true, true)
+		--newUnit:SetDamage( unit:GetMaxHitPoints() - (unit:GetMaxHitPoints()*healthRatio * 2) )
 
 	elseif transportType == TRANSPORT_GOLD then 
 		local amount = math.ceil(transportReference * healthRatio)

@@ -917,7 +917,7 @@
 		<Row>
 			<PromotionType>PROMOTION_CAS_SURPRESSED</PromotionType>
 			<DomainType>DOMAIN_AIR</DomainType>
-			<Modifier>100</Modifier>
+			<Modifier>300</Modifier>
 		</Row>
 	</UnitPromotions_Domains>
 
